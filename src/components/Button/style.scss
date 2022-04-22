@@ -1,0 +1,14 @@
+.homeButton {
+  font-size: 24px;
+  background: none;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 50px;
+
+  &:hover {
+    border: 2px solid rgba(0, 0, 0, 0);
+    background: #fff;
+  }
+}

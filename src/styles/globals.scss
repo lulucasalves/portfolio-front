@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+@import './components';
 
 html,
 body {
@@ -6,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', 'Mulish', sans-serif;
+  background-color: #111;
 }
 
 a {
@@ -17,4 +19,9 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #fff;
+}
+
+.bodyActive {
+  overflow-y: hidden;
 }
