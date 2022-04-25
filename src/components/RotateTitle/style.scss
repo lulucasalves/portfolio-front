@@ -1,0 +1,171 @@
+.titleUser {
+  span {
+    font-size: 56px;
+    user-select: none;
+    background: -webkit-linear-gradient(0deg, #ff4d4d, #f9cb28);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+  user-select: none;
+
+  .titleUser__item {
+    display: flex;
+    position: relative;
+  }
+
+  .titleUser__item-text {
+    pointer-events: none;
+    display: block;
+    position: relative;
+  }
+
+  .titleUser__item > div {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    overflow: hidden;
+  }
+
+  .titleUser__item > div span {
+    will-change: transform;
+    transform-style: preserve-3d;
+    transform: translate3d(0, -100%, 0) rotateX(-90deg);
+    transform-origin: bottom;
+    display: inline-block;
+    animation: rotateTo 40s infinite;
+    animation-delay: 1s;
+
+    &:after {
+      content: 'dev frontend';
+      animation: rotateAfter 40s infinite;
+      animation-delay: 1s;
+    }
+  }
+
+  .clone {
+    display: none;
+  }
+}
+
+@keyframes rotateTo {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0) rotateX(90deg);
+  }
+
+  5% {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0) rotateX(0deg);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0) rotateX(0deg);
+  }
+
+  30% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0) rotateX(90deg);
+  }
+
+  35% {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0) rotateX(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0) rotateX(0deg);
+  }
+
+  55% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0) rotateX(90deg);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0) rotateX(0deg);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0) rotateX(0deg);
+  }
+
+  80% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0) rotateX(90deg);
+  }
+
+  85% {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0) rotateX(0deg);
+  }
+
+  95% {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0) rotateX(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0) rotateX(90deg);
+  }
+}
+
+@keyframes rotateAfter {
+  0% {
+    content: 'dev frontend';
+  }
+
+  5% {
+    content: 'dev frontend';
+  }
+
+  25% {
+    content: 'dev frontend';
+  }
+
+  30% {
+    content: 'dev frontend';
+  }
+
+  35% {
+    content: 'dev backend';
+  }
+
+  50% {
+    content: 'dev backend';
+  }
+
+  55% {
+    content: 'dev backend';
+  }
+
+  60% {
+    content: 'dev fullstack';
+  }
+
+  75% {
+    content: 'dev fullstack';
+  }
+
+  80% {
+    content: 'dev fullstack';
+  }
+
+  85% {
+    content: 'designer';
+  }
+
+  95% {
+    content: 'designer';
+  }
+
+  100% {
+    content: 'designer';
+  }
+}

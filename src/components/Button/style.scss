@@ -1,14 +1,28 @@
 .homeButton {
-  font-size: 24px;
+  font-size: 22px;
   background: none;
-  border: 2px solid #fff;
-  padding: 10px 20px;
+  border: 1px solid #fff;
+  padding: 8px 16px;
   cursor: pointer;
   border-radius: 50px;
-  margin-top: 50px;
+  margin-top: 40px;
+  transition: 0.4s;
+  animation: buttonAnimation 2s forwards;
 
   &:hover {
-    border: 2px solid rgba(0, 0, 0, 0);
     background: #fff;
+    color: #0c0c0c;
+  }
+}
+
+@keyframes buttonAnimation {
+  from {
+    opacity: 0;
+    margin-left: -80px;
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0px;
   }
 }
