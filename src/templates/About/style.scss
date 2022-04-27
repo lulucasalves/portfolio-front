@@ -1,4 +1,31 @@
 .aboutContainer {
-  height: 100vh;
   background-color: #060606;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSection {
+  padding: 0 40px;
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  padding: 150px 0 0 60px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    margin-right: 100px;
+    width: 400px;
+    height: 400px;
+
+    box-shadow: -60px -60px 0px 0px rgba(255, 255, 255, 0.1);
+  }
 }

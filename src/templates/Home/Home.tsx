@@ -1,10 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Logo } from '../../components/Logo'
 import { MenuItem } from '../../components/MenuItem'
 import { HomeContent } from '../../components/HomeContent'
 
 export function HomePage() {
   const [menuActive, setMenuActive] = useState(false)
+
+  useEffect(() => {
+    const element = window.document.querySelector('html')
+
+    if (menuActive && element != null) {
+      element.style.overflowY = 'hidden'
+    } else if (element != null) {
+      element.style.overflowY = 'scroll'
+    }
+  }, [menuActive])
 
   return (
     <>
