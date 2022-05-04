@@ -1,17 +1,76 @@
+@keyframes glitch {
+  0% {
+    background-size: 100%;
+
+    background-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+  10% {
+    background-size: 103%;
+
+    background-position: -5px 0;
+  }
+  20% {
+    background-size: 103%;
+
+    background-position: -10px -2px;
+  }
+  30% {
+    background-size: 103%;
+
+    background-position: -10px 0;
+  }
+  40% {
+    background-size: 103%;
+
+    background-position: -5px -2px;
+  }
+  50% {
+    background-size: 103%;
+
+    background-position: -5px 0;
+  }
+  60% {
+    background-size: 103%;
+
+    background-position: -10px 0;
+  }
+  70% {
+    background-size: 103%;
+
+    background-position: 0 -2px;
+  }
+  80% {
+    background-size: 103%;
+
+    background-position: -10px 0px;
+  }
+  90% {
+    background-size: 103%;
+    background-position: -5px -2px;
+  }
+  100% {
+    background-size: 100%;
+    background-position: 0 0;
+    filter: hue-rotate(360deg);
+  }
+}
+
 .aboutContainer {
-  background-color: #060606;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .aboutSection {
-  padding: 0 40px;
-  width: 1400px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 40px;
+  max-width: 1400px;
 }
 
 .photo {
@@ -21,11 +80,84 @@
   justify-content: space-between;
   align-items: center;
 
-  img {
-    margin-right: 100px;
-    width: 400px;
+  .perfilPhoto {
+    background-image: url('https://avatars.githubusercontent.com/u/72206769?v=4');
+    margin-right: 70px;
+    min-width: 400px;
     height: 400px;
+    position: relative;
+    box-shadow: -50px -50px 0px 0px rgba(255, 255, 255, 0.1);
+    background-size: 100%;
+    transition: 1s;
 
-    box-shadow: -60px -60px 0px 0px rgba(255, 255, 255, 0.1);
+    &:hover:before {
+      animation: glitch 2.5s linear;
+    }
+
+    &:hover {
+      box-shadow: -60px -60px 0px 0px rgba(255, 255, 255, 0.1);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://avatars.githubusercontent.com/u/72206769?v=4');
+      opacity: 0.5;
+      mix-blend-mode: hard-light;
+      background-size: 100%;
+    }
   }
+}
+
+.textOptions {
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 50px;
+  flex-direction: column;
+
+  p {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .ballsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 12px;
+      margin-bottom: -30px;
+      margin-right: 5px;
+      color: rgba(255, 255, 255, 0.5);
+
+      &:last-child {
+        margin-left: -35px;
+      }
+    }
+
+    .balltext {
+      cursor: pointer;
+      margin-right: 40px;
+      width: 15px;
+      height: 15px;
+      border: 1px solid rgb(48, 85, 209);
+      border-radius: 50px;
+    }
+
+    .active {
+      background-color: rgb(48, 85, 209);
+    }
+  }
+}
+
+.textAbout {
+  font-size: 1rem;
 }

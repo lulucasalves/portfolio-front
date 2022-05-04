@@ -21,6 +21,6 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components/RotateTitle/index.tsx"
-  ],
+, "src/components/Wave/index.tsx"  ],
   "exclude": ["node_modules"]
 }

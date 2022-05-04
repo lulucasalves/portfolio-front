@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', 'Mulish', sans-serif;
-  background-color: #111;
+  background-color: #060606;
   overflow-y: hidden;
 }
 
@@ -25,4 +25,116 @@ a {
 
 .bodyActive {
   overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #060606;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+.loader {
+  background: #111;
+  height: 100vh;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  div {
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    display: flex;
+
+    span {
+      opacity: 0;
+      margin-top: 50px;
+      animation: appearLetter 3s infinite;
+
+      &:nth-child(2) {
+        animation-delay: 0.3s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+      &:nth-child(4) {
+        animation-delay: 0.9s;
+      }
+      &:nth-child(5) {
+        animation-delay: 1.2s;
+      }
+    }
+  }
+}
+
+.loaderNoActive {
+  animation: off 1s forwards;
+}
+
+@keyframes off {
+  from {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+  }
+
+  to {
+    position: absolute;
+    top: -100vh;
+    z-index: 1;
+  }
+}
+
+.principalActive {
+  animation: offContent 1s forwards;
+  z-index: 2;
+}
+
+@keyframes offContent {
+  from {
+    margin-top: 100vh;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes appearLetter {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  40% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+  60% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+  100% {
+    opacity: 0;
+    margin-top: 50px;
+  }
 }

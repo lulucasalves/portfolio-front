@@ -18,7 +18,7 @@ export function HomePage() {
 
   return (
     <>
-      <div className={menuActive ? 'bodyActive' : ''}>
+      <div id="home" className={menuActive ? 'bodyActive' : ''}>
         <div className={`container ${menuActive ? 'active' : ''}`}>
           <div className="navbar">
             <div className="menu">

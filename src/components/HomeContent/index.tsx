@@ -54,9 +54,7 @@ export function HomeContent() {
                   <span className="dynamic-txts3">cd sobre mim/</span>
                   <br />
                   <span className="apresentation2">
-                    aqui em baixo você vai ter uma breve descrição sobre mim{' '}
-                    <br />
-                    :)
+                    aqui em baixo você vai ter uma breve descrição sobre mim \o/
                   </span>
                 </p>
               </div>
