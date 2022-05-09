@@ -15,7 +15,7 @@
   margin-left: 10px;
   width: 630px;
   height: 400px;
-  background-color: rgba(34, 34, 34, 0.6);
+  background-color: rgb(22, 22, 22);
   border-radius: 15px;
   animation: terminalAnimation 2s forwards;
   box-shadow: -2px -2px 10px 2px #00000090;
@@ -188,7 +188,7 @@
     top: 2px;
     height: 80%;
     width: 100%;
-    background-color: #222;
+    background-color: rgb(22, 22, 22);
     border-left: 5px solid #fff;
     animation: typing1 3s steps(12) forwards;
     animation-delay: 2s;

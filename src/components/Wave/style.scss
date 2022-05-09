@@ -27,14 +27,14 @@
 
     &:nth-child(2) {
       .parallax > use {
-        animation: move-forever 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite,
+        animation: move-forever 5s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite,
           changebackground 10s infinite;
       }
       transform: scaleY(-1) scaleX(-1);
     }
 
     .parallax > use {
-      animation: move-forever 15s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite,
+      animation: move-forever 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite,
         changebackground 10s infinite;
     }
   }

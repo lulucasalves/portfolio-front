@@ -10,6 +10,7 @@ export function HomePage() {
     const element = window.document.querySelector('html')
 
     if (menuActive && element != null) {
+
       element.style.overflowY = 'hidden'
     } else if (element != null) {
       element.style.overflowY = 'scroll'
@@ -26,13 +27,13 @@ export function HomePage() {
 
               <div
                 onClick={() => {
-                  window.document.body.style.overflow = 'hidden'
                   window.scrollTo(0, 0)
+                  window.document.body.style.overflow = 'hidden'
                   setMenuActive(!menuActive)
                 }}
                 className="hamburger-menu"
               >
-                <div className="bar"></div>
+                <div className="bar" />
               </div>
             </div>
           </div>

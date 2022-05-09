@@ -4,14 +4,14 @@ import { Wave } from '../components/Wave'
 import { Skills } from '../templates/Skills/Skills'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import axios from 'axios'
 import { Portfolio } from '../templates/Portfolio/Portfolio'
+import { Formation } from '../templates/Formation/Formation'
 
 export default function Home() {
-  const [load, setLoad] = useState(true)
+  const [load, setLoad] = useState(false)
 
   useEffect(() => {
-    setLoad(false)
+    // setLoad(false)
     const element = window.document.querySelector('html')
     if (element && !load) {
       element.style.overflowY = 'scroll'
@@ -24,7 +24,7 @@ export default function Home() {
         <title>Lucas Alves</title>
         <link rel="shortcut icon" href="./favicon.svg" />
       </Head>
-      <div className={`loader ${load ? '' : 'loaderNoActive'}`}>
+      {/* <div className={`loader ${load ? '' : 'loaderNoActive'}`}>
         <div>
           <span>a</span>
           <span>l</span>
@@ -32,13 +32,14 @@ export default function Home() {
           <span>e</span>
           <span>s</span>
         </div>
-      </div>
+      </div> */}
       <div className={`principalContent ${load ? '' : 'principalActive'}`}>
         <HomePage />
         <About />
         <Wave />
         <Skills />
         <Portfolio />
+        <Formation />
       </div>
     </>
   )

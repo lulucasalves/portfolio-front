@@ -1,0 +1,62 @@
+.experienceDiv {
+  padding: 0 40px;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  h3 {
+    text-align: right;
+    margin: 40px 0;
+    font-size: 2rem;
+  }
+
+  .experienceContent {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+
+    .descriptionUser {
+      text-align: right;
+      margin-left: 50px;
+    }
+
+    .cardFilter {
+      margin-top: -50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 80px;
+
+      select {
+        &:first-child {
+          margin-right: 40px;
+        }
+
+        padding-left: 5px;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 7px;
+        height: 30px;
+        font-size: 1rem;
+        width: 80px;
+      }
+    }
+
+    .selectCards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .cardsSquares {
+        margin-right: 15px;
+        .cardSquare {
+          width: 11px;
+          height: 11px;
+          transform: rotate(45deg);
+          border: 1px solid white;
+          background-color: white;
+        }
+      }
+    }
+  }
+}

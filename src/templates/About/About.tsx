@@ -12,8 +12,8 @@ export function About() {
           desenvolvimento de sistemas e design gráfico.
           <br />
           Atualmente trabalho como desenvolvedor frontend na empresa ZB Negócios
-          digitais e como freelancer atuo como desenvolvedor fullstack, minha
-          stack é baseada nas linguagens Javascript e Python.
+          digitais (estágio) e como freelancer atuo como desenvolvedor
+          fullstack, minha stack é baseada nas linguagens Javascript e Python.
         </p>
       )
     }
@@ -25,8 +25,8 @@ export function About() {
           desenvolvimento de sistemas e design gráfico.
           <br />
           Atualmente trabalho como desenvolvedor frontend na empresa ZB Negócios
-          digitais e como freelancer atuo como desenvolvedor fullstack, minha
-          stack é baseada nas linguagens Javascript e Python.
+          digitais (estágio) e como freelancer atuo como desenvolvedor
+          fullstack, minha stack é baseada nas linguagens Javascript e Python.
           <br />
           Estudando na prática frameworks de Javascript e Python, data science,
           data analytics,desenvolvimento de api, desenvolvimento mobile e
@@ -42,8 +42,8 @@ export function About() {
         desenvolvimento de sistemas e design gráfico.
         <br />
         Atualmente trabalho como desenvolvedor frontend na empresa ZB Negócios
-        digitais e como freelancer atuo como desenvolvedor fullstack, minha
-        stack é baseada nas linguagens Javascript e Python.
+        digitais (estágio) e como freelancer atuo como desenvolvedor fullstack,
+        minha stack é baseada nas linguagens Javascript e Python.
         <br />
         Estudando na prática frameworks de Javascript e Python, data science,
         data analytics,desenvolvimento de api, desenvolvimento mobile e

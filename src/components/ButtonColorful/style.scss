@@ -1,0 +1,43 @@
+.colorfulButton {
+  font-size: 22px;
+  background: none;
+  padding: 3px;
+  cursor: pointer;
+  margin-top: 410px;
+  border: none;
+  background: linear-gradient(
+    -45deg,
+    #ff4d4d 0%,
+    #f9cb28 50%,
+    #ff4d4d 100%
+  );
+  background-size: 500%;
+  animation: animateButton 10s infinite;
+}
+
+.buttonInner {
+  border: none;
+  font-size: 22px;
+  background: #060606;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    color: #000;
+    background: none;
+    transition: 0.5s;
+  }
+}
+
+@keyframes animateButton {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}

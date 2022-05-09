@@ -1,0 +1,110 @@
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(19, 19, 19);
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 155px;
+  transition: 0.5s;
+
+  &:first-child {
+    margin-right: 30px;
+  }
+
+  &:hover {
+    height: 320px;
+    .image {
+      height: 170px;
+      width: 170px;
+    }
+
+    .content {
+      padding-top: 135px;
+    }
+  }
+
+  .image {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    height: 120px;
+    width: 120px;
+    background: black;
+    transition: 0.5s;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  .content {
+    cursor: default;
+    padding: 20px;
+    padding-top: 90px;
+    transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .titleCourse {
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .descriptionCourse {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .dates {
+      margin-top: 15px;
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+
+      p {
+        font-weight: 300;
+
+        span {
+          font-weight: 500;
+        }
+        &:first-child {
+          margin-right: 70px;
+        }
+      }
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 6px 12px;
+      background: none;
+      border: 1px solid #fff;
+      margin-top: 15px;
+      cursor: pointer;
+
+      transition: 0.5s;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.formExp {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #060606;
+  background-size: 12px 12px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #0c0c0c,
+    #0c0c0c 0.6000000000000001px,
+    #060606 0.6000000000000001px,
+    #060606
+  );
+  background-attachment: fixed;
+
+  .formationDiv {
+    min-height: 500px;
+    padding: 0 40px;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin: 40px 0;
+      font-size: 2rem;
+    }
+
+    .formationContent {
+      display: flex;
+      align-items: top;
+      justify-content: space-between;
+
+      .descriptionUser {
+        margin-right: 50px;
+      }
+
+      .cardsForm {
+        display: flex;
+      }
+    }
+  }
+}
