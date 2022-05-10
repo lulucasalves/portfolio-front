@@ -3,7 +3,7 @@ import { IFormationModal } from '../../templates/Formation/Formation'
 interface IExperience {
   card: number
   title: string
-  university: string
+  company: string
   init: string
   finish: string
   image: string
@@ -13,7 +13,7 @@ interface IExperience {
 export function ExperienceCard({
   title,
   image,
-  university,
+  company,
   init,
   finish,
   card,
@@ -26,15 +26,15 @@ export function ExperienceCard({
       </div>
       <div className="content">
         <p className="titleCourse">{title}</p>
-        <p className="descriptionCourse">{university}</p>
+        <p className="descriptionCourse">{company}</p>
         <div className="dates">
           <p>
-            <span>De</span>
+            <span>De:</span>
             <br />
             {init}
           </p>
           <p>
-            <span>Até</span>
+            <span>Até:</span>
             <br />
             {finish}
           </p>

@@ -1,0 +1,21 @@
+html {
+  --wave-color-1: rgb(48, 85, 209);
+  --wave-color-2: #e605f2;
+
+  --profile-options-color: rgb(236, 55, 55);
+
+  --terminal-purple-theme: rgb(119, 33, 111);
+  --terminal-green-theme: #26ed10;
+  --terminal-default-theme: rgb(49, 49, 49);
+
+  --none: rgba(255, 255, 255, 0);
+
+  --red: rgb(255, 59, 48);
+  --green: rgb(40, 205, 65);
+
+  --yellow: rgb(255, 204, 0);
+}
+
+@import './terminal/_default.scss';
+@import './terminal/_hacker.scss';
+@import './terminal/_ubuntu.scss';

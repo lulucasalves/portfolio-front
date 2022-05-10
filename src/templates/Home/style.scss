@@ -1,12 +1,12 @@
 .halfLine {
   width: 70%;
   height: 1px;
-  background-color: #fff;
+  background-color: var(--text);
 }
 
 .bodyActive {
   overflow-y: hidden;
-  background-color: #0c0c0c;
+  background-color: var(--second-background);
 }
 
 .bodyActive .main,
@@ -34,7 +34,12 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
+  color: var(--text);
+
+  .menuOpt {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .hamburger-menu {
@@ -50,7 +55,7 @@ html {
   width: 1.9rem;
   height: 1.5px;
   border-radius: 2px;
-  background-color: #eee;
+  background-color: var(--menu-icons-color);
   transition: 0.5s;
   position: relative;
 }
@@ -61,7 +66,7 @@ html {
   position: absolute;
   width: inherit;
   height: inherit;
-  background-color: #eee;
+  background-color: var(--menu-icons-color);
   transition: 0.5s;
 }
 
@@ -74,7 +79,11 @@ html {
 }
 
 .newPosition {
-  background-image: linear-gradient(135deg, #0c0c0c 0%, #111 74%);
+  background-image: linear-gradient(
+    135deg,
+    var(--second-background) 0%,
+    var(--third-background) 74%
+  );
   width: 100%;
   height: 100vh;
 }
@@ -82,7 +91,11 @@ html {
 .container {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(135deg, #0c0c0c 0%, #111 100%);
+  background-image: linear-gradient(
+    135deg,
+    var(--second-background) 0%,
+    var(--third-background) 100%
+  );
   overflow-x: hidden;
 }
 
@@ -102,15 +115,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #060606;
+  background-color: var(--background);
   opacity: 1;
   background-size: 12px 12px;
   background-image: repeating-linear-gradient(
     to right,
-    #0c0c0c,
-    #0c0c0c 0.6000000000000001px,
-    #060606 0.6000000000000001px,
-    #060606
+    var(--second-background),
+    var(--second-background) 0.6000000000000001px,
+    var(--background) 0.6000000000000001px,
+    var(--background)
   );
   background-attachment: fixed;
   position: relative;
@@ -127,7 +140,7 @@ header {
 .inner {
   max-width: 35rem;
   text-align: center;
-  color: #fff;
+  color: var(--text);
   padding: 0 2rem;
 }
 
@@ -138,10 +151,10 @@ header {
 .btn {
   margin-top: 1rem;
   padding: 0.6rem 1.8rem;
-  background-color: #1179e7;
+  // background-color: #1179e7;
   border: none;
   border-radius: 25px;
-  color: #fff;
+  color: var(--text);
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
@@ -193,7 +206,7 @@ ul {
 
 .links a {
   text-decoration: none;
-  color: rgb(232, 232, 232);
+  color: var(--menu-links-color);
   padding: 0.7rem 0;
   display: inline-block;
   font-size: 1.2rem;
@@ -208,7 +221,7 @@ ul {
   &:hover {
     margin-left: 5px;
     margin-right: -5px;
-    color: #fff;
+    color: var(--text);
   }
 }
 
@@ -247,7 +260,7 @@ ul {
   transform-style: preserve-3d;
   transform-origin: left;
   transition: 0.5s;
-  background-color: white;
+  background-color: var(--text);
 }
 
 .shadow.one {
@@ -345,3 +358,4 @@ ul {
     right: 80px;
   }
 }
+

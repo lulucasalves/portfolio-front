@@ -30,12 +30,12 @@ export function Experience() {
             </select>
           </div>
           <div className="selectCards">
-            <div className="cardsSquares">
+            {/* <div className="cardsSquares">
               <div className="cardSquare" />
-            </div>
+            </div> */}
             <ExperienceCard
               title="Desenvolvedor Frontend"
-              university="ZB Negócios Digitais"
+              company="ZB Negócios Digitais"
               image="https://images.pexels.com/photos/2078774/pexels-photo-2078774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               init="10/2021"
               finish="atualmente"

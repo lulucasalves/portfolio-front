@@ -2,7 +2,11 @@
   span {
     font-size: 56px;
     user-select: none;
-    background: -webkit-linear-gradient(0deg, #ff4d4d, #f9cb28);
+    background: -webkit-linear-gradient(
+      0deg,
+      var(--colorful-title-1),
+      var(--colorful-title-2)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;

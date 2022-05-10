@@ -111,7 +111,7 @@
   }
 
   to {
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px var(--none);
     position: absolute;
     filter: brightness(0.6);
     transform: perspective(1300px) rotateY(-18deg) translateX(390px) scale(0.7);
@@ -120,7 +120,7 @@
 
 @keyframes rightToCenter {
   from {
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px var(--none);
     position: absolute;
     filter: brightness(0.6);
     transform: perspective(1300px) rotateY(-18deg) translateX(390px) scale(0.7);
@@ -128,7 +128,7 @@
 
   to {
     cursor: pointer;
-    box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.2);
     filter: brightness(1);
     transform: none;
   }
@@ -142,7 +142,7 @@
   }
 
   to {
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px var(--none);
     filter: brightness(0.6);
     transform: perspective(1300px) rotateY(18deg) scale(0.7) translateX(-560px);
   }
@@ -156,7 +156,7 @@
   }
 
   to {
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px var(--none);
     filter: brightness(0.6);
     transform: perspective(1300px) rotateY(-18deg) translateX(390px) scale(0.7);
   }
@@ -169,7 +169,7 @@
     transform: perspective(1300px) rotateY(-18deg) translateX(390px) scale(0.7);
   }
   to {
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px var(--none);
     position: absolute;
     filter: brightness(0.6);
     transform: perspective(1300px) rotateY(18deg) scale(0.7) translateX(-560px);
@@ -178,7 +178,7 @@
 
 @keyframes leftToCenter {
   from {
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px var(--none);
     position: absolute;
     filter: brightness(0.6);
     transform: perspective(1300px) rotateY(18deg) scale(0.7) translateX(-560px);
@@ -186,7 +186,7 @@
 
   to {
     cursor: pointer;
-    box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.2);
     filter: brightness(1);
     transform: none;
   }

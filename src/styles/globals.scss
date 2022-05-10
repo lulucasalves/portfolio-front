@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
 @import './components';
+@import './themes/_dark.scss';
+@import './themes/_light.scss';
+@import './themes/_default.scss';
 
 html,
 body {
@@ -7,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', 'Mulish', sans-serif;
-  background-color: #060606;
+  background-color: var(--background);
   overflow-y: hidden;
 }
 
@@ -20,7 +23,7 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: var(--text);
 }
 
 .bodyActive {
@@ -33,7 +36,7 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #060606;
+  background: var(--background);
 }
 
 /* Handle */
@@ -48,7 +51,7 @@ a {
 }
 
 .loader {
-  background: #111;
+  background: var(--loader-background);
   height: 100vh;
   position: fixed;
   z-index: 50;

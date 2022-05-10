@@ -87,7 +87,7 @@
     min-width: 400px;
     height: 400px;
     position: relative;
-    box-shadow: -50px -50px 0px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: -50px -50px 0px 0px var(--background-01);
     background-size: 100%;
     transition: 1s;
 
@@ -96,7 +96,7 @@
     }
 
     &:hover {
-      box-shadow: -60px -60px 0px 0px rgba(255, 255, 255, 0.1);
+      box-shadow: -60px -60px 0px 0px var(--background-01);
     }
 
     &:before {
@@ -125,7 +125,8 @@
 
   p {
     margin-bottom: 15px;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text);
+    opacity: 0.6;
   }
 
   .ballsDiv {
@@ -134,10 +135,11 @@
     justify-content: center;
 
     p {
+      opacity: 0.5;
       font-size: 12px;
       margin-bottom: -30px;
       margin-right: 5px;
-      color: rgba(255, 255, 255, 0.5);
+      color: var(--text);
 
       &:last-child {
         margin-left: -35px;
@@ -149,12 +151,12 @@
       margin-right: 40px;
       width: 15px;
       height: 15px;
-      border: 1px solid rgb(48, 85, 209);
+      border: 1px solid var(--profile-options-color);
       border-radius: 50px;
     }
 
     .active {
-      background-color: rgb(48, 85, 209);
+      background-color: var(--profile-options-color);
     }
   }
 }

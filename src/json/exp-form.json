@@ -1,0 +1,32 @@
+{
+  "experience": [
+    {
+      "title": "Desenvolvedor Frontend",
+      "company": "ZB Negócios Digitais",
+      "image": "https://images.pexels.com/photos/2078774/pexels-photo-2078774.jpeg?auto:compress&cs:tinysrgb&dpr:2&h:650&w:940",
+      "init": "10/2021",
+      "finish": "atualmente",
+      "id": "1"
+    }
+  ],
+  "formation": [
+    {
+      "id": "1",
+      "type": "graduation",
+      "title": "Design gráfico",
+      "university": "Universidade Internacional",
+      "image": "https://images.pexels.com/photos/5582867/pexels-photo-5582867.jpeg?auto:compress&cs:tinysrgb&dpr:2&h:650&w:940",
+      "init": "02/2021",
+      "finish": "02/2023"
+    },
+    {
+      "id": "2",
+      "type": "graduation",
+      "title": "Análise de sistemas",
+      "university": "Universidade Internacional",
+      "image": "https://images.pexels.com/photos/5935791/pexels-photo-5935791.jpeg?auto:compress&cs:tinysrgb&dpr:2&h:650&w:940",
+      "init": "06/2021",
+      "finish": "02/2024"
+    }
+  ]
+}

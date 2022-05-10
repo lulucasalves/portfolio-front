@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Logo } from '../../components/Logo'
 import { MenuItem } from '../../components/MenuItem'
 import { HomeContent } from '../../components/HomeContent'
+import { Theme } from '../../components/Theme'
 
 export function HomePage() {
   const [menuActive, setMenuActive] = useState(false)
@@ -10,7 +11,6 @@ export function HomePage() {
     const element = window.document.querySelector('html')
 
     if (menuActive && element != null) {
-
       element.style.overflowY = 'hidden'
     } else if (element != null) {
       element.style.overflowY = 'scroll'
@@ -25,15 +25,18 @@ export function HomePage() {
             <div className="menu">
               <Logo />
 
-              <div
-                onClick={() => {
-                  window.scrollTo(0, 0)
-                  window.document.body.style.overflow = 'hidden'
-                  setMenuActive(!menuActive)
-                }}
-                className="hamburger-menu"
-              >
-                <div className="bar" />
+              <div className="menuOpt">
+                <Theme />
+                <div
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                    window.document.body.style.overflow = 'hidden'
+                    setMenuActive(!menuActive)
+                  }}
+                  className="hamburger-menu"
+                >
+                  <div className="bar" />
+                </div>
               </div>
             </div>
           </div>

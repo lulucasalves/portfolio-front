@@ -1,7 +1,7 @@
 .card {
   padding: 20px;
   border-radius: 10px;
-  background-color: rgb(19, 19, 19);
+  background-color: var(--card-background);
   text-align: center;
   justify-content: center;
   display: flex;
@@ -36,7 +36,7 @@
     border-radius: 20px;
     height: 120px;
     width: 120px;
-    background: black;
+    background: none;
     transition: 0.5s;
 
     img {
@@ -70,7 +70,7 @@
 
     .descriptionCourse {
       font-size: 15px;
-      color: rgba(255, 255, 255, 0.8);
+      opacity: 0.8;
     }
 
     .dates {
@@ -95,15 +95,15 @@
       font-size: 1rem;
       padding: 6px 12px;
       background: none;
-      border: 1px solid #fff;
+      border: 1px solid var(--text);
       margin-top: 15px;
       cursor: pointer;
 
       transition: 0.5s;
 
       &:hover {
-        background: #fff;
-        color: #000;
+        background: var(--text);
+        color: var(--card-background);
       }
     }
   }

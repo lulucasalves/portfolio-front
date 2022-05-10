@@ -1,0 +1,23 @@
+html[data-color='light'] {
+  --background: #f6f6f6;
+  --second-background: #ffffff;
+  --third-background: rgb(221, 221, 221);
+
+  --text: rgb(19, 19, 19);
+
+  --loader-background: rgb(246, 246, 246);
+
+  --terminal-default-background: rgb(249, 249, 249);
+
+  --card-background: rgb(232, 232, 232);
+
+  --background-01: rgba(0, 0, 0, 0.1);
+  --background-02: rgba(0, 0, 0, 0.2);
+  --background-07: rgba(0, 0, 0, 0.7);
+
+  --menu-icons-color: rgb(18, 18, 18);
+  --menu-links-color: rgb(29, 29, 29);
+
+  --colorful-title-1: #e64848;
+  --colorful-title-2: #ebbf22;
+}

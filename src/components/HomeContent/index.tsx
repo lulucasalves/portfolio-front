@@ -1,7 +1,24 @@
+import { useState,useEffect } from 'react'
 import { Button } from '../Button'
 import { RotateTitle } from '../RotateTitle'
 
 export function HomeContent() {
+  const [terminal, setTerminal] = useState('default')
+
+  useEffect(() => {
+    const localstorage = localStorage.getItem('terminal-theme')
+
+    if(localstorage) {
+      setTerminal(localstorage)
+    }
+  },[])
+
+  function changeTheme(val:string) {
+    localStorage.setItem('terminal-theme',val)
+
+    setTerminal(val)
+  }
+
   return (
     <div className="main">
       <header>
@@ -14,7 +31,7 @@ export function HomeContent() {
             <Button text="Ver mais" />
           </div>
           <div className="terminalThemes">
-            <div className="terminal">
+            <div className={`terminal ${terminal}`}>
               <div className="terminalOptions">
                 <div className="ballsGroup">
                   <div className="terminalBall red" />
@@ -41,11 +58,13 @@ export function HomeContent() {
                   <span className="appearMenu">
                     sobre mim
                     <br />
-                    projetos
+                    portfolio
                     <br />
-                    formação
+                    formacao
                     <br />
-                    experiência
+                    experiencia
+                    <br />
+                    curriculum
                     <br />
                     contato
                   </span>
@@ -60,9 +79,18 @@ export function HomeContent() {
               </div>
             </div>
             <div className="themes">
-              <div className="theme purple" />
-              <div className="theme black activated" />
-              <div className="theme green" />
+              <div
+                onClick={() => changeTheme('ubuntu')}
+                className={`theme purple ${terminal === 'ubuntu'?'activated':''}`}
+              />
+              <div
+                onClick={() => changeTheme('default')}
+                className={`theme black ${terminal === 'default'?'activated':''}`}
+              />
+              <div
+                onClick={() => changeTheme('hacker')}
+                className={`theme green ${terminal === 'hacker'?'activated':''}`}
+              />
             </div>
           </div>
         </div>

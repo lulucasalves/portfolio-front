@@ -16,6 +16,11 @@
   },
   { "svg": "docker", "category": ["backend", ""], "name": "Docker" },
   {
+    "svg": "expo",
+    "category": ["frontend", "", "framework", "mobile"],
+    "name": "Expo"
+  },
+  {
     "svg": "express",
     "category": ["backend", "", "framework"],
     "name": "Express"

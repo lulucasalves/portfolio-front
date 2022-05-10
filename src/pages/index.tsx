@@ -6,6 +6,8 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { Portfolio } from '../templates/Portfolio/Portfolio'
 import { Formation } from '../templates/Formation/Formation'
+import { Curriculum } from '../templates/Curriculum/Curriculum'
+
 
 export default function Home() {
   const [load, setLoad] = useState(false)
@@ -40,6 +42,7 @@ export default function Home() {
         <Skills />
         <Portfolio />
         <Formation />
+        <Curriculum/>
       </div>
     </>
   )

@@ -3,7 +3,7 @@
   max-width: 1400px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 550px;
 
   h3 {
     text-align: right;
@@ -34,7 +34,7 @@
         }
 
         padding-left: 5px;
-        background: rgba(255, 255, 255, 0.1);
+        background: var(--background-01);
         border: none;
         border-radius: 7px;
         height: 30px;
@@ -53,8 +53,8 @@
           width: 11px;
           height: 11px;
           transform: rotate(45deg);
-          border: 1px solid white;
-          background-color: white;
+          border: 1px solid var(--text);
+          background-color: var(--text);
         }
       }
     }

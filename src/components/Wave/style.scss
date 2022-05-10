@@ -64,12 +64,12 @@
 
 @keyframes changebackground {
   0% {
-    fill: rgb(48, 85, 209);
+    fill: var(--wave-color-1);
   }
   50% {
-    fill: #e605f2;
+    fill: var(--wave-color-2);
   }
   100% {
-    fill: rgb(48, 85, 209);
+    fill: var(--wave-color-1);
   }
 }
