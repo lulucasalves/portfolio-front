@@ -4,6 +4,7 @@
 @import './themes/_light.scss';
 @import './themes/_default.scss';
 
+
 html,
 body {
   scroll-behavior: smooth;
@@ -12,7 +13,11 @@ body {
   font-family: 'Poppins', 'Mulish', sans-serif;
   background-color: var(--background);
   overflow-y: hidden;
+
+
 }
+
+
 
 a {
   color: inherit;
@@ -54,44 +59,14 @@ a {
   background: var(--loader-background);
   height: 100vh;
   position: fixed;
-  z-index: 50;
+  z-index: 100;
   width: 100%;
   display: flex;
   align-items: center;
-
-  div {
-    letter-spacing: 5px;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
-    align-items: center;
-    display: flex;
-
-    span {
-      opacity: 0;
-      margin-top: 50px;
-      animation: appearLetter 3s infinite;
-
-      &:nth-child(2) {
-        animation-delay: 0.3s;
-      }
-      &:nth-child(3) {
-        animation-delay: 0.6s;
-      }
-      &:nth-child(4) {
-        animation-delay: 0.9s;
-      }
-      &:nth-child(5) {
-        animation-delay: 1.2s;
-      }
-    }
-  }
 }
 
 .loaderNoActive {
-  animation: off 1s forwards;
+  animation: offContent 1s forwards;
 }
 
 @keyframes off {
@@ -108,18 +83,13 @@ a {
   }
 }
 
-.principalActive {
-  // animation: offContent 1s forwards;
-  z-index: 2;
-}
-
 @keyframes offContent {
   from {
-    margin-top: 100vh;
+    opacity: 1;
   }
 
   to {
-    margin-top: 0;
+    opacity: 0;
   }
 }
 

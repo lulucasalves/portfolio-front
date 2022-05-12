@@ -4,8 +4,7 @@ interface IExperience {
   card: number
   title: string
   company: string
-  init: string
-  finish: string
+  period:string
   image: string
   setModal: (event: IFormationModal) => void
 }
@@ -14,13 +13,12 @@ export function ExperienceCard({
   title,
   image,
   company,
-  init,
-  finish,
+  period,
   card,
   setModal
 }: IExperience) {
   return (
-    <div className="card">
+    <div className="cardexp">
       <div className="image">
         <img src={image} />
       </div>
@@ -29,14 +27,9 @@ export function ExperienceCard({
         <p className="descriptionCourse">{company}</p>
         <div className="dates">
           <p>
-            <span>De:</span>
+            <span>Periodo</span>
             <br />
-            {init}
-          </p>
-          <p>
-            <span>Até:</span>
-            <br />
-            {finish}
+            {period}
           </p>
         </div>
         <button onClick={() => setModal({ active: true, card: card })}>

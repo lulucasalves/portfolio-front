@@ -3,6 +3,7 @@ import { Logo } from '../../components/Logo'
 import { MenuItem } from '../../components/MenuItem'
 import { HomeContent } from '../../components/HomeContent'
 import { Theme } from '../../components/Theme'
+import { Lang } from '../../components/Lang'
 
 export function HomePage() {
   const [menuActive, setMenuActive] = useState(false)
@@ -26,6 +27,7 @@ export function HomePage() {
               <Logo />
 
               <div className="menuOpt">
+                <Lang />
                 <Theme />
                 <div
                   onClick={() => {

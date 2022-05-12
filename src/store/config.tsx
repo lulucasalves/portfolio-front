@@ -9,7 +9,7 @@ interface IContext {
 export interface IMyContext {
   theme?: string
   changeTheme?: (type: string) => void
-  language?: string
+  lang?: string
   changeLang?: (language: string) => void
 }
 

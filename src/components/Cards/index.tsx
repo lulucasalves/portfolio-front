@@ -1,4 +1,4 @@
-import {  useState } from 'react'
+import { useState } from 'react'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 
 interface ISortObject {
@@ -77,19 +77,7 @@ export function Cards() {
     }
   }
 
-  const [positions, setPositions] = useState({ x: 0, y: 0, s: 1 })
-
-  const calc = (x: number, y: number) => {
-    return {
-      x: -(y - window.innerHeight / 2) / 20,
-      y: (x - window.innerWidth / 2) / 20,
-      s: 1
-    }
-  }
-
-  const trans = (x: string, y: string, s: string) =>
-    `perspective(600px) rotateX(${1 || x}deg) rotateY(${y}deg) scale(${s})`
-
+  
   return (
     <div className="cardContainer">
       <IoIosArrowBack className="arrow" onClick={() => alternateSort('left')} />

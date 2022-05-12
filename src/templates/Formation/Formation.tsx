@@ -44,7 +44,7 @@ export function Formation() {
       <>
         <FormationCard
           title="Design gráfico"
-          university="Universidade Internacional"
+          university="Uninter"
           image="https://images.pexels.com/photos/5582867/pexels-photo-5582867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           init="02/2021"
           finish="02/2023"
@@ -54,7 +54,7 @@ export function Formation() {
 
         <FormationCard
           title="Análise de sistemas"
-          university="Universidade Internacional"
+          university="Uninter"
           image="https://images.pexels.com/photos/5935791/pexels-photo-5935791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           init="06/2021"
           finish="02/2024"

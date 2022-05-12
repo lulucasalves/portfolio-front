@@ -1,4 +1,4 @@
-.card {
+.cardexp {
   padding: 20px;
   border-radius: 10px;
   background-color: var(--card-background);
@@ -75,18 +75,16 @@
 
     .dates {
       margin-top: 15px;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       display: flex;
 
       p {
+        text-align: center;
         font-weight: 300;
 
         span {
           font-weight: 500;
-        }
-        &:first-child {
-          margin-right: 70px;
         }
       }
     }

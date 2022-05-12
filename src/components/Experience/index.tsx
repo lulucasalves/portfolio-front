@@ -37,8 +37,7 @@ export function Experience() {
               title="Desenvolvedor Frontend"
               company="ZB Negócios Digitais"
               image="https://images.pexels.com/photos/2078774/pexels-photo-2078774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              init="10/2021"
-              finish="atualmente"
+              period="8 meses"
               setModal={() => setModal}
               card={2}
             />

@@ -29,7 +29,7 @@ export function Skills() {
 
   return (
     <div className={`skillsDiv ${viewAll ? 'viewAll' : 'simplify'}`}>
-      <h2>{'{ Hábilidades }'}</h2>
+      <h2>Hábilidades</h2>
       <div className="skillsOpt">
         <input
           onChange={(e) => setSearch(e.target.value)}

@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 import { Portfolio } from '../templates/Portfolio/Portfolio'
 import { Formation } from '../templates/Formation/Formation'
 import { Curriculum } from '../templates/Curriculum/Curriculum'
-
+import { Contact } from '../templates/Contact/Contact'
 
 export default function Home() {
   const [load, setLoad] = useState(false)
@@ -22,27 +22,20 @@ export default function Home() {
 
   return (
     <>
+      {/* <div className={`loader ${load ? '' : 'loaderNoActive'}`} /> */}
       <Head>
         <title>Lucas Alves</title>
         <link rel="shortcut icon" href="./favicon.svg" />
       </Head>
-      {/* <div className={`loader ${load ? '' : 'loaderNoActive'}`}>
-        <div>
-          <span>a</span>
-          <span>l</span>
-          <span>v</span>
-          <span>e</span>
-          <span>s</span>
-        </div>
-      </div> */}
-      <div className={`principalContent ${load ? '' : 'principalActive'}`}>
+      <div className="principalContent">
         <HomePage />
         <About />
         <Wave />
         <Skills />
         <Portfolio />
         <Formation />
-        <Curriculum/>
+        <Curriculum />
+        <Contact />
       </div>
     </>
   )

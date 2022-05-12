@@ -1,0 +1,78 @@
+.lang {
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+  .flag {
+    width: 35px;
+    margin-right: 5px;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+    fill: var(--text);
+  }
+
+  .langGroup {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .modal {
+      width: 150%;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 40px;
+      padding: 10px;
+      border-radius: 5px;
+      animation: appearLang 0.7s forwards;
+      left: 0;
+      position: absolute;
+      background: var(--modal-background);
+
+      .flagOpt {
+        width: 100%;
+
+        .flagsm {
+          margin-right: 10px;
+          width: 30px;
+        }
+
+        p {
+          color: var(--background-07);
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .borderSeparation {
+        background: var(--background-01);
+        margin: 5px 0;
+        width: 100%;
+        height: 1px;
+      }
+    }
+  }
+}
+
+@keyframes appearLang {
+  from {
+    top: 70px;
+    opacity: 0;
+  }
+
+  to {
+    top: 40px;
+    opacity: 1;
+  }
+}

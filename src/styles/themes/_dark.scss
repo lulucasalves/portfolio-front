@@ -4,6 +4,7 @@ html[data-color='dark'] {
   --third-background: #111;
 
   --text: #fff;
+  --text-secondary: #f4f4f4; 
 
   --loader-background: #111;
 
@@ -12,13 +13,12 @@ html[data-color='dark'] {
 
   --card-background: rgb(19, 19, 19);
 
+  --modal-background: rgb(19, 19, 19);
+
   --background-01: rgba(255, 255, 255, 0.1);
   --background-02: rgba(255, 255, 255, 0.2);
   --background-07: rgba(255, 255, 255, 0.7);
 
   --menu-icons-color: #eee;
   --menu-links-color: rgb(232, 232, 232);
-
-  --colorful-title-1: #ff4d4d;
-  --colorful-title-2: #f9cb28;
 }

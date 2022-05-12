@@ -4,12 +4,16 @@ html[data-color='light'] {
   --third-background: rgb(221, 221, 221);
 
   --text: rgb(19, 19, 19);
+  --text-secondary: #171717;
 
   --loader-background: rgb(246, 246, 246);
 
   --terminal-default-background: rgb(249, 249, 249);
+  --terminal-default-theme: rgb(111, 111, 111);
 
   --card-background: rgb(232, 232, 232);
+
+  --modal-background: rgb(232, 232, 232);
 
   --background-01: rgba(0, 0, 0, 0.1);
   --background-02: rgba(0, 0, 0, 0.2);
@@ -17,7 +21,4 @@ html[data-color='light'] {
 
   --menu-icons-color: rgb(18, 18, 18);
   --menu-links-color: rgb(29, 29, 29);
-
-  --colorful-title-1: #e64848;
-  --colorful-title-2: #ebbf22;
 }
