@@ -29,7 +29,7 @@ export function FormationCard({
         <p className="descriptionCourse">{university}</p>
         <div className="dates">
           <p>
-            <span>Início</span>
+            <span className="active">Início</span>
             <br />
             {init}
           </p>

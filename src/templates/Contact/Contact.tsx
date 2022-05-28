@@ -1,10 +1,10 @@
 import {
   AiOutlineGithub,
   AiFillLinkedin,
-  AiOutlineBehance,
-  AiOutlineMedium,
-  AiOutlineDribbble
+  AiOutlineMedium
 } from 'react-icons/ai'
+
+import { MdOutlineEmail } from 'react-icons/md'
 
 export function Contact() {
   return (
@@ -22,20 +22,12 @@ export function Contact() {
             <p>Lucas Alves</p>
           </div>
           <div className="socialMediaGroup">
-            <AiOutlineBehance />
-            <p>lulucasalves</p>
-          </div>
-          <div className="socialMediaGroup">
             <AiOutlineMedium />
-            <p>lulucasalves</p>
-          </div>
-          <div className="socialMediaGroup">
-            <AiOutlineDribbble />
             <p>lulucasalves</p>
           </div>
           <p className="ctaSocialMedia">Ou me envie um email</p>
           <div className="socialMediaGroup">
-            <AiOutlineDribbble />
+            <MdOutlineEmail />
             <p>lucas.alves.supus@oulook.com</p>
           </div>
         </div>

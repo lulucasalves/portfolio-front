@@ -37,7 +37,7 @@ export function Experience() {
               title="Desenvolvedor Frontend"
               company="ZB Negócios Digitais"
               image="https://images.pexels.com/photos/2078774/pexels-photo-2078774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              period="8 meses"
+              period="9 meses"
               setModal={() => setModal}
               card={2}
             />
@@ -45,10 +45,10 @@ export function Experience() {
         </div>
 
         <p className="descriptionUser">
-          Estou fazendo estágio na empresa ZB Negócios Digitais como desenvolvedor
-          frontend, hoje em dia sou desenvolvedor fullstack python e javascript
-          como freelancer, também já trabalhei com design e marketing com 14 até
-          17 anos.
+          Estou fazendo estágio na empresa ZB Negócios Digitais como
+          desenvolvedor frontend, hoje em dia sou desenvolvedor fullstack python
+          e javascript como freelancer, também já trabalhei com design e
+          marketing com 14 até 17 anos.
         </p>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import * as brandsList from '../../json/logos.json'
+import * as brandsList from '../../data/logos.json'
 import {
   IoIosArrowDropdownCircle,
   IoIosArrowDropupCircle

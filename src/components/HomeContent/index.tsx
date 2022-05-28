@@ -64,7 +64,7 @@ export function HomeContent() {
                     <br />
                     experiencia
                     <br />
-                    curriculum
+                    curriculo
                     <br />
                     contato
                   </span>
