@@ -1,0 +1,73 @@
+.focusModalExp {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  animation: appearBackground 1s forwards;
+
+  .modalFormation {
+    position: relative;
+    background: var(--background);
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px solid var(--background-01);
+    animation: appearModal 2s forwards;
+
+    .title {
+      font-size: 1.375rem;
+      font-weight: 500;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      opacity: 0.5;
+      font-weight: 400;
+    }
+
+    .content {
+      margin-top: 30px;
+      display: block;
+
+      .category {
+        font-weight: 500;
+      }
+
+      .timeGroup {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .closeIcon {
+    font-size: 1.875rem;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+}
+
+@keyframes appearBackground {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.85);
+  }
+}
+
+@keyframes appearModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

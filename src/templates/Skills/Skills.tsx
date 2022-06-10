@@ -28,7 +28,10 @@ export function Skills() {
   const brandsListFilter = brandsList.filter((val) => filterBrands(val))
 
   return (
-    <div className={`skillsDiv ${viewAll ? 'viewAll' : 'simplify'}`}>
+    <div
+      id="skills"
+      className={`skillsDiv ${viewAll ? 'viewAll' : 'simplify'}`}
+    >
       <h2>Hábilidades</h2>
       <div className="skillsOpt">
         <input

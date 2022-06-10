@@ -1,12 +1,33 @@
-import { useState } from 'react'
-import { IFormationModal } from '../../templates/Formation/Formation'
+import { IFormationModal } from '../../pages'
 import { ExperienceCard } from '../ExperienceCard'
 
-export function Experience() {
-  const [modal, setModal] = useState<IFormationModal>({
-    active: false,
-    card: 1
-  })
+interface IExperienceModal {
+  modal: IFormationModal
+  setModal: (event: IFormationModal) => void
+}
+
+export function Experience({ modal, setModal }: IExperienceModal) {
+  function getPeriod(passDate: string) {
+    const data1 = new Date()
+    const data2 = new Date(passDate)
+
+    let total =
+      (data2.getFullYear() - data1.getFullYear()) * 12 +
+      (data2.getMonth() - data1.getMonth())
+
+    total = -total
+
+    if (total > 12) {
+      const year = parseInt(String(total / 12))
+      const months = parseInt(String(total - year * 12))
+
+      return `${year} ${year > 1 ? 'anos' : 'ano'} e ${months} ${
+        months > 1 ? 'meses' : 'mês'
+      }`
+    }
+
+    return `${total} ${total > 1 ? 'meses' : 'mês'}`
+  }
 
   return (
     <div className="experienceDiv">
@@ -30,15 +51,12 @@ export function Experience() {
             </select>
           </div>
           <div className="selectCards">
-            {/* <div className="cardsSquares">
-              <div className="cardSquare" />
-            </div> */}
             <ExperienceCard
               title="Desenvolvedor Frontend"
               company="ZB Negócios Digitais"
-              image="https://images.pexels.com/photos/2078774/pexels-photo-2078774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              period="9 meses"
-              setModal={() => setModal}
+              image="companys/zb.png"
+              period={getPeriod('2021-10-01')}
+              setModal={() => setModal({ card: modal.card, active: true })}
               card={2}
             />
           </div>

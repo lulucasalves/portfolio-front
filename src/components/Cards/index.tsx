@@ -77,7 +77,6 @@ export function Cards() {
     }
   }
 
-  
   return (
     <div className="cardContainer">
       <IoIosArrowBack className="arrow" onClick={() => alternateSort('left')} />
@@ -85,25 +84,6 @@ export function Cards() {
         <div id="card1" className={`${sort.card1.class}${sort.card1.dir}`} />
         <div id="card2" className={`${sort.card2.class}${sort.card2.dir}`} />
         <div id="card3" className={`${sort.card3.class}${sort.card3.dir}`} />
-
-        {/* <animated.div
-          className="animatedCard"
-          onMouseMove={({ clientX: x, clientY: y }) => setPositions(calc(x, y))}
-          onMouseLeave={() => setPositions({ x: 0, y: 0, s: 1 })}
-          style={
-            sort.card3.dir === 'R' && sort.card3.class === 'leftSide'
-              ? {
-                  transform: trans(
-                    String(positions.x),
-                    String(positions.y),
-                    String(positions.s)
-                  )
-                }
-              : {}
-          }
-        >
-          <div id="card3" className={`${sort.card3.class}${sort.card3.dir}`} />
-        </animated.div> */}
       </div>
       <IoIosArrowForward
         className="arrow"

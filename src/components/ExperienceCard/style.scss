@@ -12,10 +12,6 @@
   height: 155px;
   transition: 0.5s;
 
-  &:first-child {
-    margin-right: 30px;
-  }
-
   &:hover {
     height: 320px;
     .image {
@@ -69,7 +65,7 @@
     }
 
     .descriptionCourse {
-      font-size: 15px;
+      font-size: 0.938rem;
       opacity: 0.8;
     }
 

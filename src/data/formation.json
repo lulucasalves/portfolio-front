@@ -1,0 +1,30 @@
+{
+  "design": {
+    "course": "Curso superior de tecnologia - Design gráfico",
+    "university": "Centro Universitário Internacional",
+    "igc": "4",
+    "mec": "5",
+    "address": "Brasil - Curitiba - PR",
+    "mecLink": "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTQ5MQ",
+    "courseYears": "2",
+    "courseTime": "1946",
+    "status": false,
+    "init": "02/2021",
+    "finish": "02/2023",
+    "universityDescription": "A Uninter é uma universidade privada, credenciada pelo Ministério da Educação do Brasil, hoje em dia ela possui a nota máxima em relação ao seu método de ensino, pois foi fundada em 1996, em 2022 ela já possui polos no Chile, Espanha, França, Itália, México, EUA, Portugal, Inglaterra e Japão"
+  },
+  "ads": {
+    "course": "Curso superior de tecnologia - Análise e desenvolvimento de sistemas",
+    "university": "Centro Universitário Internacional",
+    "igc": "4",
+    "mec": "5",
+    "address": "Brasil - Curitiba - PR",
+    "mecLink": "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTQ5MQ",
+    "courseYears": "2.6",
+    "courseTime": "2145",
+    "status": false,
+    "init": "06/2021",
+    "finish": "02/2024",
+    "universityDescription": "A Uninter é uma universidade privada, credenciada pelo Ministério da Educação do Brasil, hoje em dia ela possui a nota máxima em relação ao seu método de ensino, pois foi fundada em 1996, em 2022 ela já possui polos no Chile, Espanha, França, Itália, México, EUA, Portugal, Inglaterra e Japão"
+  }
+}

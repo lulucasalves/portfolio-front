@@ -101,7 +101,7 @@
     &::after {
       transition: 0.3s;
       content: 'l';
-      font-size: 14px;
+      font-size: 0.875rem;
       width: 1px;
       background-color: var(--none);
       color: var(--none);
@@ -111,7 +111,7 @@
     &:hover {
       &::after {
         content: 'l';
-        font-size: 14px;
+        font-size: 0.875rem;
         width: 1px;
         background-color: var(--text);
         color: var(--none);
@@ -137,7 +137,7 @@
 
     &::after {
       content: 'i';
-      font-size: 14px;
+      font-size: 0.875rem;
       width: 1px;
       background-color: var(--text);
       color: var(--none);
@@ -150,7 +150,7 @@
   p {
     line-height: 80px;
     margin-right: 10px;
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 500;
     animation: appearOpacity 2s forwards;
   }

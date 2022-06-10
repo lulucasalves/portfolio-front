@@ -1,4 +1,4 @@
-import { IFormationModal } from '../../templates/Formation/Formation'
+import { IFormationModal } from '../../pages'
 
 interface IFormation {
   card: number
@@ -7,7 +7,7 @@ interface IFormation {
   init: string
   finish: string
   image: string
-  setModal: (event: IFormationModal) => void
+  setState: (event: IFormationModal) => void
 }
 
 export function FormationCard({
@@ -17,7 +17,7 @@ export function FormationCard({
   init,
   finish,
   card,
-  setModal
+  setState
 }: IFormation) {
   return (
     <div className="card">
@@ -39,9 +39,7 @@ export function FormationCard({
             {finish}
           </p>
         </div>
-        <button onClick={() => setModal({ active: true, card: card })}>
-          Sobre
-        </button>
+        <button onClick={() => setState({ active: true, card })}>Sobre</button>
       </div>
     </div>
   )

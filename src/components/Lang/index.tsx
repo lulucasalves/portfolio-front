@@ -1,13 +1,28 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { MdOutlineArrowDropDown } from 'react-icons/md'
 import { IMyContext, MyContext } from '../../store/config'
 
-export function Lang() {
+interface IModalStatus {
+  status: boolean
+  setStatus: (value: boolean) => void
+}
+
+export function Lang({ status, setStatus }: IModalStatus) {
   const [modal, setModal] = useState<boolean>(false)
   const { changeLang, lang } = useContext<IMyContext>(MyContext)
 
+  useEffect(() => {
+    setModal(status)
+  }, [status])
+
   return (
-    <div className="lang" onClick={() => setModal(!modal)}>
+    <div
+      className="lang"
+      onClick={() => {
+        setModal(!modal)
+        setStatus(!modal)
+      }}
+    >
       <div className="langGroup">
         <img
           className="flag"

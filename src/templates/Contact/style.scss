@@ -1,15 +1,14 @@
 .contacts {
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  margin-bottom: 150px;
 
   .contactDiv {
     width: 100%;
-    max-width: 1400px;
-    height: 100vh;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
 
@@ -19,7 +18,7 @@
 
     .ctaSocialMedia {
       margin: 20px 0;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
 
     .socialMediaGroup {
@@ -28,15 +27,133 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
+      transition: 0.3s;
 
       svg {
-        font-size: 30px;
+        font-size: 1.875rem;
         margin-right: 8px;
+      }
+
+      &:hover {
+        opacity: 0.8;
       }
     }
   }
 
   .formSection {
-    display: block;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 40%;
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .buttonAndInput {
+      animation: groupInputAppear 1s forwards;
+
+      .inputGroup {
+        display: block;
+        margin-bottom: 15px;
+
+        label {
+          font-weight: 500;
+        }
+
+        input {
+          margin-top: 5px;
+          background: var(--background-01);
+          border: 1px solid var(--background-02);
+          border-radius: 5px;
+          height: 40px;
+          padding: 0 15px;
+          width: 100%;
+          font-size: 1rem;
+          border-radius: 7px;
+        }
+        .capitalize {
+          text-transform: capitalize;
+        }
+
+        .errorInput {
+          border: 1px solid var(--red) !important;
+        }
+
+        .submitGroupButton {
+          margin-top: 20px;
+
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .submitButton {
+          font-size: 1.375rem;
+          background: none;
+          padding: 3px;
+          cursor: pointer;
+          border: none;
+          background: linear-gradient(
+            -45deg,
+            var(--colorful-title-1) 0%,
+            var(--colorful-title-2) 50%,
+            var(--colorful-title-1) 100%
+          );
+          background-size: 500%;
+          animation: animateButton 10s infinite;
+
+          .buttonInner {
+            display: flex;
+            align-items: center;
+            border: none;
+            font-size: 1.125rem;
+            background: var(--background);
+            padding: 6px 12px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            svg {
+              font-size: 1.1rem;
+              margin-left: 10px;
+            }
+
+            &:hover {
+              background: none;
+              transition: 0.5s;
+            }
+          }
+        }
+
+        .normalButton {
+          font-size: 1.125rem;
+          background: none;
+          border: 2px solid var(--text);
+          padding: 6px 12px;
+          cursor: pointer;
+          transition: 0.4s;
+
+          &:hover {
+            background: var(--text);
+            color: var(--second-background);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes groupInputAppear {
+  from {
+    margin-top: 50px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1;
   }
 }

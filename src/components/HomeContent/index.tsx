@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '../Button'
 import { RotateTitle } from '../RotateTitle'
 
@@ -8,13 +8,13 @@ export function HomeContent() {
   useEffect(() => {
     const localstorage = localStorage.getItem('terminal-theme')
 
-    if(localstorage) {
+    if (localstorage) {
       setTerminal(localstorage)
     }
-  },[])
+  }, [])
 
-  function changeTheme(val:string) {
-    localStorage.setItem('terminal-theme',val)
+  function changeTheme(val: string) {
+    localStorage.setItem('terminal-theme', val)
 
     setTerminal(val)
   }
@@ -57,10 +57,10 @@ export function HomeContent() {
                   <br />
                   <span className="appearMenu">
                     sobre mim
+                    <br /> 
+                    habilidades
                     <br />
                     portfolio
-                    <br />
-                    formacao
                     <br />
                     experiencia
                     <br />
@@ -81,15 +81,21 @@ export function HomeContent() {
             <div className="themes">
               <div
                 onClick={() => changeTheme('ubuntu')}
-                className={`theme purple ${terminal === 'ubuntu'?'activated':''}`}
+                className={`theme purple ${
+                  terminal === 'ubuntu' ? 'activated' : ''
+                }`}
               />
               <div
                 onClick={() => changeTheme('default')}
-                className={`theme black ${terminal === 'default'?'activated':''}`}
+                className={`theme black ${
+                  terminal === 'default' ? 'activated' : ''
+                }`}
               />
               <div
                 onClick={() => changeTheme('hacker')}
-                className={`theme green ${terminal === 'hacker'?'activated':''}`}
+                className={`theme green ${
+                  terminal === 'hacker' ? 'activated' : ''
+                }`}
               />
             </div>
           </div>

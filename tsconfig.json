@@ -21,6 +21,6 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components/RotateTitle/index.tsx"
-, "src/components/Wave/index.tsx", "src/templates/Portfolio/Portfolio.tsx"  ],
+, "src/components/Wave/index.tsx", "src/templates/Portfolio/Portfolio.tsx", "src/templates/Contact/Contact.tsx"  ],
   "exclude": ["node_modules"]
 }

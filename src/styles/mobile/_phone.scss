@@ -1,0 +1,92 @@
+html {
+  @media (max-width: 768px) {
+    font-size: 87.5% !important;
+
+    .menu,
+    .overlay,
+    .aboutSection {
+      padding: 0 20px;
+    }
+
+    .lucasRef {
+      p {
+        font-size: 3rem;
+      }
+
+      .titleUser {
+        span {
+          font-size: 3rem;
+        }
+      }
+
+      .homeButton {
+        font-size: 1.4rem;
+      }
+    }
+
+    .photo {
+      .perfilPhoto {
+        height: 250px;
+        min-width: 250px;
+        margin-right: 0;
+      }
+    }
+    .skillsDiv .techBrands .brand img {
+      width: 60px;
+      margin: 0 20px;
+      margin-top: 25px;
+    }
+
+    #card1,
+    #card2,
+    #card3 {
+      height: 500px !important;
+      width: 250px !important;
+    }
+
+    .cardContainer {
+      width: 450px;
+    }
+
+    #portfolio h2 {
+      margin-bottom: 0;
+    }
+
+    .colorfulButton {
+      margin-top: 270px;
+    }
+
+    .experienceDiv {
+      min-height: 800px;
+      .experienceContent .descriptionUser {
+        text-align: left;
+      }
+    }
+
+    .formationDiv {
+      p {
+        text-align: left;
+      }
+    }
+
+    .curriculumType {
+      flex-direction: column;
+
+      .curriculumActions {
+        margin-left: 0 !important;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .buttons {
+        button {
+          font-size: 1.2rem !important;
+
+          &:last-child {
+            margin-left: 80px !important;
+          }
+        }
+      }
+    }
+  }
+}

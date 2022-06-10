@@ -3,7 +3,8 @@
 @import './themes/_dark.scss';
 @import './themes/_light.scss';
 @import './themes/_default.scss';
-
+@import './mobile/_tablet.scss';
+@import './mobile/_phone.scss';
 
 html,
 body {
@@ -13,15 +14,15 @@ body {
   font-family: 'Poppins', 'Mulish', sans-serif;
   background-color: var(--background);
   overflow-y: hidden;
-
-
 }
-
-
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.setBlur {
+  filter: blur(3px);
 }
 
 * {

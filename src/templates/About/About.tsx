@@ -29,8 +29,8 @@ export function About() {
           fullstack, minha stack é baseada nas linguagens Javascript e Python.
           <br />
           Estudando na prática frameworks de Javascript e Python, data science,
-          data analytics,desenvolvimento de api, desenvolvimento mobile e
-          arquitetura de sistemas. Focando em hábilidades para me tornar um
+          data analytics, desenvolvimento de api, desenvolvimento mobile e
+          arquitetura de sistemas. Focando em habilidades para me tornar um
           desenvolvedor pleno.
         </p>
       )
@@ -46,14 +46,14 @@ export function About() {
         minha stack é baseada nas linguagens Javascript e Python.
         <br />
         Estudando na prática frameworks de Javascript e Python, data science,
-        data analytics,desenvolvimento de api, desenvolvimento mobile e
-        arquitetura de sistemas. Focando em hábilidades para me tornar um
+        data analytics, desenvolvimento de api, desenvolvimento mobile e
+        arquitetura de sistemas. Focando em habilidades para me tornar um
         desenvolvedor pleno.
         <br />
-        Além de hábilidades técnicas, estou me aperfeiçoando nos idiomas Inglês
-        e Alemão.
+        Além de habilidades técnicas, estou me aperfeiçoando nos idioma Inglês e
+        Alemão.
         <br />
-        Curioso pela tecnologia desde cedo, as vezes passo o tempo fazendo
+        Curioso pela tecnologia desde cedo, às vezes passo o tempo fazendo
         projetos em arduino usando C++ e participando de desafios de
         programação.
       </p>

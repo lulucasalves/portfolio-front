@@ -4,7 +4,7 @@ interface IExperience {
   card: number
   title: string
   company: string
-  period:string
+  period: string
   image: string
   setModal: (event: IFormationModal) => void
 }

@@ -1,73 +1,62 @@
-import { useState } from 'react'
 import { Experience } from '../../components/Experience'
 import { FormationCard } from '../../components/FormationCard'
+import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
+import { IFormationModal } from '../../pages'
 
-export interface IFormationModal {
-  active: boolean
-  card: number
+interface IModal {
+  modal: IFormationModal
+  expModal: IFormationModal
+  setModal: (event: IFormationModal) => void
+  setExpModal: (event: IFormationModal) => void
 }
 
-export function Formation() {
-  const [modal, setModal] = useState<IFormationModal>({
-    active: false,
-    card: 1
-  })
-
+export function Formation({ modal, setModal, setExpModal, expModal }: IModal) {
   function returnCard() {
-    // if (modal.card === 1) {
-    //   return (
-    //     <FormationCard
-    //       title="Design gráfico"
-    //       university="Universidade Internacional"
-    //       image="https://images.pexels.com/photos/5582867/pexels-photo-5582867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-    //       init="02/2021"
-    //       finish="02/2023"
-    //       setModal={() => setModal}
-    //       card={1}
-    //     />
-    //   )
-    // } else if (modal.card === 2) {
-    //   return (
-    //     <FormationCard
-    //       title="Análise de sistemas"
-    //       university="Universidade Internacional"
-    //       image="https://images.pexels.com/photos/5935791/pexels-photo-5935791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-    //       init="06/2021"
-    //       finish="02/2024"
-    //       setModal={() => setModal}
-    //       card={2}
-    //     />
-    //   )
-    // }
-
-    return (
-      <>
+    if (modal.card === 1) {
+      return (
         <FormationCard
           title="Design gráfico"
-          university="Uninter"
+          university="Centro Universitário Internacional"
           image="https://images.pexels.com/photos/5582867/pexels-photo-5582867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           init="02/2021"
           finish="02/2023"
-          setModal={() => setModal}
+          setState={setModal}
           card={1}
         />
-
+      )
+    } else if (modal.card === 2) {
+      return (
         <FormationCard
           title="Análise de sistemas"
-          university="Uninter"
+          university="Centro Universitário Internacional"
           image="https://images.pexels.com/photos/5935791/pexels-photo-5935791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           init="06/2021"
           finish="02/2024"
-          setModal={() => setModal}
+          setState={setModal}
           card={2}
         />
-      </>
-    )
+      )
+    }
+  }
+
+  function prevCard() {
+    if (modal.card > 1) {
+      return modal.card - 1
+    }
+
+    return modal.card
+  }
+
+  function nextCard() {
+    if (modal.card < 2) {
+      return modal.card + 1
+    }
+    return modal.card
   }
 
   return (
     <>
-      <div className="halfLine" />
+      <div id="formation" className="halfLine" />
       <div className="formExp">
         <div className="formationDiv">
           <h3>Formação</h3>
@@ -83,10 +72,36 @@ export function Formation() {
               me formar em minhas graduações.
             </p>
 
-            <div className="cardsForm">{returnCard()}</div>
+            <div className="cardsForm">
+              <div className="cardsSection">
+                <IoIosArrowBack
+                  className={`${modal.card < 2 && 'not-active'}`}
+                  onClick={() =>
+                    setModal({ active: false, card: prevCard() || 1 })
+                  }
+                />
+                {returnCard()}
+                <IoIosArrowForward
+                  className={`${modal.card > 1 && 'not-active'}`}
+                  onClick={() =>
+                    setModal({ active: false, card: nextCard() || 1 })
+                  }
+                />
+              </div>
+              <div className="statusFormation">
+                <div
+                  onClick={() => setModal({ active: false, card: 1 })}
+                  className={`ball ${modal.card === 1 && 'active'}`}
+                />
+                <div
+                  onClick={() => setModal({ active: false, card: 2 })}
+                  className={`ball ${modal.card === 2 && 'active'}`}
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <Experience />
+        <Experience modal={expModal} setModal={setExpModal} />
       </div>
     </>
   )

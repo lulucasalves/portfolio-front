@@ -4,9 +4,11 @@ import { MenuItem } from '../../components/MenuItem'
 import { HomeContent } from '../../components/HomeContent'
 import { Theme } from '../../components/Theme'
 import { Lang } from '../../components/Lang'
+import OnOutsiceClick from 'react-outclick'
 
 export function HomePage() {
   const [menuActive, setMenuActive] = useState(false)
+  const [modal, setModal] = useState(false)
 
   useEffect(() => {
     const element = window.document.querySelector('html')
@@ -23,11 +25,17 @@ export function HomePage() {
       <div id="home" className={menuActive ? 'bodyActive' : ''}>
         <div className={`container ${menuActive ? 'active' : ''}`}>
           <div className="navbar">
-            <div className="menu">
+            <nav className="menu">
               <Logo />
 
               <div className="menuOpt">
-                <Lang />
+                <OnOutsiceClick
+                  onOutsideClick={() => {
+                    setModal(false)
+                  }}
+                >
+                  <Lang status={modal} setStatus={setModal} />
+                </OnOutsiceClick>
                 <Theme />
                 <div
                   onClick={() => {
@@ -40,16 +48,14 @@ export function HomePage() {
                   <div className="bar" />
                 </div>
               </div>
-            </div>
+            </nav>
           </div>
-
-          <div className="main-container">
+          <section className="main-container">
             <HomeContent />
             <div className="shadow one"></div>
             <div className="shadow two"></div>
-          </div>
-
-          <div
+          </section>
+          <nav
             onClick={() => {
               setMenuActive(false)
             }}
@@ -58,6 +64,7 @@ export function HomePage() {
             <ul>
               <MenuItem href="#home" className="home" name="Início" />
               <MenuItem href="#aboutMe" className="aboutMe" name="Sobre mim" />
+              <MenuItem href="#skills" className="skills" name="Habilidades" />
               <MenuItem
                 href="#portfolio"
                 className="portfolio"
@@ -66,16 +73,11 @@ export function HomePage() {
               <MenuItem
                 href="#formation"
                 className="formation"
-                name="Formação"
-              />
-              <MenuItem
-                href="#experience"
-                className="experience"
                 name="Experiência"
               />
               <MenuItem href="#contact" className="contact" name="Contato" />
             </ul>
-          </div>
+          </nav>
         </div>
       </div>
       <div className="halfLine" />

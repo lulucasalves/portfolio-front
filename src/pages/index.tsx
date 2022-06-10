@@ -8,34 +8,59 @@ import { Portfolio } from '../templates/Portfolio/Portfolio'
 import { Formation } from '../templates/Formation/Formation'
 import { Curriculum } from '../templates/Curriculum/Curriculum'
 import { Contact } from '../templates/Contact/Contact'
+import { Footer } from '../templates/Footer/Footer'
+import { ModalFormation } from '../components/ModalFormation'
+import { ModalExperience } from '../components/ModalExperience'
+import { HomeMobile } from '../templates/HomeMobile/Home'
+
+export interface IFormationModal {
+  active: boolean
+  card: number
+}
 
 export default function Home() {
-  const [load, setLoad] = useState(false)
+  const [modalFormation, setModalFormation] = useState<IFormationModal>({
+    active: false,
+    card: 1
+  })
+
+  const [modalExperience, setModalExperience] = useState<IFormationModal>({
+    active: true,
+    card: 1
+  })
+
+  const [width, setWidth] = useState<number>(1200)
 
   useEffect(() => {
-    // setLoad(false)
-    const element = window.document.querySelector('html')
-    if (element && !load) {
-      element.style.overflowY = 'scroll'
-    }
-  })
+    setWidth(window.innerWidth)
+  }, [])
 
   return (
     <>
-      {/* <div className={`loader ${load ? '' : 'loaderNoActive'}`} /> */}
+      <ModalFormation state={modalFormation} setState={setModalFormation} />
+      <ModalExperience state={modalExperience} setState={setModalExperience} />
+
       <Head>
         <title>Lucas Alves</title>
         <link rel="shortcut icon" href="./favicon.svg" />
       </Head>
-      <div className="principalContent">
-        <HomePage />
+      <div
+        className={`principalContent ${modalFormation.active ? 'setBlur' : ''}`}
+      >
+        {width > 1100 ? <HomePage /> : <HomeMobile />}
         <About />
         <Wave />
         <Skills />
         <Portfolio />
-        <Formation />
+        <Formation
+          expModal={modalExperience}
+          setExpModal={setModalExperience}
+          modal={modalFormation}
+          setModal={setModalFormation}
+        />
         <Curriculum />
         <Contact />
+        <Footer />
       </div>
     </>
   )

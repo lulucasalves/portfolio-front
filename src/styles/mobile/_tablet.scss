@@ -1,0 +1,471 @@
+html {
+  @media (max-width: 1100px) {
+    font-size: 93.75% !important;
+
+    .overlay {
+      flex-direction: column;
+      .terminalThemes {
+        display: none;
+      }
+      .lucasRef {
+        flex-direction: column;
+        text-align: center;
+
+        p {
+          font-size: 4rem;
+        }
+
+        .titleUser {
+          display: flex;
+          justify-content: center;
+
+          span {
+            font-size: 4rem;
+          }
+        }
+
+        .homeButton {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .themes {
+      display: none;
+    }
+
+    .card {
+      height: 320px;
+      .image {
+        height: 150px;
+        width: 150px;
+      }
+
+      .content {
+        padding-top: 135px;
+      }
+    }
+
+    .aboutSection {
+      height: auto;
+    }
+
+    .cardContainer {
+      margin-top: 250px;
+
+      width: 950px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .arrow {
+        cursor: pointer;
+        font-size: 3rem;
+        z-index: 20;
+
+        &:first-child {
+          margin-right: -60px;
+        }
+
+        &:last-child {
+          margin-left: -60px;
+        }
+      }
+    }
+
+    .colorfulButton {
+      margin-top: 300px;
+    }
+
+    .photo {
+      flex-direction: column;
+      padding: 100px 0 0 0;
+
+      .perfilPhoto {
+        height: 300px;
+        min-width: 300px;
+        margin-right: 0;
+      }
+
+      .textOptions {
+        margin-top: 30px;
+      }
+    }
+
+    .skillsDiv .brandArrow {
+      display: none;
+    }
+
+    .brandLine {
+      display: none;
+    }
+
+    #skills {
+      height: 100%;
+
+      input {
+        display: none;
+      }
+
+      select {
+        width: 45%;
+        font-size: 1.2rem;
+        margin-left: 0;
+      }
+    }
+
+    .cardContainer {
+      .allCards {
+        #card1 {
+          width: 250px;
+          height: 500px;
+        }
+        #card2 {
+          width: 250px;
+          height: 500px;
+        }
+        #card3 {
+          width: 250px;
+          height: 500px;
+        }
+      }
+    }
+
+    .formExp .formationDiv .formationContent .descriptionUser {
+      margin-right: 0;
+    }
+
+    .formationDiv {
+      text-align: center;
+      min-height: 670px !important;
+
+      .formationContent {
+        flex-direction: column;
+      }
+
+      .cardsForm {
+        margin-top: 100px;
+
+        button {
+          font-size: 1.2rem;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .experienceDiv .experienceContent .cardFilter {
+      margin-top: 60px;
+
+      select {
+        font-size: 1.15rem;
+      }
+    }
+
+    .experienceDiv {
+      min-height: 750px;
+      h3 {
+        text-align: center;
+      }
+
+      .experienceContent {
+        flex-direction: column-reverse;
+
+        .cardexp {
+          height: 320px;
+          .image {
+            height: 150px;
+            width: 150px;
+          }
+
+          .content {
+            padding-top: 135px;
+
+            button {
+              font-size: 1.2rem;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .experienceDiv .experienceContent .descriptionUser {
+      text-align: center;
+      margin: 0;
+    }
+
+    .formSection {
+      width: 80% !important;
+    }
+
+    .curriculumDiv {
+      padding: 30px 0;
+      height: auto;
+    }
+    .curriculumContent {
+      flex-direction: column;
+
+      .curriculumType {
+        margin-top: 30px;
+      }
+    }
+
+    .contactDiv {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+
+      .textSection {
+        margin-top: 50px;
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .socialMediaGroup {
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .active.bar {
+      transform: rotate(360deg);
+      background-color: transparent;
+    }
+
+    .active.bar:before {
+      transform: translateY(0) rotate(45deg);
+    }
+
+    .active.bar:after {
+      transform: translateY(0) rotate(-45deg);
+    }
+
+    #contact {
+      margin-bottom: 70px;
+    }
+
+    .modalFormation {
+      margin: 0 20px;
+      width: auto !important;
+    }
+
+    @keyframes leftToRight {
+      from {
+        position: absolute;
+        filter: brightness(0.6);
+        transform: perspective(1300px) rotateY(18deg) scale(0.7)
+          translateX(-370px);
+      }
+
+      to {
+        box-shadow: 0px 0px 0px 0px var(--none);
+        position: absolute;
+        filter: brightness(0.6);
+        transform: perspective(1300px) rotateY(-18deg) translateX(260px)
+          scale(0.7);
+      }
+    }
+
+    @keyframes rightToCenter {
+      from {
+        box-shadow: 0px 0px 0px 0px var(--none);
+        position: absolute;
+        filter: brightness(0.6);
+        transform: perspective(1300px) rotateY(-18deg) translateX(260px)
+          scale(0.7);
+      }
+
+      to {
+        cursor: pointer;
+        box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.2);
+        filter: brightness(1);
+        transform: none;
+      }
+    }
+
+    @keyframes centerToLeft {
+      from {
+        position: absolute;
+        filter: brightness(1);
+        transform: none;
+      }
+
+      to {
+        box-shadow: 0px 0px 0px 0px var(--none);
+        filter: brightness(0.6);
+        transform: perspective(1300px) rotateY(18deg) scale(0.7)
+          translateX(-370px);
+      }
+    }
+
+    @keyframes centerToRight {
+      from {
+        position: absolute;
+        filter: brightness(1);
+        transform: none;
+      }
+
+      to {
+        box-shadow: 0px 0px 0px 0px var(--none);
+        filter: brightness(0.6);
+        transform: perspective(1300px) rotateY(-18deg) translateX(260px)
+          scale(0.7);
+      }
+    }
+
+    @keyframes rightToLeft {
+      from {
+        position: absolute;
+        filter: brightness(0.6);
+        transform: perspective(1300px) rotateY(-18deg) translateX(260px)
+          scale(0.7);
+      }
+      to {
+        box-shadow: 0px 0px 0px 0px var(--none);
+        position: absolute;
+        filter: brightness(0.6);
+        transform: perspective(1300px) rotateY(18deg) scale(0.7)
+          translateX(-370px);
+      }
+    }
+
+    @keyframes leftToCenter {
+      from {
+        box-shadow: 0px 0px 0px 0px var(--none);
+        position: absolute;
+        filter: brightness(0.6);
+        transform: perspective(1300px) rotateY(18deg) scale(0.7)
+          translateX(-370px);
+      }
+
+      to {
+        cursor: pointer;
+        box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.2);
+        filter: brightness(1);
+        transform: none;
+      }
+    }
+  }
+
+  @media (max-width: 820px) {
+    #card3,
+    #card2,
+    #card1 {
+      height: 600px !important;
+      width: 300px !important;
+    }
+
+    #portfolio {
+      h2 {
+        margin-bottom: 60px;
+      }
+    }
+
+    .colorfulButton {
+      margin-top: 340px;
+    }
+
+    .cardContainer {
+      margin-top: 250px;
+
+      width: 570px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .arrow {
+        cursor: pointer;
+        font-size: 4rem;
+        z-index: 20;
+
+        &:first-child {
+          margin-right: -60px;
+        }
+
+        &:last-child {
+          margin-left: -60px;
+        }
+      }
+    }
+
+    .leftSideL {
+      opacity: 0;
+    }
+
+    .rightSideL {
+      opacity: 0;
+    }
+
+    .leftSideR {
+      opacity: 0;
+    }
+
+    .rightSideR {
+      opacity: 0;
+    }
+
+    @keyframes leftToRight {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes rightToCenter {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes centerToLeft {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes centerToRight {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes rightToLeft {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes leftToCenter {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+  }
+}
