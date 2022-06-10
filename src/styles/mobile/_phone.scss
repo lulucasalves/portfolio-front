@@ -5,17 +5,25 @@ html {
     .menu,
     .overlay,
     .aboutSection {
-      padding: 0 20px;
+      padding: 0 20px !important;
+    }
+
+    .formationDiv {
+      padding: 0 0px !important;
+
+      .descriptionUser {
+        padding: 0 20px !important;
+      }
     }
 
     .lucasRef {
       p {
-        font-size: 3rem;
+        font-size: 3rem !important;
       }
 
       .titleUser {
         span {
-          font-size: 3rem;
+          font-size: 3rem !important;
         }
       }
 
@@ -45,7 +53,7 @@ html {
     }
 
     .cardContainer {
-      width: 450px;
+      width: 430px;
     }
 
     #portfolio h2 {
@@ -66,6 +74,13 @@ html {
     .formationDiv {
       p {
         text-align: left;
+      }
+    }
+
+    .curriculumDiv .curriculumContent {
+      h2 {
+        font-size: 2.5rem;
+        text-align: center;
       }
     }
 
@@ -99,6 +114,9 @@ html {
           }
         }
       }
+    }
+    .contacts .formSection h3 {
+      text-align: center;
     }
   }
 }

@@ -22,7 +22,6 @@ export function ModalFormation({ state, setState }: IModalFormation) {
     courseYears: '',
     courseTime: '',
     status: false,
-    universityDescription: ''
   }
 
   useEffect(() => {
@@ -113,10 +112,6 @@ export function ModalFormation({ state, setState }: IModalFormation) {
                     </div>
                   </ul>
                 </div>
-              </div>
-              <div className="aboutUniversity">
-                <p className="title">Sobre a instituição de ensino:</p>{' '}
-                <p className="description">{info.universityDescription}</p>
               </div>
             </div>
           </OnOutsiceClick>
