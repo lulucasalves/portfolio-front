@@ -4,6 +4,7 @@ import {
   IoIosArrowDropdownCircle,
   IoIosArrowDropupCircle
 } from 'react-icons/io'
+import Image from 'next/image'
 
 interface IBrand {
   svg: string
@@ -56,7 +57,11 @@ export function Skills() {
       <div className="techBrands">
         <div className="brand">
           {brandsListFilter.map(({ svg, name }: IBrand) => {
-            return <img title={name} src={`./logos/${svg}.svg`} />
+            return (
+              <div className="brandimg" title={name}>
+                <Image width={500} height={500} src={`/logos/${svg}.svg`} />
+              </div>
+            )
           })}
         </div>
       </div>
