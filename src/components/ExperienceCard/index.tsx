@@ -1,4 +1,5 @@
-import { IFormationModal } from '../../templates/Formation/Formation'
+import { IFormationModal } from "../../pages"
+
 
 interface IExperience {
   card: number

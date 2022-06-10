@@ -77,9 +77,7 @@ export function ModalFormation({ state, setState }: IModalFormation) {
                     <li>
                       Local: <span>{info.address}</span>
                     </li>
-                    <a href={info.mecLink} target="_blank">
-                      Confira a regulamentação no mec
-                    </a>
+                    <a href={info.mecLink}>Confira a regulamentação no mec</a>
                   </ul>
                 </div>
                 <div className="column">

@@ -88,5 +88,17 @@ html {
         }
       }
     }
+
+    .modalFormation {
+      .content {
+        flex-direction: column;
+
+        .column {
+          &:first-child {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
   }
 }
