@@ -59,7 +59,9 @@ export function Skills() {
           {brandsListFilter.map(({ svg, name }: IBrand) => {
             return (
               <div className="brandimg" title={name}>
-                <Image width={500} height={500} src={`/logos/${svg}.svg`} />
+                <img
+                  src={`https://raw.githubusercontent.com/lulucasalves/portfolio-front/96dcd66b76a9459861c12abe56ba47d9cd7cf871/public/logos/${svg}.svg`}
+                />
               </div>
             )
           })}
