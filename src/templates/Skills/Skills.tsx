@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import * as brandsList from '../../data/logos.json'
 import {
   IoIosArrowDropdownCircle,
@@ -16,17 +16,27 @@ export function Skills() {
   const [search, setSearch] = useState('')
   const [category, setCategory] = useState('')
   const [viewAll, setViewAll] = useState(false)
+  const [brands, setBrands] = useState<IBrand[]>([
+    { svg: '', category: [''], name: 'zzz' }
+  ])
 
   function filterBrands(val: IBrand) {
     const name = val.name.toLowerCase()
 
     return (
       name.includes(search.toLowerCase()) &&
-      val.category.includes(category.toLowerCase())
+      val.category.includes(category.toLowerCase()) &&
+      !name.includes('zzz')
     )
   }
 
-  const brandsListFilter = brandsList.filter((val) => filterBrands(val))
+  useEffect(() => {
+    brandsList.map(({ name, category, svg }) => {
+      setBrands((oldArray) => [...oldArray, { name, category, svg }])
+    })
+  }, [brandsList])
+
+  const brandsListFilter = brands.filter((val) => filterBrands(val))
 
   return (
     <div
