@@ -35,15 +35,15 @@ export function Experience({ modal, setModal }: IExperienceModal) {
       <div className="experienceContent">
         <div className="cardsExp">
           <div className="cardFilter">
-            <select>
-              <option defaultValue="de" value="de" disabled>
+            <select defaultValue="de">
+              <option value="de" disabled>
                 De:
               </option>
               <option value="2021">2021</option>
               <option value="2022">2022</option>
             </select>
-            <select>
-              <option defaultValue="até" value="até" disabled>
+            <select defaultValue="até">
+              <option value="até" disabled>
                 Até:
               </option>
               <option value="2021">2021</option>
