@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Wave } from '../../components/Wave'
 
 export function About() {
-  const [textSize, setTextSize] = useState(3)
+  const [textSize, setTextSize] = useState(2)
 
   function returnDescription() {
     if (textSize === 1) {

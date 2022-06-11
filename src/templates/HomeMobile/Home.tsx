@@ -1,10 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Logo } from '../../components/Logo'
-import { MenuItem } from '../../components/MenuItem'
 import { HomeContent } from '../../components/HomeContent'
-import { Theme } from '../../components/Theme'
-import { Lang } from '../../components/Lang'
-import OnOutsiceClick from 'react-outclick'
+import { MobileMenu } from '../../components/MobileMenu'
 
 export function HomeMobile() {
   const [menuActive, setMenuActive] = useState(false)
@@ -12,6 +9,9 @@ export function HomeMobile() {
   return (
     <>
       <div id="home">
+        {menuActive && (
+          <MobileMenu state={menuActive} setState={setMenuActive} />
+        )}
         <div className="container">
           <div className="navbar">
             <nav className="menu">

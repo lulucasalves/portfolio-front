@@ -1,0 +1,88 @@
+.overlayMobile {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.2);
+  animation: animateOverlay 0.4s forwards;
+
+  .mobileModal {
+    animation: animateModal 1s forwards;
+
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    background: var(--background);
+    width: 100%;
+    height: 400px;
+    border-radius: 50px 50px 0 0;
+
+    .firstOpt {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .langDiv {
+        margin: 20px 0 0 30px;
+      }
+
+      .themeDiv {
+        margin: 20px 30px 0 0;
+      }
+    }
+
+    .navigation {
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        li {
+          text-align: center;
+
+          a {
+            text-align: center;
+            text-decoration: none;
+            color: var(--menu-links-color);
+            padding: 0.7rem 0;
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            cursor: pointer;
+            transform: translateY(10px);
+            animation: none;
+
+            &:hover {
+              margin-left: 5px;
+              margin-right: -5px;
+              color: var(--text);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animateOverlay {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animateModal {
+  from {
+    bottom: -350px;
+  }
+
+  to {
+    bottom: 0;
+  }
+}

@@ -115,8 +115,24 @@ html {
         }
       }
     }
-    .contacts .formSection h3 {
-      text-align: center;
+
+    .focusModalExp .modalFormation .title {
+      margin-top: 20px;
+    }
+
+    #skills {
+      select {
+        width: 90%;
+      }
+    }
+    .mode-tog {
+      margin: 0;
+    }
+
+    .contacts .formSection {
+      h3 {
+        text-align: center;
+      }
     }
   }
 }

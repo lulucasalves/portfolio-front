@@ -25,7 +25,7 @@ export function HomeContent() {
         <div className="overlay">
           <div className="lucasRef">
             <p>Olá, me chamo</p>
-            <p> Lucas e sou</p>
+            <p>Lucas e sou</p>
             <RotateTitle />
 
             <Button text="Ver mais" />

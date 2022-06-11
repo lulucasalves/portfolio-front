@@ -2,6 +2,7 @@ import { IFormationModal } from '../../pages'
 import { IoCloseOutline } from 'react-icons/io5'
 import OnOutsiceClick from 'react-outclick'
 import { useEffect, useState } from 'react'
+
 interface IModalFormation {
   state: IFormationModal
   setState: (event: IFormationModal) => void

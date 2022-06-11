@@ -41,7 +41,7 @@ export function Skills() {
           placeholder="Procure por alguma tecnologia"
         />
         <select onChange={(e) => setCategory(e.target.value)}>
-          <option selected value="" disabled>
+          <option defaultValue="" value="" disabled>
             Categoria
           </option>
           <option value="">Todas</option>
@@ -58,7 +58,7 @@ export function Skills() {
         <div className="brand">
           {brandsListFilter.map(({ svg, name }: IBrand) => {
             return (
-              <div className="brandimg" title={name}>
+              <div className="brandimg" key={svg} title={name}>
                 <img
                   src={`https://raw.githubusercontent.com/lulucasalves/portfolio-front/96dcd66b76a9459861c12abe56ba47d9cd7cf871/public/logos/${svg}.svg`}
                 />
