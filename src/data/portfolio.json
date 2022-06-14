@@ -3,97 +3,266 @@
     "title": "Smurl - Front",
     "image": "https://github.com/lulucasalves/smurl-front/blob/main/.github/image-1.png?raw=true",
     "code": "https://github.com/lulucasalves/smurl-front",
-    "site": "https://smurl.vercel.app"
+    "site": "https://smurl.vercel.app",
+    "search": [
+      "javascript",
+      "smurl",
+      "front",
+      "react",
+      "graphql",
+      "docker",
+      "scss",
+      "yup",
+      "axios"
+    ]
   },
   {
     "title": "Smurl - Back",
     "code": "https://github.com/lulucasalves/smurl-back",
-    "site": "https://smurl.vercel.app/"
+    "site": "https://smurl.vercel.app/",
+    "search": [
+      "javascript",
+      "smurl",
+      "json web token",
+      "back",
+      "node",
+      "graphql",
+      "postgres",
+      "axios",
+      "apollo",
+      "sequelize",
+      "docker"
+    ]
   },
   {
     "title": "SocialOff - Front",
     "image": "https://github.com/lulucasalves/socialoff-front/blob/main/.github/image-1.png?raw=true",
     "code": "https://github.com/lulucasalves/socialoff-front",
-    "site": "https://socialoff.vercel.app"
+    "site": "https://socialoff.vercel.app",
+    "search": [
+      "javascript",
+      "socialoff",
+      "front",
+      "react",
+      "next",
+      "docker",
+      "scss",
+      "yup",
+      "axios",
+      "formik"
+    ]
   },
   {
     "title": "SocialOff - Back",
     "code": "https://github.com/lulucasalves/socialoff-back",
-    "site": "https://socialoff.vercel.app"
+    "site": "https://socialoff.vercel.app",
+    "search": [
+      "javascript",
+      "back",
+      "node",
+      "express",
+      "puppeter",
+      "docker",
+      "socialoff"
+    ]
   },
   {
     "title": "Gameplay - Mobile",
-    "code": "https://github.com/lulucasalves/gameplay-mobile"
+    "code": "https://github.com/lulucasalves/gameplay-mobile",
+    "search": [
+      "javascript",
+      "mobile",
+      "react native",
+      "expo",
+      "axios",
+      "gameplay"
+    ]
   },
   {
     "title": "Serverless - Back",
     "code": "https://github.com/lulucasalves/serverless-back",
-    "image": "https://github.com/lulucasalves/certificateGenerator-api-back/raw/main/.github/certificate-img.png"
+    "image": "https://github.com/lulucasalves/certificateGenerator-api-back/raw/main/.github/certificate-img.png",
+    "search": [
+      "javascript",
+      "aws",
+      "back",
+      "node",
+      "serverless",
+      "handlebars",
+      "puppeter",
+      "typescript",
+      "serverless"
+    ]
   },
   {
     "title": "Rentalx - Back",
-    "code": "https://github.com/lulucasalves/rentalx-back"
+    "code": "https://github.com/lulucasalves/rentalx-back",
+    "search": [
+      "javascript",
+      "aws",
+      "back",
+      "node",
+      "express",
+      "swagger",
+      "mysql",
+      "redis",
+      "docker",
+      "rentalx"
+    ]
   },
   {
     "title": "DevNews - Front",
     "image": "https://github.com/lulucasalves/devnews-front/blob/main/.github/image2.png?raw=true",
-    "code": "https://github.com/lulucasalves/devnews-front"
+    "code": "https://github.com/lulucasalves/devnews-front",
+    "search": [
+      "javascript",
+      "styled components",
+      "front",
+      "react",
+      "next",
+      "docker",
+      "yup",
+      "axios",
+      "formik",
+      "redux",
+      "fauna",
+      "prismic",
+      "stripe",
+      "devnews"
+    ]
   },
   {
     "title": "Overzap - Back",
-    "code": "https://github.com/lulucasalves/overzap-back"
+    "code": "https://github.com/lulucasalves/overzap-back",
+    "search": [
+      "javascript",
+      "json web token",
+      "back",
+      "node",
+      "express",
+      "mongoose",
+      "mongodb",
+      "whatsapp",
+      "overzap"
+    ]
   },
   {
     "title": "Heat App - Mobile",
-    "code": "https://github.com/lulucasalves/heatapp-mobile"
+    "code": "https://github.com/lulucasalves/heatapp-mobile",
+    "search": [
+      "javascript",
+      "mobile",
+      "react native",
+      "expo",
+      "axios",
+      "socket io",
+      "heat app"
+    ]
   },
   {
     "title": "Dashgo - Front",
     "image": "https://github.com/lulucasalves/dashgo-front/blob/main/.github/Imagem2.png?raw=true",
-    "code": "https://github.com/lulucasalves/dashgo-front"
+    "code": "https://github.com/lulucasalves/dashgo-front",
+    "search": [
+      "javascript",
+      "styled components",
+      "front",
+      "react",
+      "next",
+      "yup",
+      "axios",
+      "material ui",
+      "redux",
+      "axios",
+      "dashgo"
+    ]
   },
   {
     "title": "Finapi - Back",
-    "code": "https://github.com/lulucasalves/finapi-back"
+    "code": "https://github.com/lulucasalves/finapi-back",
+    "search": [
+      "javascript",
+      "json web token",
+      "back",
+      "node",
+      "express",
+      "mysql",
+      "finapi"
+    ]
   },
   {
     "title": "Heat React - Front",
     "image": "https://github.com/lulucasalves/heatreactjs-project-front/raw/main/.github/img-1.png",
-    "code": "https://github.com/lulucasalves/heatreactjs-front"
+    "code": "https://github.com/lulucasalves/heatreactjs-front",
+    "search": [
+      "javascript",
+      "styled components",
+      "front",
+      "react",
+      "next",
+      "axios",
+      "socket io",
+      "Heat React"
+    ]
   },
-
   {
     "title": "Influencer Pack - Front",
     "image": "https://github.com/lulucasalves/influencerpack-project/raw/main/.github/img1.png",
-    "code": "https://github.com/lulucasalves/influencerpack-front"
+    "code": "https://github.com/lulucasalves/influencerpack-front",
+    "search": ["javascript", "html", "front", "css", "influencer pack"]
   },
   {
     "title": "MyMoney - Front",
     "image": "https://github.com/lulucasalves/mymoney-front/blob/main/.github/image1.png?raw=true",
-    "code": "https://github.com/lulucasalves/mymoney-front"
+    "code": "https://github.com/lulucasalves/mymoney-front",
+    "search": [
+      "javascript",
+      "styled components",
+      "front",
+      "react",
+      "next",
+      "yup",
+      "formik",
+      "axios",
+      "mymoney"
+    ]
   },
   {
     "title": "Friends - Back",
-    "code": "https://github.com/lulucasalves/friends-back"
+    "code": "https://github.com/lulucasalves/friends-back",
+    "search": ["javascript", "typescript", "back", "node", "express", "friends"]
   },
   {
     "title": "Spotify Clone - Front",
     "image": "https://github.com/lulucasalves/spotify-clone/raw/master/.github/img1.png",
-    "code": "https://github.com/lulucasalves/spotifyclone-front"
+    "code": "https://github.com/lulucasalves/spotifyclone-front",
+    "search": ["javascript", "html", "front", "css", "spotify"]
   },
   {
     "title": "Heat Node - Back",
-    "code": "https://github.com/lulucasalves/heatnode-back"
+    "code": "https://github.com/lulucasalves/heatnode-back",
+    "search": [
+      "javascript",
+      "json web token",
+      "back",
+      "node",
+      "express",
+      "socket io",
+      "prisma",
+      "typescript",
+      "heat node"
+    ]
   },
   {
     "title": "Coffee&Code - Front",
     "image": "https://github.com/lulucasalves/coffeecode-project/raw/main/.github/img-3.png",
-    "code": "https://github.com/lulucasalves/coffeecode-front"
+    "code": "https://github.com/lulucasalves/coffeecode-front",
+    "search": ["javascript", "html", "front", "css", "coffeecode"]
   },
-
   {
     "title": "Overfy - Front",
     "image": "https://github.com/lulucasalves/overfy-project/raw/main/.github/img-1.png",
-    "code": "https://github.com/lulucasalves/overfy-front"
+    "code": "https://github.com/lulucasalves/overfy-front",
+    "search": ["javascript", "html", "front", "css", "overfy"]
   }
 ]

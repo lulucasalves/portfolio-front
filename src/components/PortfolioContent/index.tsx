@@ -5,6 +5,7 @@ export interface IPortfolioContent {
   image?: string
   code: string
   site?: string
+  search: string[]
 }
 
 export function PortfolioContent({
