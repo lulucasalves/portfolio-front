@@ -22,7 +22,7 @@ export function ModalFormation({ state, setState }: IModalFormation) {
     mecLink: '',
     courseYears: '',
     courseTime: '',
-    status: false,
+    status: false
   }
 
   useEffect(() => {

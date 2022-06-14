@@ -1,0 +1,99 @@
+[
+  {
+    "title": "Smurl - Front",
+    "image": "https://github.com/lulucasalves/smurl-front/blob/main/.github/image-1.png?raw=true",
+    "code": "https://github.com/lulucasalves/smurl-front",
+    "site": "https://smurl.vercel.app"
+  },
+  {
+    "title": "Smurl - Back",
+    "code": "https://github.com/lulucasalves/smurl-back",
+    "site": "https://smurl.vercel.app/"
+  },
+  {
+    "title": "SocialOff - Front",
+    "image": "https://github.com/lulucasalves/socialoff-front/blob/main/.github/image-1.png?raw=true",
+    "code": "https://github.com/lulucasalves/socialoff-front",
+    "site": "https://socialoff.vercel.app"
+  },
+  {
+    "title": "SocialOff - Back",
+    "code": "https://github.com/lulucasalves/socialoff-back",
+    "site": "https://socialoff.vercel.app"
+  },
+  {
+    "title": "Gameplay - Mobile",
+    "code": "https://github.com/lulucasalves/gameplay-mobile"
+  },
+  {
+    "title": "Serverless - Back",
+    "code": "https://github.com/lulucasalves/serverless-back",
+    "image": "https://github.com/lulucasalves/certificateGenerator-api-back/raw/main/.github/certificate-img.png"
+  },
+  {
+    "title": "Rentalx - Back",
+    "code": "https://github.com/lulucasalves/rentalx-back"
+  },
+  {
+    "title": "DevNews - Front",
+    "image": "https://github.com/lulucasalves/devnews-front/blob/main/.github/image2.png?raw=true",
+    "code": "https://github.com/lulucasalves/devnews-front"
+  },
+  {
+    "title": "Overzap - Back",
+    "code": "https://github.com/lulucasalves/overzap-back"
+  },
+  {
+    "title": "Heat App - Mobile",
+    "code": "https://github.com/lulucasalves/heatapp-mobile"
+  },
+  {
+    "title": "Dashgo - Front",
+    "image": "https://github.com/lulucasalves/dashgo-front/blob/main/.github/Imagem2.png?raw=true",
+    "code": "https://github.com/lulucasalves/dashgo-front"
+  },
+  {
+    "title": "Finapi - Back",
+    "code": "https://github.com/lulucasalves/finapi-back"
+  },
+  {
+    "title": "Heat React - Front",
+    "image": "https://github.com/lulucasalves/heatreactjs-project-front/raw/main/.github/img-1.png",
+    "code": "https://github.com/lulucasalves/heatreactjs-front"
+  },
+
+  {
+    "title": "Influencer Pack - Front",
+    "image": "https://github.com/lulucasalves/influencerpack-project/raw/main/.github/img1.png",
+    "code": "https://github.com/lulucasalves/influencerpack-front"
+  },
+  {
+    "title": "MyMoney - Front",
+    "image": "https://github.com/lulucasalves/mymoney-front/blob/main/.github/image1.png?raw=true",
+    "code": "https://github.com/lulucasalves/mymoney-front"
+  },
+  {
+    "title": "Friends - Back",
+    "code": "https://github.com/lulucasalves/friends-back"
+  },
+  {
+    "title": "Spotify Clone - Front",
+    "image": "https://github.com/lulucasalves/spotify-clone/raw/master/.github/img1.png",
+    "code": "https://github.com/lulucasalves/spotifyclone-front"
+  },
+  {
+    "title": "Heat Node - Back",
+    "code": "https://github.com/lulucasalves/heatnode-back"
+  },
+  {
+    "title": "Coffee&Code - Front",
+    "image": "https://github.com/lulucasalves/coffeecode-project/raw/main/.github/img-3.png",
+    "code": "https://github.com/lulucasalves/coffeecode-front"
+  },
+
+  {
+    "title": "Overfy - Front",
+    "image": "https://github.com/lulucasalves/overfy-project/raw/main/.github/img-1.png",
+    "code": "https://github.com/lulucasalves/overfy-front"
+  }
+]

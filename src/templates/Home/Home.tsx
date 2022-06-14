@@ -26,7 +26,7 @@ export function HomePage() {
         <div className={`container ${menuActive ? 'active' : ''}`}>
           <div className="navbar">
             <nav className="menu">
-              <Logo />
+              <Logo text="alves" />
 
               <div className="menuOpt">
                 <OnOutsiceClick

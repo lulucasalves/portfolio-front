@@ -21,6 +21,7 @@
     animation: appearModal 2s forwards;
 
     .title {
+      margin-top: 20px;
       font-size: 1.375rem;
       font-weight: 500;
     }
@@ -36,6 +37,12 @@
       margin-top: 30px;
       display: flex;
       justify-content: space-between;
+
+      .column {
+        &:last-child {
+          margin-left: 100px;
+        }
+      }
 
       .category {
         font-weight: 500;

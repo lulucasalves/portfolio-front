@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import * as brandsList from '../../data/logos.json'
 import {
   IoIosArrowDropdownCircle,
@@ -75,7 +75,7 @@ export function Skills() {
           })}
         </div>
       </div>
-      {brandsListFilter.length > 21 ? (
+      {brandsListFilter.length > 22 ? (
         <>
           <div className="brandLine" />
           {viewAll ? (

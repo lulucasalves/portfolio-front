@@ -15,7 +15,7 @@ export function HomeMobile() {
         <div className="container">
           <div className="navbar">
             <nav className="menu">
-              <Logo />
+              <Logo text="alves" />
 
               <div className="menuOpt">
                 <div

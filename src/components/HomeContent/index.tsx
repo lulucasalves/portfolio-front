@@ -57,7 +57,7 @@ export function HomeContent() {
                   <br />
                   <span className="appearMenu">
                     sobre mim
-                    <br /> 
+                    <br />
                     habilidades
                     <br />
                     portfolio

@@ -1,13 +1,17 @@
+import Link from 'next/link'
+
 interface IButton {
   text: string
 }
 
 export function ButtonColorful({ text }: IButton) {
   return (
-    <button className="colorfulButton">
-      <div className="buttonInner">
-        <a href="#aboutMe">{text}</a>{' '}
-      </div>
-    </button>
+    <Link href="/portfolio">
+      <button className="colorfulButton">
+        <div className="buttonInner">
+          <p>{text}</p>
+        </div>
+      </button>
+    </Link>
   )
 }

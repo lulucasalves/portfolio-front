@@ -1,3 +1,7 @@
-export function Logo() {
-  return <h3 className="logo">alves</h3>
+interface ILogo {
+  text: string
+}
+
+export function Logo({ text }: ILogo) {
+  return <h3 className="logo">{text}</h3>
 }

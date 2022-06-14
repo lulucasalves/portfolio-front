@@ -1,0 +1,24 @@
+.exitIcon {
+  font-size: 2rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.portfolio-container {
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--background);
+  opacity: 1;
+  background-size: 12px 12px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--second-background),
+    var(--second-background) 0.6000000000000001px,
+    var(--background) 0.6000000000000001px,
+    var(--background)
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+}

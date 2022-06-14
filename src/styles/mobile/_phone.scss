@@ -109,6 +109,10 @@ html {
         flex-direction: column;
 
         .column {
+          &:last-child {
+            margin-left: 0 !important;
+          }
+
           &:first-child {
             margin-bottom: 20px;
           }

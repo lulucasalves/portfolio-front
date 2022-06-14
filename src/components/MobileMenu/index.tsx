@@ -24,7 +24,6 @@ export function MobileMenu({ state, setState }: IModalFormation) {
           <OnOutsiceClick
             onOutsideClick={() => {
               setState(false)
-              setModal(false)
             }}
           >
             <div className="mobileModal">
@@ -46,7 +45,6 @@ export function MobileMenu({ state, setState }: IModalFormation) {
               <div className="navigation">
                 <ul
                   onClick={() => {
-                    setModal(false)
                     setState(false)
                   }}
                 >
