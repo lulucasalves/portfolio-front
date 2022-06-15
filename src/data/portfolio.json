@@ -14,7 +14,9 @@
       "scss",
       "yup",
       "axios"
-    ]
+    ],
+    "gif": "https://github.com/lulucasalves/smurl-front/blob/main/.github/git-1.gif",
+    "description": ""
   },
   {
     "title": "Smurl - Back",

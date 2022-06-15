@@ -1,11 +1,21 @@
 import { useEffect, useState } from 'react'
-import { IPortfolioContent, PortfolioContent } from '../PortfolioContent'
+import { PortfolioContent } from '../PortfolioContent'
 import * as jsonData from '../../data/portfolio.json'
+import { IPort } from '../../templates/PortfolioHome/Home'
+import { IModalPortfolio } from '../../pages/portfolio'
 
-export function PortfolioHome() {
+export function PortfolioHome({ setState, setActive  }: IPort) {
   const [filterInput, setFilterInput] = useState<string>('')
-  const [content, setContent] = useState<IPortfolioContent[]>([
-    { code: '', title: '', site: '', image: '', search: [''] }
+  const [content, setContent] = useState<IModalPortfolio[]>([
+    {
+      search: [''],
+      title: '',
+      image: '',
+      description: '',
+      site: '',
+      code: '',
+      gif: ''
+    }
   ])
   const [front, setFront] = useState<boolean>(false)
   const [back, setBack] = useState<boolean>(false)
@@ -18,16 +28,18 @@ export function PortfolioHome() {
         ...oldArray,
         {
           title: val.title,
-          image: val.image,
-          site: val.site,
+          image: val.image || '',
+          site: val.site || '',
           code: val.code,
-          search: val.search
+          search: val.search,
+          description: val.description || '',
+          gif: val.gif || ''
         }
       ])
     })
   }, [jsonData])
 
-  function filterAll(val: IPortfolioContent) {
+  function filterAll(val: IModalPortfolio) {
     if (front || back || mobile || deploy || filterInput) {
       const frontIncludes = val.search.includes('front')
       const backIncludes = val.search.includes('back')
@@ -118,6 +130,8 @@ export function PortfolioHome() {
                     site={val.site ? val.site : ''}
                     code={val.code}
                     search={val.search}
+                    setState={setState}
+                    setActive={setActive}
                   />
                 )
               }
@@ -133,6 +147,8 @@ export function PortfolioHome() {
                     site={val.site ? val.site : ''}
                     code={val.code}
                     search={val.search}
+                    setState={setState}
+                    setActive={setActive}
                   />
                 )
               }

@@ -1,4 +1,5 @@
 import { BsBoxArrowUpRight, BsCodeSlash, BsGithub } from 'react-icons/bs'
+import { IModalPortfolio } from '../../pages/portfolio'
 
 export interface IPortfolioContent {
   title: string
@@ -6,13 +7,17 @@ export interface IPortfolioContent {
   code: string
   site?: string
   search: string[]
+  setState: (event: IModalPortfolio) => void
+  setActive: (event: boolean) => void
 }
 
 export function PortfolioContent({
   title,
   image,
   code,
-  site
+  site,
+  setActive,
+  setState
 }: IPortfolioContent) {
   function selectImage() {
     if (image) {
@@ -44,7 +49,7 @@ export function PortfolioContent({
     <div className="content-port">
       <img src={selectImage()} />
       <p className="portfolioTitle">{title}</p>
-      <button>Ver mais</button>
+      <button onClick={() => setActive(true)}>Ver mais</button>
       <div className="iconsGroup">
         <BsCodeSlash onClick={() => getCode()} />
         <BsGithub onClick={() => getGithub()} />
