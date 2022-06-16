@@ -47,11 +47,7 @@ export default function Home() {
         <link rel="shortcut icon" href="./favicon.svg" />
       </Head>
       <div className={`principalContent ${active ? 'setBlur' : ''}`}>
-        {width > 1100 ? (
-          <HomePage setActive={setActive} setState={setModal} />
-        ) : (
-          <HomeMobile />
-        )}
+        <HomePage setActive={setActive} setState={setModal} />
 
         <Footer />
       </div>

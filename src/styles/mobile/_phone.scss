@@ -138,5 +138,16 @@ html {
         text-align: center;
       }
     }
+
+    .content {
+      .buttonsGroupP {
+        flex-direction: column;
+        margin-top: 10px;
+
+        button {
+          margin-top: 10px;
+        }
+      }
+    }
   }
 }

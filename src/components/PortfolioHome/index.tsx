@@ -4,7 +4,7 @@ import * as jsonData from '../../data/portfolio.json'
 import { IPort } from '../../templates/PortfolioHome/Home'
 import { IModalPortfolio } from '../../pages/portfolio'
 
-export function PortfolioHome({ setState, setActive  }: IPort) {
+export function PortfolioHome({ setState, setActive }: IPort) {
   const [filterInput, setFilterInput] = useState<string>('')
   const [content, setContent] = useState<IModalPortfolio[]>([
     {
@@ -132,6 +132,8 @@ export function PortfolioHome({ setState, setActive  }: IPort) {
                     search={val.search}
                     setState={setState}
                     setActive={setActive}
+                    description={val.description}
+                    gif={val.gif || ''}
                   />
                 )
               }
@@ -146,9 +148,11 @@ export function PortfolioHome({ setState, setActive  }: IPort) {
                     title={val.title}
                     site={val.site ? val.site : ''}
                     code={val.code}
+                    description={val.description}
                     search={val.search}
                     setState={setState}
                     setActive={setActive}
+                    gif={val.gif || ''}
                   />
                 )
               }

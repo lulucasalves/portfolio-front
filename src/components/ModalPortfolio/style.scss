@@ -1,73 +1,40 @@
-.focusModalExp {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  z-index: 200;
-  animation: appearBackground 1s forwards;
+.content {
+  .categoriesP {
+    font-size: 0.875rem;
+    opacity: 0.5;
+    margin-bottom: 15px;
+  }
 
-  .modalFormation {
-    position: relative;
-    background: var(--background);
+  .buttonsGroupP {
+    margin-top: 30px;
     width: 100%;
-    max-width: 900px;
-    border-radius: 20px;
+    justify-content: space-around;
     display: flex;
-    flex-direction: column;
-    padding: 25px;
-    border: 1px solid var(--background-01);
-    animation: appearModal 2s forwards;
+    align-items: center;
 
-    .title {
-      font-size: 1.375rem;
-      font-weight: 500;
-    }
-
-    .subtitle {
+    button {
+      cursor: pointer;
+      padding: 7px 14px;
+      background: none;
       font-size: 1rem;
-      opacity: 0.5;
-      font-weight: 400;
-    }
+      border: 1px solid var(--text);
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
 
-    .content {
-      margin-top: 30px;
-      display: block;
-
-      .category {
-        font-weight: 500;
+      svg {
+        margin-left: 10px;
+        font-size: 0.875rem;
+        transition: 0.3s;
       }
 
-      .timeGroup {
-        display: flex;
-        align-items: center;
+      &:hover {
+        background: var(--text);
+        color: var(--background);
+        svg {
+          fill: var(--background);
+        }
       }
     }
-  }
-  .closeIcon {
-    font-size: 1.875rem;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    cursor: pointer;
-  }
-}
-
-@keyframes appearBackground {
-  from {
-    background: rgba(0, 0, 0, 0);
-  }
-  to {
-    background: rgba(0, 0, 0, 0.85);
-  }
-}
-
-@keyframes appearModal {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }

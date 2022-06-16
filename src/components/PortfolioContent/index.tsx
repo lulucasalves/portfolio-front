@@ -9,10 +9,15 @@ export interface IPortfolioContent {
   search: string[]
   setState: (event: IModalPortfolio) => void
   setActive: (event: boolean) => void
+  description: string
+  gif?: string
 }
 
 export function PortfolioContent({
   title,
+  search,
+  description,
+  gif,
   image,
   code,
   site,
@@ -49,7 +54,14 @@ export function PortfolioContent({
     <div className="content-port">
       <img src={selectImage()} />
       <p className="portfolioTitle">{title}</p>
-      <button onClick={() => setActive(true)}>Ver mais</button>
+      <button
+        onClick={() => {
+          setState({ title, search, description, gif, image, code, site })
+          setActive(true)
+        }}
+      >
+        Ver mais
+      </button>
       <div className="iconsGroup">
         <BsCodeSlash onClick={() => getCode()} />
         <BsGithub onClick={() => getGithub()} />

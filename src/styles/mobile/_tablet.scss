@@ -467,5 +467,41 @@ html {
         opacity: 0;
       }
     }
+
+    .menuOptP {
+      .lang {
+        display: none;
+      }
+
+      .mode-tog {
+        display: none;
+      }
+
+      .exitIcon {
+        font-size: 2.2rem;
+        margin: 0;
+      }
+    }
+
+    .portfolio-container {
+      padding-top: 150px;
+      .portfolioDiv {
+        padding: 0 20px;
+        .inputGroup {
+          flex-direction: column;
+          align-items: start;
+
+          .bigInput {
+            margin: 0;
+            width: 100%;
+          }
+
+          .checkboxGroup {
+            margin: 0;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
   }
 }

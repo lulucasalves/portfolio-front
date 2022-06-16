@@ -2,6 +2,8 @@ import { IoCloseOutline } from 'react-icons/io5'
 import OnOutsiceClick from 'react-outclick'
 import { useEffect, useState } from 'react'
 import { IModalPortfolio } from '../../pages/portfolio'
+import { BsBoxArrowUpRight } from 'react-icons/bs'
+
 interface IModal {
   active: boolean
   state: IModalPortfolio
@@ -21,6 +23,20 @@ export function ModalPortfolio({ active, state, setState, setActive }: IModal) {
     gif: ''
   }
 
+  const [title] = state.title.split('-')
+
+  function getType() {
+    if (state.search.includes('front')) {
+      return 'Front-End'
+    }
+
+    if (state.search.includes('back')) {
+      return 'Back-End'
+    }
+
+    return 'Mobile'
+  }
+
   useEffect(() => {
     setAppear(active)
   }, [active])
@@ -30,6 +46,20 @@ export function ModalPortfolio({ active, state, setState, setActive }: IModal) {
       setState(defaultState)
     }
   }, [appear])
+
+  function getCode() {
+    window.open(`https://gitpod.io/#${state.code}`, '_blank')
+  }
+
+  function getGithub() {
+    window.open(state.code, '_blank')
+  }
+
+  function getSite() {
+    if (state.site) {
+      window.open(state.site, '_blank')
+    }
+  }
 
   return (
     <div>
@@ -51,37 +81,38 @@ export function ModalPortfolio({ active, state, setState, setActive }: IModal) {
                   setState(defaultState)
                 }}
               />
-              <p className="title">Desenvolvedor Frontend - Estágio</p>
-              <p className="subtitle">ZB Negócios Digitais</p>
+              <p className="title">{title}</p>
+              <p className="subtitle">{getType()}</p>
 
               <div className="content">
-                <p className="category">Hábilidades utilizadas na função:</p>
-                <p>
-                  React, Javascript, React Native, HTML, CSS, Jquery e Api Rest
+                {state.gif ||
+                  (state.image && (
+                    <img
+                      style={{ width: '100%' }}
+                      src={state.gif || state.image}
+                    />
+                  ))}
+                <p className="categoriesP">
+                  {state.search.map((res) => {
+                    return <>{` ${res} /`}</>
+                  })}
                 </p>
-                <br />
-                <p className="category">Responsábilidades:</p>
-                <p>
-                  Responsável pela criação de telas em HTML e React, integração
-                  de apis e desenvolvimento de sistemas em Javascript
-                </p>
-                <br />
-                <p className="category">Sobre a empresa:</p>
-                <p>
-                  A ZB Negócios Digitais é uma rede de empresas que trabalha
-                  vários tipos de ramos dentro do mundo digital, como:
-                  marketing, sistemas de transações e análise de desempenho.
-                </p>
-                <br />
-                <div className="timeGroup">
-                  <div style={{ marginRight: '50px' }}>
-                    <p className="category">Data de Início:</p>
-                    <p>10/2021</p>
-                  </div>
-                  <div>
-                    <p className="category">Data de Termino:</p>{' '}
-                    <p>Atualmente</p>
-                  </div>
+                <p>{state.description}</p>
+                <div className="buttonsGroupP">
+                  <button onClick={() => getCode()}>
+                    Código
+                    <BsBoxArrowUpRight onClick={() => getSite()} />
+                  </button>
+                  {state.site && (
+                    <button onClick={() => getSite()}>
+                      Acessar
+                      <BsBoxArrowUpRight onClick={() => getSite()} />
+                    </button>
+                  )}
+                  <button onClick={() => getGithub()}>
+                    Repositório
+                    <BsBoxArrowUpRight onClick={() => getSite()} />
+                  </button>
                 </div>
               </div>
             </div>

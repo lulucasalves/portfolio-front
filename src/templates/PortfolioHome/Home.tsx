@@ -24,7 +24,7 @@ export function HomePage({ setState, setActive }: IPort) {
           <nav className="menu">
             <Logo text="portfolio" />
 
-            <div className="menuOpt">
+            <div className="menuOpt menuOptP">
               <OnOutsiceClick
                 onOutsideClick={() => {
                   setModal(false)
