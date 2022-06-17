@@ -21,6 +21,7 @@ export function PortfolioHome({ setState, setActive }: IPort) {
   const [back, setBack] = useState<boolean>(false)
   const [mobile, setMobile] = useState<boolean>(false)
   const [deploy, setDeploy] = useState<boolean>(false)
+  
 
   useEffect(() => {
     jsonData.map((val) => {

@@ -8,6 +8,7 @@ import { IoExitOutline } from 'react-icons/io5'
 import Link from 'next/link'
 import { PortfolioHome } from '../../components/PortfolioHome'
 import { IModalPortfolio } from '../../pages/portfolio'
+import { MobileMenuPortfolio } from '../../components/MobileMenuPortfolio'
 
 export interface IPort {
   setState: (event: IModalPortfolio) => void
@@ -16,9 +17,11 @@ export interface IPort {
 
 export function HomePage({ setState, setActive }: IPort) {
   const [modal, setModal] = useState(false)
+  const [menu, setMenu] = useState(false)
 
   return (
     <div id="home">
+      <MobileMenuPortfolio state={menu} setState={setMenu} />
       <div className="container">
         <div className="navbar">
           <nav className="menu">
@@ -33,9 +36,18 @@ export function HomePage({ setState, setActive }: IPort) {
                 <Lang status={modal} setStatus={setModal} />
               </OnOutsiceClick>
               <Theme />
+
               <Link href="/">
                 <IoExitOutline className="exitIcon" />
               </Link>
+              <div
+                onClick={() => {
+                  setMenu(!menu)
+                }}
+                className="hamburger-menu"
+              >
+                <div className={`bar ${menu ? 'active' : ''}`} />
+              </div>
             </div>
           </nav>
         </div>
