@@ -85,13 +85,12 @@ export function ModalPortfolio({ active, state, setState, setActive }: IModal) {
               <p className="subtitle">{getType()}</p>
 
               <div className="content">
-                {state.gif ||
-                  (state.image && (
-                    <img
-                      style={{ width: '100%' }}
-                      src={state.gif || state.image}
-                    />
-                  ))}
+                {(state.gif || state.image) && (
+                  <img
+                    style={{ width: '100%' }}
+                    src={state.gif || state.image}
+                  />
+                )}
                 <p className="categoriesP">
                   {state.search.map((res) => {
                     return <>{` ${res} /`}</>

@@ -74,6 +74,22 @@
     "description": "A parte do Back-end deste projeto tem o objetivo de capturar a url e o tipo de rede social escolhida e fazer o trabalho de web scrapping e por fim retornar o link afim da pessoa baixar no próprio dispositivo."
   },
   {
+    "title": "Arcade - Front",
+    "code": "https://github.com/lulucasalves/arcade-front",
+    "search": [
+      "javascript",
+      "arcade",
+      "front",
+      "html",
+      "css",
+      "express",
+      "cors",
+      "canvas"
+    ],
+    "site": "https://arcade-retro.herokuapp.com/",
+    "description": "Este site foi construido com Javascript para mostrar habolidades com javascript canvas e criar jogos divertidos e abordar temas avançados em relação a Javascript."
+  },
+  {
     "title": "Gameplay - Mobile",
     "code": "https://github.com/lulucasalves/gameplay-mobile",
     "search": [
@@ -140,7 +156,8 @@
       "stripe",
       "devnews"
     ],
-    "description": "Esta aplicação foi feita somente no Front-end no curso de especialização em React da Rocketseat com autênticação com o Github, controlando o acesso do usuário, a partir do seu plano de pagamento, podendo ser de graça ou pago."
+    "description": "Esta aplicação foi feita somente no Front-end no curso de especialização em React da Rocketseat com autênticação com o Github, controlando o acesso do usuário, a partir do seu plano de pagamento, podendo ser de graça ou pago.",
+    "gif": "https://github.com/lulucasalves/devnews-front/blob/main/.github/gif-1.gif?raw=true"
   },
   {
     "title": "Overzap - Back",
@@ -189,7 +206,8 @@
       "axios",
       "dashgo"
     ],
-    "description": "Este projeto foi criado no curso de especialização em React da Rocketseat, ele é uma plataforma de crm que permite o usuário fazer login e cadastrar, editar e excluir seus dados."
+    "description": "Este projeto foi criado no curso de especialização em React da Rocketseat, ele é uma plataforma de crm que permite o usuário fazer login e cadastrar, editar e excluir seus dados.",
+    "gif": "https://github.com/lulucasalves/dashgo-front/blob/main/.github/gif-1.gif?raw=true"
   },
   {
     "title": "Finapi - Back",
@@ -232,6 +250,7 @@
     "title": "MyMoney - Front",
     "image": "https://github.com/lulucasalves/mymoney-front/blob/main/.github/image1.png?raw=true",
     "code": "https://github.com/lulucasalves/mymoney-front",
+    "site": "https://mymoney-ten.vercel.app/",
     "search": [
       "javascript",
       "styled components",
@@ -263,7 +282,8 @@
     "image": "https://github.com/lulucasalves/spotify-clone/raw/master/.github/img1.png",
     "code": "https://github.com/lulucasalves/spotifyclone-front",
     "search": ["javascript", "html", "front", "css", "spotify"],
-    "description": "Este site é um clone do Spotify, feito com o propósito de mostrar hábilidades com html, css e javascript."
+    "description": "Este site é um clone do Spotify, feito com o propósito de mostrar hábilidades com html, css e javascript.",
+    "site": "https://spotifyclone-tawny.vercel.app/"
   },
   {
     "title": "Heat Node - Back",
@@ -286,13 +306,15 @@
     "image": "https://github.com/lulucasalves/coffeecode-project/raw/main/.github/img-3.png",
     "code": "https://github.com/lulucasalves/coffeecode-front",
     "search": ["javascript", "html", "front", "css", "coffeecode"],
-    "description": "O Coffee&Code é um projeto que foi criado como sugestão de uma startup do ramo de lanchonetes, sendo criado totalmente em html, css e javascript focando na área do Front-end."
+    "description": "O Coffee&Code é um projeto que foi criado como sugestão de uma startup do ramo de lanchonetes, sendo criado totalmente em html, css e javascript focando na área do Front-end.",
+    "site": "https://coffeecode.vercel.app/"
   },
   {
     "title": "Overfy - Front",
     "image": "https://github.com/lulucasalves/overfy-project/raw/main/.github/img-1.png",
     "code": "https://github.com/lulucasalves/overfy-front",
     "search": ["javascript", "html", "front", "css", "overfy"],
-    "description": "Este site foi criado durante o evento da NLW da Rocketseat, promovendo uma agência de viagens, com tela inicial e tela de cadastro, com funcionalidades extras."
+    "description": "Este site foi criado durante o evento da NLW da Rocketseat, promovendo uma agência de viagens, com tela inicial e tela de cadastro, com funcionalidades extras.",
+    "site": "https://overfy-blush.vercel.app/"
   }
 ]
