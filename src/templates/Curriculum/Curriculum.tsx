@@ -1,22 +1,11 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { animated } from 'react-spring'
 import { MdOutlineFileDownload, MdOutlineRemoveRedEye } from 'react-icons/md'
+import { IMyContext, MyContext } from '../../store/config'
 
 export function Curriculum() {
   const [positions, setPositions] = useState({ x: 0, y: 0, s: 1, t: '0s' })
-
-  function downloadContent(url: string) {
-    fetch(url)
-      .then((res) => {
-        res.blob()
-      })
-      .then((blob: any) => {
-        const link = document.createElement('a')
-        link.href = URL.createObjectURL(blob)
-        link.download = 'SocialOff'
-        link.click()
-      })
-  }
+  const { lang } = useContext<IMyContext>(MyContext)
 
   const calc = (x: number, y: number) => {
     return {
@@ -64,14 +53,28 @@ export function Curriculum() {
               baixe o documento
             </p>
             <div className="buttons">
-              <button>
+              <a
+                href={
+                  lang === 'en'
+                    ? 'https://github.com/lulucasalves/portfolio-front/raw/8457ed1a79814eb5a11596f6f453e6fb368fdd6b/.github/Curriculum%20-%20Lucas%20(English).pdf'
+                    : 'https://github.com/lulucasalves/portfolio-front/raw/8457ed1a79814eb5a11596f6f453e6fb368fdd6b/.github/Curriculum%20-%20Lucas%20(Portuguese).pdf'
+                }
+              >
                 <MdOutlineFileDownload />
                 Baixar
-              </button>
-              <button>
+              </a>
+
+              <a
+                href={
+                  lang !== 'en'
+                    ? 'https://drive.google.com/file/d/1t5MLR5n9jbQAFBLeZBW8bhsKeM90ORuu/view'
+                    : 'https://drive.google.com/file/d/1tMACjhDb0VmEf1AszK5-MQqgq-8Q_GQ9/view'
+                }
+                target="_blank"
+              >
                 <MdOutlineRemoveRedEye />
                 Visualizar
-              </button>
+              </a>
             </div>
           </div>
         </div>
