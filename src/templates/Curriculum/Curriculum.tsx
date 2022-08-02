@@ -5,6 +5,19 @@ import { MdOutlineFileDownload, MdOutlineRemoveRedEye } from 'react-icons/md'
 export function Curriculum() {
   const [positions, setPositions] = useState({ x: 0, y: 0, s: 1, t: '0s' })
 
+  function downloadContent(url: string) {
+    fetch(url)
+      .then((res) => {
+        res.blob()
+      })
+      .then((blob: any) => {
+        const link = document.createElement('a')
+        link.href = URL.createObjectURL(blob)
+        link.download = 'SocialOff'
+        link.click()
+      })
+  }
+
   const calc = (x: number, y: number) => {
     return {
       x: -(y - window.innerHeight / 2) / 30,
