@@ -89,7 +89,7 @@ export function ModalPortfolio({ active, state, setState, setActive }: IModal) {
                 {(state.gif || state.image) && (
                   <Image
                     width={2000}
-                    height={1150}
+                    height={1000}
                     src={state.gif || state.image || ''}
                   />
                 )}
