@@ -6,6 +6,7 @@ import {
 } from 'react-icons/io'
 import Image from 'next/image'
 import { Trans } from '../../components/Trans'
+import { useIntl } from 'react-intl'
 
 interface IBrand {
   svg: string
@@ -14,6 +15,7 @@ interface IBrand {
 }
 
 export function Skills() {
+  const { formatMessage } = useIntl()
   const [search, setSearch] = useState('')
   const [category, setCategory] = useState('')
   const [viewAll, setViewAll] = useState(false)
@@ -51,7 +53,7 @@ export function Skills() {
         <input
           onChange={(e) => setSearch(e.target.value)}
           type="text"
-          placeholder="Procure por alguma tecnologia"
+          placeholder={formatMessage({ id: 'search-tech' })}
         />
         <select defaultValue="" onChange={(e) => setCategory(e.target.value)}>
           <option value="" disabled>

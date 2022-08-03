@@ -1,5 +1,5 @@
-import { IFormationModal } from "../../pages"
-
+import { IFormationModal } from '../../pages'
+import { Trans } from '../Trans'
 
 interface IExperience {
   card: number
@@ -24,17 +24,23 @@ export function ExperienceCard({
         <img src={image} />
       </div>
       <div className="content">
-        <p className="titleCourse">{title}</p>
-        <p className="descriptionCourse">{company}</p>
+        <p className="titleCourse">
+          <Trans text={title} />
+        </p>
+        <p className="descriptionCourse">
+          <Trans text={company} />
+        </p>
         <div className="dates">
           <p>
-            <span>Periodo</span>
+            <span>
+              <Trans text="period" />
+            </span>
             <br />
             {period}
           </p>
         </div>
         <button onClick={() => setModal({ active: true, card: card })}>
-          Sobre
+          <Trans text="about-button" />
         </button>
       </div>
     </div>

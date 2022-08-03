@@ -3,6 +3,7 @@ import OnOutsiceClick from 'react-outclick'
 import { useEffect, useState } from 'react'
 import { IModalPortfolio } from '../../pages/portfolio'
 import { BsBoxArrowUpRight } from 'react-icons/bs'
+import { Trans } from '../Trans'
 
 interface IModal {
   active: boolean
@@ -69,7 +70,6 @@ export function ModalPortfolio({ active, state, setState, setActive }: IModal) {
             onOutsideClick={() => {
               setState(defaultState)
               setActive(false)
-
               setAppear(false)
             }}
           >
@@ -99,17 +99,17 @@ export function ModalPortfolio({ active, state, setState, setActive }: IModal) {
                 <p>{state.description}</p>
                 <div className="buttonsGroupP">
                   <button onClick={() => getCode()}>
-                    Código
+                    <Trans text="code" />
                     <BsBoxArrowUpRight onClick={() => getSite()} />
                   </button>
                   {state.site && (
                     <button onClick={() => getSite()}>
-                      Acessar
+                      <Trans text="access-button" />
                       <BsBoxArrowUpRight onClick={() => getSite()} />
                     </button>
                   )}
                   <button onClick={() => getGithub()}>
-                    Repositório
+                    <Trans text="repository" />
                     <BsBoxArrowUpRight onClick={() => getSite()} />
                   </button>
                 </div>

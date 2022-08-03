@@ -1,4 +1,5 @@
 import { IFormationModal } from '../../pages'
+import { Trans } from '../Trans'
 
 interface IFormation {
   card: number
@@ -25,21 +26,31 @@ export function FormationCard({
         <img src={image} />
       </div>
       <div className="content">
-        <p className="titleCourse">{title}</p>
-        <p className="descriptionCourse">{university}</p>
+        <p className="titleCourse">
+          <Trans text={title} />
+        </p>
+        <p className="descriptionCourse">
+          <Trans text={university} />
+        </p>
         <div className="dates">
           <p>
-            <span className="active">Início</span>
+            <span className="active">
+              <Trans text="init" />
+            </span>
             <br />
             {init}
           </p>
           <p>
-            <span>Final</span>
+            <span>
+              <Trans text="finish" />
+            </span>
             <br />
             {finish}
           </p>
         </div>
-        <button onClick={() => setState({ active: true, card })}>Sobre</button>
+        <button onClick={() => setState({ active: true, card })}>
+          <Trans text="about-button" />
+        </button>
       </div>
     </div>
   )

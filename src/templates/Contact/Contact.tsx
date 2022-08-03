@@ -12,6 +12,7 @@ import { FiSend } from 'react-icons/fi'
 import emailjs from '@emailjs/browser'
 import { IMyContext, MyContext } from '../../store/config'
 import { Trans } from '../../components/Trans'
+import { useIntl } from 'react-intl'
 
 interface ISubmit {
   name: string
@@ -24,6 +25,7 @@ interface IEmail {
 }
 
 export function Contact({ setEmail }: IEmail) {
+  const { formatMessage } = useIntl()
   const [level, setLevel] = useState<number>(1)
   const { lang } = useContext<IMyContext>(MyContext)
   const [sended, setSended] = useState(false)
@@ -50,7 +52,7 @@ export function Contact({ setEmail }: IEmail) {
           setEmail(true)
         })
         .catch(() => {
-          alert(<Trans text="email-error" />)
+          alert(formatMessage({ id: 'email-error' }))
         })
     }
   }

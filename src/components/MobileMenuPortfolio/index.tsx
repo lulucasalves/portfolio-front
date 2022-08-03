@@ -48,7 +48,7 @@ export function MobileMenuPortfolio({ state, setState }: IModalFormation) {
                     setState(false)
                   }}
                 >
-                  <MenuItem href="/" className="exitPort" name="Sair" />
+                  <MenuItem href="/" className="exitPort" name="exit" />
                 </ul>
               </div>
             </div>

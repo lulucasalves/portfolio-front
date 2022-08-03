@@ -8,6 +8,7 @@ interface IModalFormation {
   setState: (event: IFormationModal) => void
 }
 import * as formData from '../../data/formation.json'
+import { Trans } from '../Trans'
 
 export function ModalFormation({ state, setState }: IModalFormation) {
   const [appear, setAppear] = useState<boolean>(false)
@@ -57,58 +58,82 @@ export function ModalFormation({ state, setState }: IModalFormation) {
                 className="closeIcon"
                 onClick={() => setState({ card: state.card, active: false })}
               />
-              <p className="title">{info.course} </p>
-              <p className="subtitle">{info.university}</p>
+              <p className="title">
+                <Trans text={info.course} />
+              </p>
+              <p className="subtitle">
+                <Trans text={info.university} />
+              </p>
 
               <div className="content">
                 <div className="column">
-                  <p className="category">Instituição de ensino:</p>
+                  <p className="category">
+                    <Trans text="teach-institute" />:
+                  </p>
                   <ul>
                     <li>
-                      Instituição:
-                      <span> {info.university}</span>
+                      <Trans text="institute" />:
+                      <span>
+                        {' '}
+                        <Trans text={info.university} />
+                      </span>
                     </li>
                     <li>
                       IGC: <span>{info.igc}</span>
                     </li>
                     <li>
-                      Nota no mec: <span>{info.mec}</span>
+                      <Trans text="mec-grade" />: <span>{info.mec}</span>
                     </li>
                     <li>
-                      Local: <span>{info.address}</span>
+                      <Trans text="address" />: <span>{info.address}</span>
                     </li>
-                    <a href={info.mecLink}>Confira a regulamentação no mec</a>
+                    <a href={info.mecLink} target="_blank">
+                      <Trans text="mec-regulamentatation" />
+                    </a>
                   </ul>
                 </div>
                 <div className="column">
-                  <p className="category">Sobre o curso:</p>
+                  <p className="category">
+                    <Trans text="about-course" />:
+                  </p>
                   <ul>
                     <li>
-                      Duração: <span>{info.courseYears} anos</span>
+                      <Trans text="duration" />:{' '}
+                      <span>
+                        {info.courseYears} <Trans text="years" />
+                      </span>
                     </li>
                     <li>
-                      Carga horária: <span>{info.courseTime}h</span>
+                      <Trans text="time-expended" />:{' '}
+                      <span>{info.courseTime}h</span>
                     </li>
                     <li>
                       Status:
-                      <span> {info.status ? 'Finalizado' : 'Em curso'}</span>
+                      <span>
+                        {' '}
+                        {info.status ? (
+                          <Trans text="finished" />
+                        ) : (
+                          <Trans text="in-course" />
+                        )}
+                      </span>
                     </li>
                     <li>
-                      Data de início: <span>{info.init}</span>
+                      <Trans text="init-date" />: <span>{info.init}</span>
                     </li>
                     <li>
-                      Data de término: <span>{info.finish}</span>
+                      <Trans text="finish-date" />: <span>{info.finish}</span>
                     </li>
                     <div className="groupButtons">
                       <button type="button" disabled={!info.status}>
-                        Grade currícular
+                        <Trans text="curriculum-grade" />
                       </button>
                       <button
                         type="button"
                         style={{ marginLeft: '15px' }}
                         disabled={!info.status}
                       >
-                        Credencial
+                        <Trans text="credential" />
                       </button>
                     </div>
                   </ul>

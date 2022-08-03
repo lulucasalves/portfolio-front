@@ -16,8 +16,8 @@ export function Formation({ modal, setModal, setExpModal, expModal }: IModal) {
     if (modal.card === 1) {
       return (
         <FormationCard
-          title="Design gráfico"
-          university="Centro Universitário Internacional"
+          title="graphic-design"
+          university="university-center"
           image="https://images.pexels.com/photos/5582867/pexels-photo-5582867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           init="02/2021"
           finish="02/2023"
@@ -28,8 +28,8 @@ export function Formation({ modal, setModal, setExpModal, expModal }: IModal) {
     } else if (modal.card === 2) {
       return (
         <FormationCard
-          title="Análise de sistemas"
-          university="Centro Universitário Internacional"
+          title="analysis-system"
+          university="university-center"
           image="https://images.pexels.com/photos/5935791/pexels-photo-5935791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           init="06/2021"
           finish="02/2024"

@@ -1,9 +1,9 @@
 {
   "design": {
-    "course": "Curso superior de tecnologia - Design gráfico",
-    "university": "Centro Universitário Internacional",
+    "course": "design-course",
+    "university": "university-center",
     "igc": "4",
-    "mec": "5",
+    "mec": "5 (max)",
     "address": "Brasil - Curitiba - PR",
     "mecLink": "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTQ5MQ",
     "courseYears": "2",
@@ -13,10 +13,10 @@
     "finish": "02/2023"
   },
   "ads": {
-    "course": "Curso superior de tecnologia - Análise e desenvolvimento de sistemas",
-    "university": "Centro Universitário Internacional",
+    "course": "analist-course",
+    "university": "university-center",
     "igc": "4",
-    "mec": "5",
+    "mec": "5 (max)",
     "address": "Brasil - Curitiba - PR",
     "mecLink": "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTQ5MQ",
     "courseYears": "2.6",

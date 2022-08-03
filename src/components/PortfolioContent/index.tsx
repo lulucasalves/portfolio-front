@@ -1,5 +1,6 @@
 import { BsBoxArrowUpRight, BsCodeSlash, BsGithub } from 'react-icons/bs'
 import { IModalPortfolio } from '../../pages/portfolio'
+import { Trans } from '../Trans'
 
 export interface IPortfolioContent {
   title: string
@@ -60,7 +61,7 @@ export function PortfolioContent({
           setActive(true)
         }}
       >
-        Ver mais
+        <Trans text="see-more" />
       </button>
       <div className="iconsGroup">
         <BsCodeSlash onClick={() => getCode()} />

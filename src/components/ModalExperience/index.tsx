@@ -2,15 +2,14 @@ import { IFormationModal } from '../../pages'
 import { IoCloseOutline } from 'react-icons/io5'
 import OnOutsiceClick from 'react-outclick'
 import { useEffect, useState } from 'react'
+import { Trans } from '../Trans'
 interface IModalFormation {
   state: IFormationModal
   setState: (event: IFormationModal) => void
 }
-import * as expData from '../../data/experience.json'
 
 export function ModalExperience({ state, setState }: IModalFormation) {
   const [appear, setAppear] = useState<boolean>(false)
-  let info = expData.zb
 
   useEffect(() => {
     setAppear(state.active)
@@ -36,36 +35,49 @@ export function ModalExperience({ state, setState }: IModalFormation) {
                 className="closeIcon"
                 onClick={() => setState({ card: state.card, active: false })}
               />
-              <p className="title">Desenvolvedor Frontend - Estágio</p>
-              <p className="subtitle">ZB Negócios Digitais</p>
+              <p className="title">
+                <Trans text="experience-1" />
+              </p>
+              <p className="subtitle">
+                <Trans text="experience-2" />
+              </p>
 
               <div className="content">
-                <p className="category">Hábilidades utilizadas na função:</p>
+                <p className="category">
+                  <Trans text="experience-3" />
+                </p>
                 <p>
                   React, Javascript, React Native, HTML, CSS, Jquery e Api Rest
                 </p>
                 <br />
-                <p className="category">Responsábilidades:</p>
+                <p className="category">
+                  <Trans text="responsible" />:
+                </p>
                 <p>
-                  Responsável pela criação de telas em HTML e React, integração
-                  de apis e desenvolvimento de sistemas em Javascript
+                  <Trans text="experience-4" />
                 </p>
                 <br />
-                <p className="category">Sobre a empresa:</p>
+                <p className="category">
+                  <Trans text="experience-5" />:
+                </p>
                 <p>
-                  A ZB Negócios Digitais é uma rede de empresas que trabalha
-                  vários tipos de ramos dentro do mundo digital, como:
-                  marketing, sistemas de transações e análise de desempenho.
+                  <Trans text="experience-6" />
                 </p>
                 <br />
                 <div className="timeGroup">
                   <div style={{ marginRight: '50px' }}>
-                    <p className="category">Data de Início:</p>
+                    <p className="category">
+                      <Trans text="init-date" />:
+                    </p>
                     <p>10/2021</p>
                   </div>
                   <div>
-                    <p className="category">Data de Termino:</p>{' '}
-                    <p>Atualmente</p>
+                    <p className="category">
+                      <Trans text="finish-date" />:
+                    </p>
+                    <p>
+                      <Trans text="current" />
+                    </p>
                   </div>
                 </div>
               </div>
