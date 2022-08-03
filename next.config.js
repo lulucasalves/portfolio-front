@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: ['github.com'],
+    domains: ['github.com', 'images.pexels.com'],
     formats: ['image/webp']
   },
   env: {

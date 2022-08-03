@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { IModalPortfolio } from '../../pages/portfolio'
 import { BsBoxArrowUpRight } from 'react-icons/bs'
 import { Trans } from '../Trans'
+import Image from 'next/image'
 
 interface IModal {
   active: boolean
@@ -86,9 +87,10 @@ export function ModalPortfolio({ active, state, setState, setActive }: IModal) {
 
               <div className="content">
                 {(state.gif || state.image) && (
-                  <img
-                    style={{ width: '100%' }}
-                    src={state.gif || state.image}
+                  <Image
+                    width={2000}
+                    height={1150}
+                    src={state.gif || state.image || ''}
                   />
                 )}
                 <p className="categoriesP">

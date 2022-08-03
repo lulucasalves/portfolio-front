@@ -65,7 +65,7 @@ export function Experience({ modal, setModal }: IExperienceModal) {
             <ExperienceCard
               title="frontend"
               company="experience-2"
-              image="companys/zb.png"
+              image="/companys/zb.png"
               period={getPeriod('2021-10-01')}
               setModal={() => setModal({ card: modal.card, active: true })}
               card={2}

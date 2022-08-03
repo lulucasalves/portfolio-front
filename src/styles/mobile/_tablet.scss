@@ -37,7 +37,8 @@ html {
       }
     }
 
-    .hamburger-menu {
+    .hamburger-menu,
+    .hamburger-menu-none {
       display: flex;
     }
 
@@ -210,7 +211,6 @@ html {
         flex-direction: column-reverse;
 
         .cardexp {
-          // width: ;
           height: 320px;
           .image {
             height: 150px;

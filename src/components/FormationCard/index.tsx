@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { IFormationModal } from '../../pages'
 import { Trans } from '../Trans'
 
@@ -23,7 +24,7 @@ export function FormationCard({
   return (
     <div className="card">
       <div className="image">
-        <img src={image} />
+        <Image layout="fill" src={image} />
       </div>
       <div className="content">
         <p className="titleCourse">

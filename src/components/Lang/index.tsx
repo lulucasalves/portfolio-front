@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useContext, useEffect, useState } from 'react'
 import { MdOutlineArrowDropDown } from 'react-icons/md'
 import { IMyContext, MyContext } from '../../store/config'
@@ -24,9 +25,11 @@ export function Lang({ status, setStatus }: IModalStatus) {
       }}
     >
       <div className="langGroup">
-        <img
+        <Image
+          width={35}
+          height={35}
           className="flag"
-          src={`flags/${lang === 'en' ? 'usa' : 'brazil'}.svg`}
+          src={`/flags/${lang === 'en' ? 'usa' : 'brazil'}.svg`}
         />
         <MdOutlineArrowDropDown className="arrow" />
 
@@ -36,7 +39,12 @@ export function Lang({ status, setStatus }: IModalStatus) {
               className="flagOpt"
               onClick={() => changeLang && changeLang('en')}
             >
-              <img className="flagsm" src="flags/usa.svg" />
+              <Image
+                width={30}
+                height={30}
+                className="flagsm"
+                src="/flags/usa.svg"
+              />
               <p>en</p>
             </div>
             <div className="borderSeparation" />
@@ -44,7 +52,12 @@ export function Lang({ status, setStatus }: IModalStatus) {
               className="flagOpt"
               onClick={() => changeLang && changeLang('pt')}
             >
-              <img className="flagsm" src="flags/brazil.svg" />
+              <Image
+                width={30}
+                height={30}
+                className="flagsm"
+                src="/flags/brazil.svg"
+              />
               <p>pt</p>
             </div>
           </div>

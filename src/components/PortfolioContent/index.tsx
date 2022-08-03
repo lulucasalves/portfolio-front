@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { BsBoxArrowUpRight, BsCodeSlash, BsGithub } from 'react-icons/bs'
 import { IModalPortfolio } from '../../pages/portfolio'
 import { Trans } from '../Trans'
@@ -53,7 +54,7 @@ export function PortfolioContent({
 
   return (
     <div className="content-port">
-      <img src={selectImage()} />
+      <Image src={selectImage()} width={300} height={500} />
       <p className="portfolioTitle">{title}</p>
       <button
         onClick={() => {

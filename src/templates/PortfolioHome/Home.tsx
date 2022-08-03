@@ -43,7 +43,7 @@ export function HomePage({ setState, setActive }: IPort) {
                 onClick={() => {
                   setMenu(!menu)
                 }}
-                className="hamburger-menu"
+                className="hamburger-menu-none"
               >
                 <div className={`bar ${menu ? 'active' : ''}`} />
               </div>
