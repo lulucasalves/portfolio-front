@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Lottie from 'react-lottie'
-import animationData from '../../assets/87580-email-icon-animation.json'
+import * as animationData from '../../assets/87580-email-icon-animation.json'
 
 interface IEmail {
   state: boolean

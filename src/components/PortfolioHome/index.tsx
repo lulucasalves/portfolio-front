@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { PortfolioContent } from '../PortfolioContent'
-import jsonData from '../../data/portfolio.json'
+import * as jsonData from '../../data/portfolio.json'
 import { IPort } from '../../templates/PortfolioHome/Home'
 import { IModalPortfolio } from '../../pages/portfolio'
 import { Trans } from '../Trans'

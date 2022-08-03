@@ -1,8 +1,8 @@
 import { ReactElement, useContext } from 'react'
 import { IntlProvider } from 'react-intl'
 
-import enMessages from '../data/en.json'
-import ptMessages from '../data/pt.json'
+import * as enMessages from '../data/en.json'
+import * as ptMessages from '../data/pt.json'
 import { IMyContext, MyContext } from './config'
 
 const messages = {
