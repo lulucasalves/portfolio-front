@@ -1,5 +1,5 @@
 import { Formik } from 'formik'
-import { useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import {
   AiOutlineGithub,
   AiFillLinkedin,
@@ -9,6 +9,8 @@ import { submitSchema } from '../../schemas'
 import { MdOutlineEmail } from 'react-icons/md'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { FiSend } from 'react-icons/fi'
+import emailjs from '@emailjs/browser'
+import { IMyContext, MyContext } from '../../store/config'
 
 interface ISubmit {
   name: string
@@ -16,18 +18,41 @@ interface ISubmit {
   cellphone?: string
 }
 
-export function Contact() {
+interface IEmail {
+  setEmail: (value: boolean) => void
+}
+
+export function Contact({ setEmail }: IEmail) {
   const [level, setLevel] = useState<number>(1)
-
-  const [value, setValue] = useState<any>('')
-
-  console.log(value)
+  const { lang } = useContext<IMyContext>(MyContext)
+  const [sended, setSended] = useState(false)
 
   function handleSendForm(values: ISubmit) {
     if (!values.email || level === 1) {
       setLevel(2)
     } else {
-      alert('boa')
+      const templateParams = {
+        to_name: values.name,
+        to_email: values.email.toLocaleLowerCase(),
+        phone: values.cellphone || ''
+      }
+
+      emailjs
+        .send(
+          process.env.NEXT_PUBLIC_SERVICEID || '',
+          `lulucasalves${lang || 'en'}`,
+          templateParams,
+          process.env.NEXT_PUBLIC_USERID
+        )
+        .then(() => {
+          setSended(true)
+          setEmail(true)
+        })
+        .catch(() => {
+          alert(
+            'Infelizmente ocorreu um erro ;-;, Por favor me envie um email diretamente!'
+          )
+        })
     }
   }
 
@@ -155,9 +180,13 @@ export function Contact() {
                         >
                           Voltar
                         </button>
-                        <button className="submitButton" type="submit">
+                        <button
+                          disabled={sended}
+                          className="submitButton"
+                          type="submit"
+                        >
                           <div className="buttonInner">
-                            Enviar
+                            {sended ? 'Enviado' : 'Enviar'}
                             <FiSend />
                           </div>
                         </button>

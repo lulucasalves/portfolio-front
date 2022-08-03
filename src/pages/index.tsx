@@ -9,6 +9,7 @@ import { Formation } from '../templates/Formation/Formation'
 import { Curriculum } from '../templates/Curriculum/Curriculum'
 import { Contact } from '../templates/Contact/Contact'
 import { Footer } from '../templates/Footer/Footer'
+import { CheckEmail } from '../components/CheckEmail'
 import { ModalFormation } from '../components/ModalFormation'
 import { ModalExperience } from '../components/ModalExperience'
 import { HomeMobile } from '../templates/HomeMobile/Home'
@@ -23,13 +24,12 @@ export default function Home() {
     active: false,
     card: 1
   })
-
   const [modalExperience, setModalExperience] = useState<IFormationModal>({
     active: true,
     card: 1
   })
-
-  const [width, setWidth] = useState<number>(1200)
+  const [width, setWidth] = useState(1200)
+  const [email, setEmail] = useState(false)
 
   useEffect(() => {
     setWidth(window.innerWidth)
@@ -37,6 +37,7 @@ export default function Home() {
 
   return (
     <>
+      <CheckEmail state={email} setState={setEmail} />
       <ModalFormation state={modalFormation} setState={setModalFormation} />
       <ModalExperience state={modalExperience} setState={setModalExperience} />
 
@@ -59,7 +60,7 @@ export default function Home() {
           setModal={setModalFormation}
         />
         <Curriculum />
-        <Contact />
+        <Contact setEmail={setEmail} />
         <Footer />
       </div>
     </>

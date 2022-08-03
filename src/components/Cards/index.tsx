@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 
 interface ISortObject {
@@ -18,6 +18,22 @@ export function Cards() {
     card2: { class: 'center', dir: 'L' },
     card3: { class: 'rightSide', dir: 'L' }
   })
+  const [time, setTime] = useState(6)
+
+  useEffect(() => {
+    let interval = null as any
+
+    if (time > 0) {
+      interval = setInterval(() => {
+        setTime((oldSecs) => oldSecs - 1)
+      }, 1000)
+    } else {
+      alternateSort('right')
+      setTime(6)
+    }
+
+    return () => clearInterval(interval)
+  }, [time])
 
   function alternateSort(side: string) {
     if (side === 'left') {
@@ -79,7 +95,13 @@ export function Cards() {
 
   return (
     <div className="cardContainer">
-      <IoIosArrowBack className="arrow" onClick={() => alternateSort('left')} />
+      <IoIosArrowBack
+        className="arrow"
+        onClick={() => {
+          setTime(15)
+          alternateSort('right')
+        }}
+      />
       <div className="allCards">
         <div id="card1" className={`${sort.card1.class}${sort.card1.dir}`} />
         <div id="card2" className={`${sort.card2.class}${sort.card2.dir}`} />
@@ -87,7 +109,10 @@ export function Cards() {
       </div>
       <IoIosArrowForward
         className="arrow"
-        onClick={() => alternateSort('right')}
+        onClick={() => {
+          alternateSort('left')
+          setTime(15)
+        }}
       />
     </div>
   )
