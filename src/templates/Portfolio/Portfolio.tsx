@@ -6,7 +6,7 @@ export function Portfolio() {
     <div id="portfolio" className="portDiv">
       <h2>Portfolio</h2>
       <Cards />
-      <ButtonColorful text="Mais projetos" />
+      <ButtonColorful text="more-projects" />
     </div>
   )
 }

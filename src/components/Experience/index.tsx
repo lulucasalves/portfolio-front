@@ -1,5 +1,6 @@
 import { IFormationModal } from '../../pages'
 import { ExperienceCard } from '../ExperienceCard'
+import { Trans } from '../Trans'
 
 interface IExperienceModal {
   modal: IFormationModal
@@ -31,20 +32,22 @@ export function Experience({ modal, setModal }: IExperienceModal) {
 
   return (
     <div className="experienceDiv">
-      <h3>Experiência</h3>
+      <h3>
+        <Trans text="experience" />
+      </h3>
       <div className="experienceContent">
         <div className="cardsExp">
           <div className="cardFilter">
             <select defaultValue="de">
               <option value="de" disabled>
-                De:
+                <Trans text="from" />:
               </option>
               <option value="2021">2021</option>
               <option value="2022">2022</option>
             </select>
             <select defaultValue="até">
               <option value="até" disabled>
-                Até:
+                <Trans text="to" />:
               </option>
               <option value="2021">2021</option>
               <option value="2022">2022</option>
@@ -63,10 +66,7 @@ export function Experience({ modal, setModal }: IExperienceModal) {
         </div>
 
         <p className="descriptionUser">
-          Estou fazendo estágio na empresa ZB Negócios Digitais como
-          desenvolvedor frontend, hoje em dia sou desenvolvedor fullstack python
-          e javascript como freelancer, também já trabalhei com design e
-          marketing com 14 até 17 anos.
+          <Trans text="experience-description" />
         </p>
       </div>
     </div>

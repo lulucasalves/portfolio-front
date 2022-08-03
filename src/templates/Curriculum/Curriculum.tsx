@@ -2,6 +2,7 @@ import { useContext, useState } from 'react'
 import { animated } from 'react-spring'
 import { MdOutlineFileDownload, MdOutlineRemoveRedEye } from 'react-icons/md'
 import { IMyContext, MyContext } from '../../store/config'
+import { Trans } from '../../components/Trans'
 
 export function Curriculum() {
   const [positions, setPositions] = useState({ x: 0, y: 0, s: 1, t: '0s' })
@@ -23,9 +24,9 @@ export function Curriculum() {
     <div className="curriculumDiv">
       <div className="curriculumContent">
         <h2>
-          Quer saber mais?
+          <Trans text="know-more" />
           <br />
-          Baixe meu currículo
+          <Trans text="download-curriculum" />
         </h2>
 
         <div className="curriculumType">
@@ -48,20 +49,20 @@ export function Curriculum() {
           </animated.div>
           <div className="curriculumActions">
             <p>
-              Acesse online ou
+              <Trans text="access" />
               <br />
-              baixe o documento
+              <Trans text="download-doc" />
             </p>
             <div className="buttons">
               <a
                 href={
                   lang === 'en'
-                    ? 'https://github.com/lulucasalves/portfolio-front/raw/8457ed1a79814eb5a11596f6f453e6fb368fdd6b/.github/Curriculum%20-%20Lucas%20(English).pdf'
-                    : 'https://github.com/lulucasalves/portfolio-front/raw/8457ed1a79814eb5a11596f6f453e6fb368fdd6b/.github/Curriculum%20-%20Lucas%20(Portuguese).pdf'
+                    ? 'https://github.com/lulucasalves/portfolio-front/raw/7e173da865f1fc7d1efba8ab79c71d5c8b12e2c9/.github/Curriculum%20-%20Lucas%20(English).pdf'
+                    : 'https://github.com/lulucasalves/portfolio-front/raw/7e173da865f1fc7d1efba8ab79c71d5c8b12e2c9/.github/Curriculum%20-%20Lucas%20(Portuguese).pdf'
                 }
               >
                 <MdOutlineFileDownload />
-                Baixar
+                <Trans text="download" />
               </a>
 
               <a
@@ -73,7 +74,7 @@ export function Curriculum() {
                 target="_blank"
               >
                 <MdOutlineRemoveRedEye />
-                Visualizar
+                <Trans text="visualization" />
               </a>
             </div>
           </div>

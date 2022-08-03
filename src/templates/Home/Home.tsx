@@ -62,20 +62,20 @@ export function HomePage() {
             className="links"
           >
             <ul>
-              <MenuItem href="#home" className="home" name="Início" />
-              <MenuItem href="#aboutMe" className="aboutMe" name="Sobre mim" />
-              <MenuItem href="#skills" className="skills" name="Habilidades" />
+              <MenuItem href="#home" className="home" name="home" />
+              <MenuItem href="#aboutMe" className="aboutMe" name="about" />
+              <MenuItem href="#skills" className="skills" name="skills" />
               <MenuItem
                 href="#portfolio"
                 className="portfolio"
-                name="Portfólio"
+                name="portfolio"
               />
               <MenuItem
                 href="#formation"
                 className="formation"
-                name="Experiência"
+                name="experience"
               />
-              <MenuItem href="#contact" className="contact" name="Contato" />
+              <MenuItem href="#contact" className="contact" name="contact" />
             </ul>
           </nav>
         </div>

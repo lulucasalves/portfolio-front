@@ -1,5 +1,5 @@
 import { Formik } from 'formik'
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useState } from 'react'
 import {
   AiOutlineGithub,
   AiFillLinkedin,
@@ -11,6 +11,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi'
 import { FiSend } from 'react-icons/fi'
 import emailjs from '@emailjs/browser'
 import { IMyContext, MyContext } from '../../store/config'
+import { Trans } from '../../components/Trans'
 
 interface ISubmit {
   name: string
@@ -49,9 +50,7 @@ export function Contact({ setEmail }: IEmail) {
           setEmail(true)
         })
         .catch(() => {
-          alert(
-            'Infelizmente ocorreu um erro ;-;, Por favor me envie um email diretamente!'
-          )
+          alert(<Trans text="email-error" />)
         })
     }
   }
@@ -60,8 +59,12 @@ export function Contact({ setEmail }: IEmail) {
     <div id="contact" className="contacts">
       <div className="contactDiv">
         <div className="textSection">
-          <h2>Contato</h2>
-          <p className="ctaSocialMedia">Me siga nas redes sociais!</p>
+          <h2>
+            <Trans text="contact" />
+          </h2>
+          <p className="ctaSocialMedia">
+            <Trans text="follow-social" />
+          </p>
           <div
             title="Github"
             className="socialMediaGroup"
@@ -92,7 +95,9 @@ export function Contact({ setEmail }: IEmail) {
             <AiOutlineMedium />
             <p>lulucasalves</p>
           </div>
-          <p className="ctaSocialMedia">Ou me envie um email</p>
+          <p className="ctaSocialMedia">
+            <Trans text="send-email" />
+          </p>
           <div
             className="socialMediaGroup"
             onClick={() =>
@@ -105,7 +110,9 @@ export function Contact({ setEmail }: IEmail) {
           </div>
         </div>
         <div className="formSection">
-          <h3>Entre em contato comigo</h3>
+          <h3>
+            <Trans text="contact-me" />
+          </h3>
 
           <Formik
             initialValues={{
@@ -123,7 +130,9 @@ export function Contact({ setEmail }: IEmail) {
                 {level === 1 && (
                   <div className="buttonAndInput">
                     <div className="inputGroup ">
-                      <label htmlFor="name">Nome</label>
+                      <label htmlFor="name">
+                        <Trans text="name" />
+                      </label>
                       <br />
                       <input
                         id="name"
@@ -138,7 +147,8 @@ export function Contact({ setEmail }: IEmail) {
                         <div />
                         <button className="submitButton" type="submit">
                           <div className="buttonInner">
-                            Continuar <HiArrowNarrowRight />
+                            <Trans text="continue" />
+                            <HiArrowNarrowRight />
                           </div>
                         </button>
                       </div>
@@ -150,7 +160,6 @@ export function Contact({ setEmail }: IEmail) {
                     <div className="inputGroup">
                       <label htmlFor="email">E-mail</label>
                       <br />
-
                       <input
                         id="email"
                         placeholder="johndoe@gmail.com"
@@ -162,7 +171,9 @@ export function Contact({ setEmail }: IEmail) {
                       />
                     </div>
                     <div className="inputGroup">
-                      <label htmlFor="cellphone">Celular (opcional)</label>
+                      <label htmlFor="cellphone">
+                        <Trans text="phone" />
+                      </label>
                       <br />
                       <input
                         id="cellphone"
@@ -178,7 +189,7 @@ export function Contact({ setEmail }: IEmail) {
                           className="normalButton"
                           type="submit"
                         >
-                          Voltar
+                          <Trans text="return" />
                         </button>
                         <button
                           disabled={sended}
@@ -186,7 +197,11 @@ export function Contact({ setEmail }: IEmail) {
                           type="submit"
                         >
                           <div className="buttonInner">
-                            {sended ? 'Enviado' : 'Enviar'}
+                            {sended ? (
+                              <Trans text="sended" />
+                            ) : (
+                              <Trans text="send" />
+                            )}
                             <FiSend />
                           </div>
                         </button>

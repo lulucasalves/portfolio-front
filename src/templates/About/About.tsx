@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Trans } from '../../components/Trans'
 import { Wave } from '../../components/Wave'
 
 export function About() {
@@ -8,12 +9,9 @@ export function About() {
     if (textSize === 1) {
       return (
         <p className="descriptionText">
-          Meu nome é Lucas, tenho 19 anos e sou estudante de análise e
-          desenvolvimento de sistemas e design gráfico.
+          <Trans text="about-1" />
           <br />
-          Atualmente trabalho como desenvolvedor frontend na empresa ZB Negócios
-          digitais (estágio) e como freelancer atuo como desenvolvedor
-          fullstack, minha stack é baseada nas linguagens Javascript e Python.
+          <Trans text="about-2" />
         </p>
       )
     }
@@ -21,41 +19,26 @@ export function About() {
     if (textSize === 2) {
       return (
         <p className="descriptionText">
-          Meu nome é Lucas, tenho 19 anos e sou estudante de análise e
-          desenvolvimento de sistemas e design gráfico.
+          <Trans text="about-1" />
           <br />
-          Atualmente trabalho como desenvolvedor frontend na empresa ZB Negócios
-          digitais (estágio) e como freelancer atuo como desenvolvedor
-          fullstack, minha stack é baseada nas linguagens Javascript e Python.
+          <Trans text="about-2" />
           <br />
-          Estudando na prática frameworks de Javascript e Python, data science,
-          data analytics, desenvolvimento de api, desenvolvimento mobile e
-          arquitetura de sistemas. Focando em habilidades para me tornar um
-          desenvolvedor pleno.
+          <Trans text="about-3" />
         </p>
       )
     }
 
     return (
       <p className="descriptionText">
-        Meu nome é Lucas, tenho 19 anos e sou estudante de análise e
-        desenvolvimento de sistemas e design gráfico.
+        <Trans text="about-1" />
         <br />
-        Atualmente trabalho como desenvolvedor frontend na empresa ZB Negócios
-        digitais (estágio) e como freelancer atuo como desenvolvedor fullstack,
-        minha stack é baseada nas linguagens Javascript e Python.
+        <Trans text="about-2" />
         <br />
-        Estudando na prática frameworks de Javascript e Python, data science,
-        data analytics, desenvolvimento de api, desenvolvimento mobile e
-        arquitetura de sistemas. Focando em habilidades para me tornar um
-        desenvolvedor pleno.
+        <Trans text="about-3" />
         <br />
-        Além de habilidades técnicas, estou me aperfeiçoando nos idioma Inglês e
-        Alemão.
+        <Trans text="about-4" />
         <br />
-        Curioso pela tecnologia desde cedo, às vezes passo o tempo fazendo
-        projetos em arduino usando C++ e participando de desafios de
-        programação.
+        <Trans text="about-5" />
       </p>
     )
   }
@@ -67,9 +50,13 @@ export function About() {
           <div className="perfilPhoto" />
           <div className="textAbout">
             <div className="textOptions">
-              <p>ajuste o tamanho da descrição</p>
+              <p>
+                <Trans text="description-change" />
+              </p>
               <div className="ballsDiv">
-                <p>pequena</p>
+                <p>
+                  <Trans text="small" />
+                </p>
                 <div
                   onClick={() => setTextSize(1)}
                   className={`balltext ${textSize == 1 ? 'active' : ''}`}
@@ -82,7 +69,9 @@ export function About() {
                   onClick={() => setTextSize(3)}
                   className={`balltext ${textSize == 3 ? 'active' : ''}`}
                 />
-                <p>grande</p>
+                <p>
+                  <Trans text="big" />
+                </p>
               </div>
             </div>
             {returnDescription()}

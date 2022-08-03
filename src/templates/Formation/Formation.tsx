@@ -2,6 +2,7 @@ import { Experience } from '../../components/Experience'
 import { FormationCard } from '../../components/FormationCard'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 import { IFormationModal } from '../../pages'
+import { Trans } from '../../components/Trans'
 
 interface IModal {
   modal: IFormationModal
@@ -59,17 +60,12 @@ export function Formation({ modal, setModal, setExpModal, expModal }: IModal) {
       <div id="formation" className="halfLine" />
       <div className="formExp">
         <div className="formationDiv">
-          <h3>Formação</h3>
+          <h3>
+            <Trans text="formation" />
+          </h3>
           <div className="formationContent">
             <p className="descriptionUser">
-              Atualmente estou cursando design gráfico e análise e
-              desenvolvimento de sistemas na Universidade Internacional, a
-              previsão da minha formação em design será em fevereiro de 2023, e
-              para análise e desenvolvimento de sistemas será em fevereiro de
-              2024, busco me aprofundar cada vez mais no mundo da tecnologia e
-              estou atraz sempre de algo mais difícil e complexo, pretendo
-              cursar uma pós graduação de engenharia de software, logo após eu
-              me formar em minhas graduações.
+              <Trans text="formation-description" />
             </p>
 
             <div className="cardsForm">

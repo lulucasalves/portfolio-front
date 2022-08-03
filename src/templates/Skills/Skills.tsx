@@ -5,6 +5,7 @@ import {
   IoIosArrowDropupCircle
 } from 'react-icons/io'
 import Image from 'next/image'
+import { Trans } from '../../components/Trans'
 
 interface IBrand {
   svg: string
@@ -43,7 +44,9 @@ export function Skills() {
       id="skills"
       className={`skillsDiv ${viewAll ? 'viewAll' : 'simplify'}`}
     >
-      <h2>Hábilidades</h2>
+      <h2>
+        <Trans text="skills" />
+      </h2>
       <div className="skillsOpt">
         <input
           onChange={(e) => setSearch(e.target.value)}
@@ -52,15 +55,23 @@ export function Skills() {
         />
         <select defaultValue="" onChange={(e) => setCategory(e.target.value)}>
           <option value="" disabled>
-            Categoria
+            <Trans text="category" />
           </option>
-          <option value="">Todas</option>
+          <option value="">
+            <Trans text="all" />
+          </option>
           <option value="frontend">Frontend</option>
           <option value="backend">Backend</option>
           <option value="mobile">Mobile</option>
-          <option value="database">Banco de dados</option>
-          <option value="framework">Framework / Biblioteca</option>
-          <option value="language">Linguagem</option>
+          <option value="database">
+            <Trans text="database" />
+          </option>
+          <option value="framework">
+            <Trans text="library" />
+          </option>
+          <option value="language">
+            <Trans text="language" />
+          </option>
         </select>
       </div>
 

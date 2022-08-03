@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from '../Button'
 import { RotateTitle } from '../RotateTitle'
+import { Trans } from '../Trans'
 
 export function HomeContent() {
   const [terminal, setTerminal] = useState('default')
@@ -24,11 +25,14 @@ export function HomeContent() {
       <header>
         <div className="overlay">
           <div className="lucasRef">
-            <p>Olá, me chamo</p>
-            <p>Lucas e sou</p>
+            <p>
+              <Trans text="hi" />
+            </p>
+            <p>
+              <Trans text="lucas" />
+            </p>
             <RotateTitle />
-
-            <Button text="Ver mais" />
+            <Button text="see-more" />
           </div>
           <div className="terminalThemes">
             <div className={`terminal ${terminal}`}>
@@ -47,33 +51,34 @@ export function HomeContent() {
                   <span className="dynamic-txts1">hello world</span>
                   <br />
                   <span className="apresentation">
-                    olá seja bem vindo(a) ao meu site, aqui você verá uma
-                    apresentação minha e dos meus trabalhos na área da
-                    tecnologia
+                    <Trans text="terminal-1" />
                   </span>
                   <br />
                   <span className="bash bash1">bash: ~$</span>{' '}
                   <span className="dynamic-txts2">ls</span>
                   <br />
                   <span className="appearMenu">
-                    sobre mim
+                    <Trans text="terminal-2" />
                     <br />
-                    habilidades
+                    <Trans text="terminal-3" />
                     <br />
-                    portfolio
+                    <Trans text="terminal-4" />
                     <br />
-                    experiencia
+                    <Trans text="terminal-5" />
                     <br />
-                    curriculo
+                    <Trans text="terminal-6" />
                     <br />
-                    contato
+                    <Trans text="terminal-7" />
                   </span>
                   <br />
                   <span className="bash bash2">bash: ~$</span>{' '}
-                  <span className="dynamic-txts3">cd sobre mim/</span>
+                  <span className="dynamic-txts3">
+                    cd <Trans text="terminal-2" />/
+                  </span>
                   <br />
                   <span className="apresentation2">
-                    aqui em baixo você vai ter uma breve descrição sobre mim \o/
+                    <Trans text="terminal-8" />
+                    \o/
                   </span>
                 </p>
               </div>

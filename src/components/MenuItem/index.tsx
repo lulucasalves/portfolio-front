@@ -1,3 +1,5 @@
+import { Trans } from "../Trans"
+
 interface IMenuList {
   name: string
   href?: string
@@ -8,7 +10,7 @@ export function MenuItem({ name, href, className }: IMenuList) {
   return (
     <li>
       <a href={href || '#'} className={className}>
-        {name}
+        <Trans text={name} />
       </a>
     </li>
   )
