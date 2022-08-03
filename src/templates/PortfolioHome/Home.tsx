@@ -7,7 +7,7 @@ import { IoExitOutline } from 'react-icons/io5'
 import { PortfolioHome } from '../../components/PortfolioHome'
 import { IModalPortfolio } from '../../pages/portfolio'
 import { MobileMenuPortfolio } from '../../components/MobileMenuPortfolio'
-import { MyLink } from '../../components/MyLink'
+import Link from 'next/link'
 
 export interface IPort {
   setState: (event: IModalPortfolio) => void
@@ -36,9 +36,9 @@ export function HomePage({ setState, setActive }: IPort) {
               </OnOutsiceClick>
               <Theme />
 
-              <MyLink href="/">
+              <Link href="/">
                 <IoExitOutline className="exitIcon" />
-              </MyLink>
+              </Link>
               <div
                 onClick={() => {
                   setMenu(!menu)

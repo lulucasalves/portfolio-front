@@ -87,7 +87,7 @@ export function ModalFormation({ state, setState }: IModalFormation) {
                     <li>
                       <Trans text="address" />: <span>{info.address}</span>
                     </li>
-                    <a href={info.mecLink} target="_blank">
+                    <a href={info.mecLink} target="_blank" rel="noreferrer">
                       <Trans text="mec-regulamentatation" />
                     </a>
                   </ul>

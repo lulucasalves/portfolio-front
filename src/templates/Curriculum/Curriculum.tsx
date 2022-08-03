@@ -72,6 +72,7 @@ export function Curriculum() {
                     : 'https://drive.google.com/file/d/1tMACjhDb0VmEf1AszK5-MQqgq-8Q_GQ9/view'
                 }
                 target="_blank"
+                rel="noreferrer"
               >
                 <MdOutlineRemoveRedEye />
                 <Trans text="visualization" />
