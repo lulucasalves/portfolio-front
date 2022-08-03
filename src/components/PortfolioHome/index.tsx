@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { PortfolioContent } from '../PortfolioContent'
-import * as jsonData from '../../data/portfolio.json'
+import jsonData from '../../data/portfolio.json'
 import { IPort } from '../../templates/PortfolioHome/Home'
 import { IModalPortfolio } from '../../pages/portfolio'
 import { Trans } from '../Trans'
@@ -126,10 +126,11 @@ export function PortfolioHome({ setState, setActive }: IPort) {
       </div>
       <div className="portfolioContent">
         {contentFilter.length
-          ? contentFilter.map((val) => {
+          ? contentFilter.map((val, i) => {
               if (val.title) {
                 return (
                   <PortfolioContent
+                    key={i}
                     image={val.image ? val.image : ''}
                     title={val.title}
                     site={val.site ? val.site : ''}
@@ -145,10 +146,11 @@ export function PortfolioHome({ setState, setActive }: IPort) {
 
               return
             })
-          : content.map((val) => {
+          : content.map((val, i) => {
               if (val.title) {
                 return (
                   <PortfolioContent
+                    key={i}
                     image={val.image ? val.image : ''}
                     title={val.title}
                     site={val.site ? val.site : ''}

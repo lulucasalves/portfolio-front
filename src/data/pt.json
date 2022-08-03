@@ -101,5 +101,27 @@
   "month": "mês",
   "months": "meses",
   "year": "ano",
-  "and": "e"
+  "and": "e",
+
+  "smurl-front": "Este projeto foi feito completamente por mim, com o objetivo de encurtar grandes links, apresentado minha hábilidades de manipulação de dados, arquitetura de dados, consumo de dados do graphql no Front-end e conhecimento em javascript em geral.",
+  "smurl-back": "Nesta aplicação Back-end foi feita exclusivamente para o projeto de Front-end, sua principal função é cadastro e login de usuário, recuperação de senha, autênticação com o Google, Facebook e Github, além de edição do usuário e manipulação das urls.",
+  "socialoff-front": "Este projeto foi criado para suprir as necessidades de download de conteúdos das redes sociais, onde não permitem fazer o download a partir dela, suas requisições demoram de 1 a 30 segundos.",
+  "socialoff-back": "A parte do Back-end deste projeto tem o objetivo de capturar a url e o tipo de rede social escolhida e fazer o trabalho de web scrapping e por fim retornar o link afim da pessoa baixar no próprio dispositivo.",
+  "arcade-front": "Este site foi construido com Javascript para mostrar habolidades com javascript canvas e criar jogos divertidos e abordar temas avançados em relação a Javascript.",
+  "gameplay-mobile": "Este aplicativo foi feito durante um evento da rocket seat na trilha de react native, criando uma aplicação completa com o Back-end dentro do Front-end com o tema de controle de jogos a partir de grupos no Discord, podendo ser utilizada offline.",
+  "serverless-back": "A aplicação serverless foi construida com a arquitetura serverless, contruída durante o curso de especialização em Nodejs, nela é possível gerar um certificado com nome, nota e id do usuário, estilizado com Handlebars.",
+  "rentalx-back": "O Rentalx é um projeto feito no curso de especialização de Nodejs da Rocketseat, criando inúmeras ações para gerenciamento de uma locadora de automóveis como proprietário do negócio ou como usuário comum.",
+  "devnews-front": "Esta aplicação foi feita somente no Front-end no curso de especialização em React da Rocketseat com autênticação com o Github, controlando o acesso do usuário, a partir do seu plano de pagamento, podendo ser de graça ou pago.",
+  "overzap-back": "O Overzap é uma automatização do Whatsapp com o objetivo de atender clientes de um restaurante de delivery a partir de mensagens e amazenando suas informações no banco de dados.",
+  "heatapp-mobile": "O Heat App é um aplicativo criado em React Native criado durante o evento da Rocketseat da NLW, seu objetivo é promover um evento de programação mostrando comentários de participantes de evento e o seu perfil de usuário autênticado com o Github.",
+  "dashgo-front": "Este projeto foi criado no curso de especialização em React da Rocketseat, ele é uma plataforma de crm que permite o usuário fazer login e cadastrar, editar e excluir seus dados.",
+  "finapi-back": "A Finapi é uma aplicação que foi feita no curso de especialização de Nodejs da Rocketseat com o objetivo de permitir com que as pessoas consigam organizar seu dinheiro a partir da api.",
+  "heatreact-front": "Este projeto foi feito no evento da Rocketseat NLW em que criava uma versão web para promoção de um evento de programação, onde é possível visualizar comentários de participantes e visualizar seu perfil de usuário.",
+  "influencerpack-front": "Este site foi feito para ajudar a promover um produto de consultoria de influencer, feito completamente com html, css e javascript.",
+  "mymoney-front": "O MyMoney é um site de controle financeiro feito durante o curso de especialização em React da Rocketseat , ele permite que os usuário possam organizar o controle financeiro a partir de tabelas de gastos e calculos automatizados de gastos e dinheiro total.",
+  "friends-back": "Esta api foi criada durante o evento NLW da Rocketseat, com o objetivo de ser uma aplicação de conexão de pessoas que possuam ou queiram ter um vinculo com outras pessoas, como uma rede social.",
+  "spotify-front": "Este site é um clone do Spotify, feito com o propósito de mostrar hábilidades com html, css e javascript.",
+  "heatnode-back": "A api Heat foi criada durante o evento NLW da Rocketseat, com o objetivo se ser integrada com o site e o aplicativo feito afim de promover um evento de programação, a api apresenta as funcionalidades de autênticação com o github e gerenciamento de mensagens enviadas pelos usuários no banco de dados.",
+  "coffeecode-front": "O Coffee&Code é um projeto que foi criado como sugestão de uma startup do ramo de lanchonetes, sendo criado totalmente em html, css e javascript focando na área do Front-end.",
+  "overfy-front": "Este site foi criado durante o evento da NLW da Rocketseat, promovendo uma agência de viagens, com tela inicial e tela de cadastro, com funcionalidades extras."
 }

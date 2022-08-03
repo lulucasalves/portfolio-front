@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { MyLink } from '../MyLink'
 import { Trans } from '../Trans'
 
 interface IButton {
@@ -7,7 +7,7 @@ interface IButton {
 
 export function ButtonColorful({ text }: IButton) {
   return (
-    <Link href="/portfolio">
+    <MyLink href="/portfolio">
       <button className="colorfulButton">
         <div className="buttonInner">
           <p>
@@ -15,6 +15,6 @@ export function ButtonColorful({ text }: IButton) {
           </p>
         </div>
       </button>
-    </Link>
+    </MyLink>
   )
 }

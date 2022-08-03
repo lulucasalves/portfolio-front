@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import { Logo } from '../../components/Logo'
-import { HomeContent } from '../../components/HomeContent'
 import { Theme } from '../../components/Theme'
 import { Lang } from '../../components/Lang'
 import OnOutsiceClick from 'react-outclick'
 import { IoExitOutline } from 'react-icons/io5'
-import Link from 'next/link'
 import { PortfolioHome } from '../../components/PortfolioHome'
 import { IModalPortfolio } from '../../pages/portfolio'
 import { MobileMenuPortfolio } from '../../components/MobileMenuPortfolio'
+import { MyLink } from '../../components/MyLink'
 
 export interface IPort {
   setState: (event: IModalPortfolio) => void
@@ -37,9 +36,9 @@ export function HomePage({ setState, setActive }: IPort) {
               </OnOutsiceClick>
               <Theme />
 
-              <Link href="/">
+              <MyLink href="/">
                 <IoExitOutline className="exitIcon" />
-              </Link>
+              </MyLink>
               <div
                 onClick={() => {
                   setMenu(!menu)

@@ -102,5 +102,27 @@
   "month": "month",
   "months": "months",
   "year": "year",
-  "and": "and"
+  "and": "and",
+
+  "smurl-front": "This project was done completely by me, with the aim of shortening large links, presented my feasibilities of data manipulation, data architecture, data consumption of graphql in the Front-end and knowledge in javascript in general.",
+  "smurl-back": "In this Back-end application was made exclusively for the Front-end project, its main function is user registration and login, password recovery, authentication with Google, Facebook and Github, as well as user editing and manipulation of urls.",
+  "socialoff-front": "This project was created to meet the needs of downloading content from social networks, where they do not allow to download from it, their requests take 1 to 30 seconds.",
+  "socialoff-back": "The back-end part of this project is intended to capture the url and type of social network chosen and do the web scrapping work and finally return the link in order for the person to download on the device itself.",
+  "arcade-front": "This site was built with Javascript to show habolities with javascript canvas and create fun games and address advanced themes in relation to Javascript.",
+  "gameplay-mobile": "This app was made during a rocket seat event on the react native track, creating a complete application with the Back end within the Front-end with the theme of game control from groups in Discord, and can be used offline.",
+  "serverless-back": "The serverless application was built with serverless architecture, built during the specialization course in Nodejs, it is possible to generate a certificate with user name, note and id, styled with Handlebars.",
+  "rentalx-back": "Rentalx is a project done in rocketseat's Nodejs specialization course, creating numerous actions to manage a car rental company as a business owner or as an ordinary user.",
+  "devnews-front": "This application was made only on the Front end in rocketseat's React specialization course with github authentication, controlling user access from your payment plan, and can be free or paid for.",
+  "overzap-back": "Overzap is an automation of Whatsapp with the aim of serving customers of a delivery restaurant from messages and amazenando their information in the database.",
+  "heatapp-mobile": "Heat App is an app created in React Native created during the NLW Rocketseat event, its goal is to promote a programming event showing comments from event attendees and their authentic user profile with Github.",
+  "dashgo-front": "This project was created in Rocketseat's React specialization course, it is a crm platform that allows the user to log in and register, edit and delete their data.",
+  "finapi-back": "Finapi is an application that was made in rocketseat's Nodejs specialization course with the aim of allowing people to organize their money from the api.",
+  "heatreact-front": "This project was done at the Rocketseat NLW event in which i created a web version to promote a programming event, where you can view participant comments and view your user profile.",
+  "influencerpack-front": "This site was made to help promote an influencer consulting product, made entirely with html, css and javascript.",
+  "mymoney-front": "MyMoney is a financial control site made during Rocketseat's React specialization course, it allows users to organize financial control from spending tables and automated calculations of spending and total money.",
+  "friends-back": "This api was created during rocketseat's NLW event, with the goal of being a connecting application for people who own or want to have a link with other people, such as a social network.",
+  "spotify-front": "This site is a clone of Spotify, made for the purpose of showing feasibilities with html, css and javascript.",
+  "heatnode-back": "The Heat api was created during rocketseat's NLW event, with the goal of being integrated with the website and the application made in order to promote a programming event, the api presents the functionalities of authentication with github and management of messages sent by users in the database.",
+  "coffeecode-front": "Coffee&Code is a project that was created as a suggestion of a startup in the cafeteria business, being created entirely in html, css and javascript focusing on the front-end area.",
+  "overfy-front": "This site was created during rocketseat's NLW event, promoting a travel agency, with home screen and registration screen, with extra features."
 }

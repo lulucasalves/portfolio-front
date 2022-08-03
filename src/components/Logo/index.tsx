@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { MyLink } from '../MyLink'
 
 interface ILogo {
   text: string
@@ -6,8 +6,8 @@ interface ILogo {
 
 export function Logo({ text }: ILogo) {
   return (
-    <Link href="/">
+    <MyLink href="/">
       <h3 className="logo">{text}</h3>
-    </Link>
+    </MyLink>
   )
 }

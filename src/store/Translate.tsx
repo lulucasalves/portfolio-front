@@ -1,8 +1,8 @@
-import { useContext } from 'react'
+import { ReactElement, useContext } from 'react'
 import { IntlProvider } from 'react-intl'
 
-import * as enMessages from '../data/en.json'
-import * as ptMessages from '../data/pt.json'
+import enMessages from '../data/en.json'
+import ptMessages from '../data/pt.json'
 import { IMyContext, MyContext } from './config'
 
 const messages = {
@@ -10,11 +10,20 @@ const messages = {
   en: enMessages
 }
 
-export function LangProvider({ children }: any) {
+interface ILangProvider {
+  children: ReactElement
+}
+
+export function LangProvider({ children }: ILangProvider) {
   const { lang } = useContext<IMyContext>(MyContext)
 
   return (
-    <IntlProvider locale={lang || 'pt'} messages={messages[lang]}>
+    <IntlProvider
+      locale={lang || 'pt'}
+      messages={
+        lang != undefined ? messages[lang as keyof typeof messages] : {}
+      }
+    >
       {children}
     </IntlProvider>
   )

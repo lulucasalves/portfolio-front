@@ -92,11 +92,13 @@ export function ModalPortfolio({ active, state, setState, setActive }: IModal) {
                   />
                 )}
                 <p className="categoriesP">
-                  {state.search.map((res) => {
+                  {state.search.map((res, i) => {
                     return <>{` ${res} /`}</>
                   })}
                 </p>
-                <p>{state.description}</p>
+                <p>
+                  <Trans text={state.description} />
+                </p>
                 <div className="buttonsGroupP">
                   <button onClick={() => getCode()}>
                     <Trans text="code" />

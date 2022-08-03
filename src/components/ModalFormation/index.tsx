@@ -7,7 +7,7 @@ interface IModalFormation {
   state: IFormationModal
   setState: (event: IFormationModal) => void
 }
-import * as formData from '../../data/formation.json'
+import formData from '../../data/formation.json'
 import { Trans } from '../Trans'
 
 export function ModalFormation({ state, setState }: IModalFormation) {
