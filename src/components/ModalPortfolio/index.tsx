@@ -78,8 +78,9 @@ export function ModalPortfolio({ active, state, setState, setActive }: IModal) {
               <IoCloseOutline
                 className="closeIcon"
                 onClick={() => {
-                  setActive(false)
                   setState(defaultState)
+                  setActive(false)
+                  setAppear(false)
                 }}
               />
               <p className="title">{title}</p>
