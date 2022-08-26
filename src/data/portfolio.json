@@ -38,6 +38,14 @@
     "description": "smurl-back"
   },
   {
+    "title": "Hypesoft - Front",
+    "image": "https://github.com/lulucasalves/hypesoft-front/blob/main/.github/image-1.png?raw=true",
+    "code": "https://github.com/lulucasalves/hypesoft-front",
+    "search": ["typescript", "nextjs", "test", "storybook", "docker", "react"],
+    "description": "hypesoft-front",
+    "site": "https://hypesoft-lucas.vercel.app/"
+  },
+  {
     "title": "SocialOff - Front",
     "image": "https://github.com/lulucasalves/socialoff-front/blob/main/.github/image-1.png?raw=true",
     "code": "https://github.com/lulucasalves/socialoff-front",
@@ -56,6 +64,14 @@
     ],
     "gif": "https://github.com/lulucasalves/socialoff-front/blob/main/.github/git-1.gif?raw=true",
     "description": "socialoff-front"
+  },
+  {
+    "title": "MKS - Front",
+    "image": "https://github.com/lulucasalves/mks-front/blob/main/.github/image-1.png?raw=true",
+    "code": "https://github.com/lulucasalves/mks-front",
+    "search": ["typescript", "nextjs", "test", "docker", "react"],
+    "description": "mks-front",
+    "site": "https://mks-lucas.vercel.app/"
   },
   {
     "title": "SocialOff - Back",

@@ -124,5 +124,7 @@
   "spotify-front": "This site is a clone of Spotify, made for the purpose of showing feasibilities with html, css and javascript.",
   "heatnode-back": "The Heat api was created during rocketseat's NLW event, with the goal of being integrated with the website and the application made in order to promote a programming event, the api presents the functionalities of authentication with github and management of messages sent by users in the database.",
   "coffeecode-front": "Coffee&Code is a project that was created as a suggestion of a startup in the cafeteria business, being created entirely in html, css and javascript focusing on the front-end area.",
-  "overfy-front": "This site was created during rocketseat's NLW event, promoting a travel agency, with home screen and registration screen, with extra features."
+  "overfy-front": "This site was created during rocketseat's NLW event, promoting a travel agency, with home screen and registration screen, with extra features.",
+  "hypesoft-front": "This project is a challenge from Hypesoft, with the objective of testing the developer's front-end skills, in which it is necessary to develop a company presentation according to the proposed design with nextjs and styled components.",
+  "mks-front": "This ecommerce site is a front-end challenge from the company MKS development of systems"
 }
