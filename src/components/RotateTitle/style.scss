@@ -42,7 +42,7 @@
     animation-delay: 1s;
 
     &:after {
-      content: 'frontend dev';
+      content: 'Python dev';
       animation: rotateAfter 40s infinite;
       animation-delay: 1s;
     }
@@ -122,43 +122,43 @@
 
 @keyframes rotateAfter {
   0% {
-    content: 'Fullstack dev';
+    content: 'Software dev';
   }
 
   5% {
-    content: 'Fullstack dev';
+    content: 'Software dev';
   }
 
   25% {
-    content: 'Fullstack dev';
+    content: 'Software dev';
   }
 
   30% {
-    content: 'Fullstack dev';
+    content: 'Software dev';
   }
 
   35% {
-    content: 'Backend dev';
+    content: 'Javascript dev';
   }
 
   50% {
-    content: 'Backend dev';
+    content: 'Javascript dev';
   }
 
   55% {
-    content: 'Backend dev';
+    content: 'Javascript dev';
   }
 
   60% {
-    content: 'Frontend dev';
+    content: 'Python dev';
   }
 
   75% {
-    content: 'Frontend dev';
+    content: 'Python dev';
   }
 
   80% {
-    content: 'Frontend dev';
+    content: 'Python dev';
   }
 
   85% {

@@ -1,6 +1,6 @@
 {
   "about-1": "Meu nome é Lucas, tenho 19 anos e sou estudante de análise e desenvolvimento de sistemas e design gráfico.",
-  "about-2": "Atualmente trabalho como desenvolvedor frontend na empresa ZB Negócios digitais (estágio) e como freelancer atuo como desenvolvedor fullstack, minha stack é baseada nas linguagens Javascript e Python.",
+  "about-2": "Atualmente trabalho como desenvolvedor frontend na empresa ZB Negócios digitais (estágio) e como freelancer atuo como desenvolvedor de software, minha stack é baseada nas linguagens Javascript e Python.",
   "about-3": "Estudando na prática frameworks de Javascript e Python, data science,data analytics, desenvolvimento de api, desenvolvimento mobile e arquitetura de sistemas. Focando em habilidades para me tornar um desenvolvedor pleno.",
   "about-4": "Além de habilidades técnicas, estou me aperfeiçoando nos idioma Inglês e Alemão.",
   "about-5": "Curioso pela tecnologia desde cedo, às vezes passo o tempo fazendo projetos em arduino usando C++ e participando de desafios de programação.",
@@ -29,7 +29,7 @@
   "thanks": "< Obrigado pela visita >",
 
   "formation": "Formação",
-  "formation-description": "Atualmente estou cursando design gráfico e análise e desenvolvimento de sistemas na Universidade Internacional, a previsão da minha formação em design será em fevereiro de 2023, e para análise e desenvolvimento de sistemas será em fevereiro de 2024, busco me aprofundar cada vez mais no mundo da tecnologia e estou atraz sempre de algo mais difícil e complexo, pretendo cursar uma pós graduação de engenharia de software, logo após eu me formar em minhas graduações.",
+  "formation-description": "Atualmente estou cursando design gráfico e análise e desenvolvimento de sistemas na Universidade Internacional, a previsão da minha formação em design será em fevereiro de 2023, e para análise e desenvolvimento de sistemas será em fevereiro de 2024, busco me aprofundar cada vez mais no mundo da tecnologia e estou atraz sempre de algo mais difícil e complexo, pretendo cursar uma pós graduação em engenharia de software, logo após eu me formar em minhas graduações.",
   "graphic-design": "Design gráfico",
   "home": "Início",
   "about": "Sobre mim",
@@ -55,7 +55,7 @@
   "language": "Linguagem",
   "see-more": "Ver mais",
   "more-projects": "Mais projetos",
-  "experience-description": "Estou fazendo estágio na empresa ZB Negócios Digitais como desenvolvedor frontend, hoje em dia sou desenvolvedor fullstack python e javascript como freelancer, também já trabalhei com design e marketing com 14 até 17 anos.",
+  "experience-description": "Estou fazendo estágio na empresa ZB Negócios Digitais como desenvolvedor frontend, hoje em dia sou desenvolvedor de software python e javascript como freelancer, também já trabalhei com design e marketing com 14 até 17 anos.",
   "from": "De",
   "to": "Até",
   "responsible": "Responsábilidades",
