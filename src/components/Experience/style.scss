@@ -16,6 +16,8 @@
     align-items: top;
     justify-content: space-between;
 
+    flex-direction: row-reverse;
+
     .descriptionUser {
       text-align: left;
       margin-left: 50px;

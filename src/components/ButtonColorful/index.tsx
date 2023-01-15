@@ -7,14 +7,14 @@ interface IButton {
 
 export function ButtonColorful({ text }: IButton) {
   return (
-    <Link href="/portfolio">
-      <button className="colorfulButton">
+    <Link href="https://github.com/lulucasalves">
+      <a><button className="colorfulButton">
         <div className="buttonInner">
           <p>
             <Trans text={text} />
           </p>
         </div>
-      </button>
+      </button></a>
     </Link>
   )
 }

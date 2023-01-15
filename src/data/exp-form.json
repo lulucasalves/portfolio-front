@@ -3,7 +3,7 @@
     {
       "title": "Desenvolvedor Frontend",
       "company": "ZB Negócios Digitais",
-      "image": "https://images.pexels.com/photos/2078774/pexels-photo-2078774.jpeg?auto:compress&cs:tinysrgb&dpr:2&h:650&w:940",
+      "image": "/companys/zb.png",
       "init": "10/2021",
       "finish": "atualmente",
       "id": "1"
@@ -17,7 +17,8 @@
       "university": "Uninter",
       "image": "https://images.pexels.com/photos/5582867/pexels-photo-5582867.jpeg?auto:compress&cs:tinysrgb&dpr:2&h:650&w:940",
       "init": "02/2021",
-      "finish": "02/2023"
+      "finish": "02/2023", 
+      "credential": ""
     },
     {
       "id": "2",

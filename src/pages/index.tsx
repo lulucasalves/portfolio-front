@@ -25,7 +25,7 @@ export default function Home() {
     card: 1
   })
   const [modalExperience, setModalExperience] = useState<IFormationModal>({
-    active: true,
+    active: false,
     card: 1
   })
   const [width, setWidth] = useState(1200)

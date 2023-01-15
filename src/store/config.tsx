@@ -14,8 +14,8 @@ export interface IMyContext {
 }
 
 export function Provider({ children }: IContext) {
-  const [theme, setTheme] = useState('dark')
-  const [lang, setLang] = useState('en')
+  const [theme, setTheme] = useState('light')
+  const [lang, setLang] = useState('pt')
 
   function changeTheme(type: string) {
     localStorage.setItem('theme', type)

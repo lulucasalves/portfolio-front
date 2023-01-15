@@ -9,6 +9,7 @@ interface IExperience {
   period: string
   image: string
   setModal: (event: IFormationModal) => void
+  link: string
 }
 
 export function ExperienceCard({
@@ -16,8 +17,7 @@ export function ExperienceCard({
   image,
   company,
   period,
-  card,
-  setModal
+  link,
 }: IExperience) {
   return (
     <div className="cardexp">
@@ -40,10 +40,10 @@ export function ExperienceCard({
             {period}
           </p>
         </div>
-        <button onClick={() => setModal({ active: true, card: card })}>
+        <button onClick={() => window.open(link, '_blank')}>
           <Trans text="about-button" />
         </button>
       </div>
-    </div>
+    </div >
   )
 }

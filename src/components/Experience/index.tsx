@@ -1,14 +1,16 @@
-import { useIntl } from 'react-intl'
+import { FormationCard } from '../../components/FormationCard'
+import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 import { IFormationModal } from '../../pages'
+import { Trans } from '../../components/Trans'
 import { ExperienceCard } from '../ExperienceCard'
-import { Trans } from '../Trans'
+import { useIntl } from 'react-intl'
 
-interface IExperienceModal {
+interface IModal {
   modal: IFormationModal
   setModal: (event: IFormationModal) => void
 }
 
-export function Experience({ modal, setModal }: IExperienceModal) {
+export function Experience({ modal, setModal, }: IModal) {
   const { formatMessage } = useIntl()
   const monthT = formatMessage({ id: 'month' })
   const monthsT = formatMessage({ id: 'months' })
@@ -30,53 +32,97 @@ export function Experience({ modal, setModal }: IExperienceModal) {
       const year = parseInt(String(total / 12))
       const months = parseInt(String(total - year * 12))
 
-      return `${year} ${year > 1 ? yearsT : yearT} ${andT} ${months} ${
-        months > 1 ? monthsT : monthT
-      }`
+      return `${year} ${year > 1 ? yearsT : yearT} ${andT} ${months} ${months > 1 ? monthsT : monthT
+        }`
     }
 
     return `${total} ${total > 1 ? monthsT : monthT}`
   }
 
+  function returnCard() {
+    if (modal.card === 2) {
+      return (
+        <ExperienceCard
+          link='https://www.linkedin.com/company/zbnegocios'
+          company='experience-2'
+          period={`11 ${monthsT}`}
+          title="experience-1"
+          image='/companys/zb.png'
+          setModal={setModal}
+          card={2}
+        />
+      )
+    } else if (modal.card === 1) {
+      return (
+        <ExperienceCard
+          link='https://www.linkedin.com/company/hypesoft'
+          period={getPeriod('2022-09-15')}
+          company='experience-2-2'
+          title="experience-1-2"
+          image='/companys/hypesoft.jpeg'
+          setModal={setModal}
+          card={1}
+        />
+      )
+    }
+  }
+
+  function prevCard() {
+    if (modal.card > 1) {
+      return modal.card - 1
+    }
+
+    return modal.card
+  }
+
+  function nextCard() {
+    if (modal.card < 2) {
+      return modal.card + 1
+    }
+    return modal.card
+  }
+
   return (
-    <div className="experienceDiv">
-      <h3>
-        <Trans text="experience" />
-      </h3>
-      <div className="experienceContent">
-        <div className="cardsExp">
-          <div className="cardFilter">
-            <select defaultValue="de">
-              <option value="de" disabled>
-                <Trans text="from" />:
-              </option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
-            </select>
-            <select defaultValue="até">
-              <option value="até" disabled>
-                <Trans text="to" />:
-              </option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
-            </select>
-          </div>
-          <div className="selectCards">
-            <ExperienceCard
-              title="frontend"
-              company="experience-2"
-              image="/companys/zb.png"
-              period={getPeriod('2021-10-01')}
-              setModal={() => setModal({ card: modal.card, active: true })}
-              card={2}
-            />
+    <div className="formExp">
+      <div className="formationDiv experienceDiv">
+        <h3>
+          <Trans text="experience" />
+        </h3>
+        <div className="formationContent experienceContent">
+          <p className="descriptionUser">
+            <Trans text="experience-description" />
+          </p>
+
+          <div className="cardsForm">
+            <div className="cardsSection">
+              <IoIosArrowBack
+                className={`${modal.card < 2 && 'not-active'}`}
+                onClick={() =>
+                  setModal({ active: false, card: prevCard() || 1 })
+                }
+              />
+              {returnCard()}
+              <IoIosArrowForward
+                className={`${modal.card > 1 && 'not-active'}`}
+                onClick={() =>
+                  setModal({ active: false, card: nextCard() || 1 })
+                }
+              />
+            </div>
+            <div className="statusFormation">
+              <div
+                onClick={() => setModal({ active: false, card: 1 })}
+                className={`ball ${modal.card === 1 && 'active'}`}
+              />
+              <div
+                onClick={() => setModal({ active: false, card: 2 })}
+                className={`ball ${modal.card === 2 && 'active'}`}
+              />
+            </div>
           </div>
         </div>
-
-        <p className="descriptionUser">
-          <Trans text="experience-description" />
-        </p>
       </div>
     </div>
+
   )
 }

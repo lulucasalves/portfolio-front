@@ -1,7 +1,7 @@
 {
-  "about-1": "My name is Lucas, I'm 19 years old and I'm a student of systems analysis and development and graphic design.",
-  "about-2": "Currently Working as a frontend developer at ZB Digital Business (internement) and as a freelancer I work as a software developer, my stack is based on javascript and python languages.",
-  "about-3": "Studying frameworks and languages of Javascript and Python, data science, data analytics, api development, mobile development and systems architecture. Focusing on skills to become a senior developer.",
+  "about-1": "My name is Lucas, I'm 19 years old and I'm graduated in graphic design and studying systems analysis and development.",
+  "about-2": "I currently work as a fullstack developer at Hypesoft and as a freelancer I work as a software developer, my stack is based on Javascript and Python languages.",
+  "about-3": "Studying in practice Javascript and Python frameworks, devops, api development, mobile development and systems architecture. Focusing on skills to become a senior developer.",
   "about-4": "In addition to technical skills, I'm improving myself in the English and German languages.",
   "about-5": "Curious about technology from an early age, I sometimes spend time doing arduino projects using C++ and participating in programming challenges.",
 
@@ -29,7 +29,7 @@
   "thanks": "< Thanks for visiting >",
 
   "formation": "Formation",
-  "formation-description": "I'm currently studying graphic design and systems analysis and development at the International University Center, the prediction of my design course will be in February 2023, and for systems analysis and development will be in February 2024, I seek to delve deeper and deeper into the world of technology and I'm always behind something more difficult and complex,  I intend to attend a post-graduate degree in software engineering, right after I graduated in my undergraduate studies.",
+  "formation-description": "I am currently graduated in graphic design and I am studying systems analysis and development at the International University, my graduation in systems analysis and development is scheduled for February 2024, I seek to delve more and more into the world of technology and I am always behind something more difficult and complex, I intend to attend a postgraduate course in software engineering, right after I graduate in systems analysis and development.",
   "graphic-design": "Graphic Design",
   "analysis-system": "Systems Analysis",
   "home": "Home",
@@ -56,7 +56,7 @@
   "language": "Language",
   "see-more": "See more",
   "more-projects": "More projects",
-  "experience-description": "I'm doing internship at ZB Digital Business as a frontend developer, nowadays I'm a software python developer and javascript as a freelancer, I have also worked with design and marketing with 14 to 17 years.",
+  "experience-description": "I'm working at Hypesoft company as a fullstack developer, nowadays I'm a python and javascript software developer as a freelancer, and I did an internship at ZB Negócios as a frontend developer.",
   "from": "From",
   "to": "To",
   "responsible": "Responsibilities",
@@ -69,7 +69,7 @@
 
   "finish": "End",
   "exit": "Exit",
-  "experience-1": "Frontend Developer - Internship",
+  "experience-1": "Frontend Developer",
   "experience-2": "ZB Digital Business",
   "experience-3": "Uses for features in the function:",
   "experience-4": "Responsible for creating HTML and React screens, api integration and javascript system development",
@@ -78,6 +78,12 @@
   "design-course": "Higher education - Graphic design",
   "analist-course": "Higher education - Analysis and development of systems",
   "university-center": "International University Center",
+
+  "experience-1-2": "Fullstack Developer",
+  "experience-2-2": "Hypesoft",
+  "experience-4-2": "Responsible for creating HTML and React screens, api integration and javascript system development",
+  "experience-5-2": "About the company",
+  "experience-6-2": "ZB Digital Business is a network of companies that work various types of branches within the digital world, such as: marketing, transaction systems and performance analysis.",
 
   "institute": "Institution",
   "teach-institute": "Educational institution",

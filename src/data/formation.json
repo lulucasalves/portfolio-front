@@ -8,9 +8,10 @@
     "mecLink": "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTQ5MQ",
     "courseYears": "2",
     "courseTime": "1946",
-    "status": false,
+    "status": true,
     "init": "02/2021",
-    "finish": "02/2023"
+    "finish": "02/2023",
+    "credential": "https://drive.google.com/file/d/1vy-R2gyJ8cFzxFk896JZPTQIc1Hd43FR/view?usp=sharing"
   },
   "ads": {
     "course": "analist-course",
@@ -23,6 +24,7 @@
     "courseTime": "2145",
     "status": false,
     "init": "06/2021",
-    "finish": "02/2024"
+    "finish": "02/2024", 
+    "credential": ""
   }
 }

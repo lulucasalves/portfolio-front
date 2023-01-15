@@ -55,22 +55,14 @@ export function Curriculum() {
             </p>
             <div className="buttons">
               <a
-                href={
-                  lang === 'en'
-                    ? 'https://github.com/lulucasalves/portfolio-front/raw/7e173da865f1fc7d1efba8ab79c71d5c8b12e2c9/.github/Curriculum%20-%20Lucas%20(English).pdf'
-                    : 'https://github.com/lulucasalves/portfolio-front/raw/7e173da865f1fc7d1efba8ab79c71d5c8b12e2c9/.github/Curriculum%20-%20Lucas%20(Portuguese).pdf'
-                }
+                href='https://github.com/lulucasalves/portfolio-front/raw/7e173da865f1fc7d1efba8ab79c71d5c8b12e2c9/.github/curriculum.pdf'
               >
                 <MdOutlineFileDownload />
                 <Trans text="download" />
               </a>
 
               <a
-                href={
-                  lang !== 'en'
-                    ? 'https://drive.google.com/file/d/1t5MLR5n9jbQAFBLeZBW8bhsKeM90ORuu/view'
-                    : 'https://drive.google.com/file/d/1tMACjhDb0VmEf1AszK5-MQqgq-8Q_GQ9/view'
-                }
+                href='https://drive.google.com/file/d/1giw8dguR_m68BaPVCBcPupDQ71AKl3yv/view?usp=sharing'
                 target="_blank"
                 rel="noreferrer"
               >

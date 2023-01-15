@@ -23,6 +23,7 @@ export function ModalFormation({ state, setState }: IModalFormation) {
     mecLink: '',
     courseYears: '',
     courseTime: '',
+    credential: '',
     status: false
   }
 
@@ -125,10 +126,8 @@ export function ModalFormation({ state, setState }: IModalFormation) {
                       <Trans text="finish-date" />: <span>{info.finish}</span>
                     </li>
                     <div className="groupButtons">
-                      <button type="button" disabled={!info.status}>
-                        <Trans text="curriculum-grade" />
-                      </button>
                       <button
+                        onClick={() => window.open(info.credential, '_blank')}
                         type="button"
                         style={{ marginLeft: '15px' }}
                         disabled={!info.status}

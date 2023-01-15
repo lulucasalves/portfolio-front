@@ -1,7 +1,7 @@
 {
-  "about-1": "Meu nome é Lucas, tenho 19 anos e sou estudante de análise e desenvolvimento de sistemas e design gráfico.",
-  "about-2": "Atualmente trabalho como desenvolvedor frontend na empresa ZB Negócios digitais (estágio) e como freelancer atuo como desenvolvedor de software, minha stack é baseada nas linguagens Javascript e Python.",
-  "about-3": "Estudando na prática frameworks de Javascript e Python, data science,data analytics, desenvolvimento de api, desenvolvimento mobile e arquitetura de sistemas. Focando em habilidades para me tornar um desenvolvedor pleno.",
+  "about-1": "Meu nome é Lucas, tenho 19 anos e sou graduado em design gráfico e estudante de análise e desenvolvimento de sistemas.",
+  "about-2": "Atualmente trabalho como desenvolvedor fullstack na empresa Hypesoft e como freelancer atuo como desenvolvedor de software, minha stack é baseada nas linguagens Javascript e Python.",
+  "about-3": "Estudando na prática frameworks de Javascript e Python, devops, desenvolvimento de api, desenvolvimento mobile e arquitetura de sistemas. Focando em habilidades para me tornar um desenvolvedor senior.",
   "about-4": "Além de habilidades técnicas, estou me aperfeiçoando nos idioma Inglês e Alemão.",
   "about-5": "Curioso pela tecnologia desde cedo, às vezes passo o tempo fazendo projetos em arduino usando C++ e participando de desafios de programação.",
 
@@ -29,7 +29,7 @@
   "thanks": "< Obrigado pela visita >",
 
   "formation": "Formação",
-  "formation-description": "Atualmente estou cursando design gráfico e análise e desenvolvimento de sistemas na Universidade Internacional, a previsão da minha formação em design será em fevereiro de 2023, e para análise e desenvolvimento de sistemas será em fevereiro de 2024, busco me aprofundar cada vez mais no mundo da tecnologia e estou atraz sempre de algo mais difícil e complexo, pretendo cursar uma pós graduação em engenharia de software, logo após eu me formar em minhas graduações.",
+  "formation-description": "Atualmente sou graduado em design gráfico e estou estudando análise e desenvolvimento de sistemas na Universidade Internacional, a previsão da minha formação em análise e desenvolvimento de sistemas será em fevereiro de 2024, busco me aprofundar cada vez mais no mundo da tecnologia e estou atraz sempre de algo mais difícil e complexo, pretendo cursar uma pós graduação em engenharia de software, logo após eu me formar em análise e desenvolvimento de sistemas.",
   "graphic-design": "Design gráfico",
   "home": "Início",
   "about": "Sobre mim",
@@ -55,7 +55,7 @@
   "language": "Linguagem",
   "see-more": "Ver mais",
   "more-projects": "Mais projetos",
-  "experience-description": "Estou fazendo estágio na empresa ZB Negócios Digitais como desenvolvedor frontend, hoje em dia sou desenvolvedor de software python e javascript como freelancer, também já trabalhei com design e marketing com 14 até 17 anos.",
+  "experience-description": "Estou trabalhando na empresa Hypesoft como desenvolvedor fullstack, hoje em dia sou desenvolvedor de software python e javascript como freelancer, e fiz estágio na ZB negócios como desenvolvedor frontend.",
   "from": "De",
   "to": "Até",
   "responsible": "Responsábilidades",
@@ -69,7 +69,7 @@
 
   "finish": "Final",
   "exit": "Sair",
-  "experience-1": "Desenvolvedor Frontend - Estágio",
+  "experience-1": "Desenvolvedor Frontend",
   "experience-2": "ZB Negócios Digitais",
   "experience-3": "Hábilidades utilizadas na função:",
   "experience-4": "Responsável pela criação de telas em HTML e React, integração de apis e desenvolvimento de sistemas em Javascript",
@@ -102,6 +102,13 @@
   "months": "meses",
   "year": "ano",
   "and": "e",
+
+  "experience-1-2": "Desenvolvedor Fullstack",
+  "experience-2-2": "Hypesoft",
+  "experience-3-2": "Hábilidades utilizadas na função:",
+  "experience-4-2": "Responsável pela criação de telas em HTML e React, integração de apis e desenvolvimento de sistemas em Javascript",
+  "experience-5-2": "Sobre a empresa",
+  "experience-6-2": "A ZB Negócios Digitais é uma rede de empresas que trabalha vários tipos de ramos dentro do mundo digital, como: marketing, sistemas de transações e análise de desempenho.",
 
   "smurl-front": "Este projeto foi feito completamente por mim, com o objetivo de encurtar grandes links, apresentado minha hábilidades de manipulação de dados, arquitetura de dados, consumo de dados do graphql no Front-end e conhecimento em javascript em geral.",
   "smurl-back": "Nesta aplicação Back-end foi feita exclusivamente para o projeto de Front-end, sua principal função é cadastro e login de usuário, recuperação de senha, autênticação com o Google, Facebook e Github, além de edição do usuário e manipulação das urls.",

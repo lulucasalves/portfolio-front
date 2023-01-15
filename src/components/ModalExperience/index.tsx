@@ -8,6 +8,7 @@ interface IModalFormation {
   setState: (event: IFormationModal) => void
 }
 
+
 export function ModalExperience({ state, setState }: IModalFormation) {
   const [appear, setAppear] = useState<boolean>(false)
 
@@ -20,6 +21,7 @@ export function ModalExperience({ state, setState }: IModalFormation) {
       setState({ card: state.card, active: false })
     }
   }, [appear])
+
 
   return (
     <div>
@@ -36,15 +38,15 @@ export function ModalExperience({ state, setState }: IModalFormation) {
                 onClick={() => setState({ card: state.card, active: false })}
               />
               <p className="title">
-                <Trans text="experience-1" />
+                <Trans text={`experience-1${state.card === 1 ? '-2' : ''}`} />
               </p>
               <p className="subtitle">
-                <Trans text="experience-2" />
+                <Trans text={`experience-2${state.card === 1 ? '-2' : ''}`} />
               </p>
 
               <div className="content">
                 <p className="category">
-                  <Trans text="experience-3" />
+                  <Trans text={`experience-3`} />
                 </p>
                 <p>
                   React, Javascript, React Native, HTML, CSS, Jquery e Api Rest
@@ -54,14 +56,14 @@ export function ModalExperience({ state, setState }: IModalFormation) {
                   <Trans text="responsible" />:
                 </p>
                 <p>
-                  <Trans text="experience-4" />
+                  <Trans text={`experience-4${state.card === 1 ? '-2' : ''}`} />
                 </p>
                 <br />
                 <p className="category">
-                  <Trans text="experience-5" />:
+                  <Trans text={`experience-5${state.card === 1 ? '-2' : ''}`} />:
                 </p>
                 <p>
-                  <Trans text="experience-6" />
+                  <Trans text={`experience-6${state.card === 1 ? '-2' : ''}`} />
                 </p>
                 <br />
                 <div className="timeGroup">

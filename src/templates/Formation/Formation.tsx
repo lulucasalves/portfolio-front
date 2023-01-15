@@ -12,6 +12,7 @@ interface IModal {
 }
 
 export function Formation({ modal, setModal, setExpModal, expModal }: IModal) {
+
   function returnCard() {
     if (modal.card === 1) {
       return (
