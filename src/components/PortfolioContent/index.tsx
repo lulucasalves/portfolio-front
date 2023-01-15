@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { BsBoxArrowUpRight, BsCodeSlash, BsGithub } from 'react-icons/bs'
-import { IModalPortfolio } from '../../pages/portfolio'
+import { IModalPortfolio } from '../../pages/icnvifnsdiofnsdoifnisfinsdoifnids'
 import { Trans } from '../Trans'
 
 export interface IPortfolioContent {

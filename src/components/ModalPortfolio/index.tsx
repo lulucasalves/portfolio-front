@@ -1,7 +1,7 @@
 import { IoCloseOutline } from 'react-icons/io5'
 import OnOutsiceClick from 'react-outclick'
 import { useEffect, useState } from 'react'
-import { IModalPortfolio } from '../../pages/portfolio'
+import { IModalPortfolio } from '../../pages/icnvifnsdiofnsdoifnisfinsdoifnids'
 import { BsBoxArrowUpRight } from 'react-icons/bs'
 import { Trans } from '../Trans'
 import Image from 'next/image'

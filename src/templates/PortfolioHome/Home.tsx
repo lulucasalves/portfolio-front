@@ -5,7 +5,7 @@ import { Lang } from '../../components/Lang'
 import OnOutsiceClick from 'react-outclick'
 import { IoExitOutline } from 'react-icons/io5'
 import { PortfolioHome } from '../../components/PortfolioHome'
-import { IModalPortfolio } from '../../pages/portfolio'
+import { IModalPortfolio } from '../../pages/icnvifnsdiofnsdoifnisfinsdoifnids'
 import { MobileMenuPortfolio } from '../../components/MobileMenuPortfolio'
 import Link from 'next/link'
 

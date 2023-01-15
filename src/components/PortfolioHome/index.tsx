@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { PortfolioContent } from '../PortfolioContent'
 import * as jsonData from '../../data/portfolio.json'
 import { IPort } from '../../templates/PortfolioHome/Home'
-import { IModalPortfolio } from '../../pages/portfolio'
+import { IModalPortfolio } from '../../pages/icnvifnsdiofnsdoifnisfinsdoifnids'
 import { Trans } from '../Trans'
 import { useIntl } from 'react-intl'
 
@@ -127,45 +127,45 @@ export function PortfolioHome({ setState, setActive }: IPort) {
       <div className="portfolioContent">
         {contentFilter.length
           ? contentFilter.map((val, i) => {
-              if (val.title) {
-                return (
-                  <PortfolioContent
-                    key={i}
-                    image={val.image ? val.image : ''}
-                    title={val.title}
-                    site={val.site ? val.site : ''}
-                    code={val.code}
-                    search={val.search}
-                    setState={setState}
-                    setActive={setActive}
-                    description={val.description}
-                    gif={val.gif || ''}
-                  />
-                )
-              }
+            if (val.title) {
+              return (
+                <PortfolioContent
+                  key={i}
+                  image={val.image ? val.image : ''}
+                  title={val.title}
+                  site={val.site ? val.site : ''}
+                  code={val.code}
+                  search={val.search}
+                  setState={setState}
+                  setActive={setActive}
+                  description={val.description}
+                  gif={val.gif || ''}
+                />
+              )
+            }
 
-              return
-            })
+            return
+          })
           : content.map((val, i) => {
-              if (val.title) {
-                return (
-                  <PortfolioContent
-                    key={i}
-                    image={val.image ? val.image : ''}
-                    title={val.title}
-                    site={val.site ? val.site : ''}
-                    code={val.code}
-                    description={val.description}
-                    search={val.search}
-                    setState={setState}
-                    setActive={setActive}
-                    gif={val.gif || ''}
-                  />
-                )
-              }
+            if (val.title) {
+              return (
+                <PortfolioContent
+                  key={i}
+                  image={val.image ? val.image : ''}
+                  title={val.title}
+                  site={val.site ? val.site : ''}
+                  code={val.code}
+                  description={val.description}
+                  search={val.search}
+                  setState={setState}
+                  setActive={setActive}
+                  gif={val.gif || ''}
+                />
+              )
+            }
 
-              return
-            })}
+            return
+          })}
       </div>
     </div>
   )
