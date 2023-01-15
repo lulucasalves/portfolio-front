@@ -55,7 +55,7 @@ export function Curriculum() {
             </p>
             <div className="buttons">
               <a
-                href='https://github.com/lulucasalves/portfolio-front/raw/7e173da865f1fc7d1efba8ab79c71d5c8b12e2c9/.github/curriculum.pdf'
+                href='https://github.com/lulucasalves/portfolio-front/blob/main/.github/curriculum.pdf'
               >
                 <MdOutlineFileDownload />
                 <Trans text="download" />
