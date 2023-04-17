@@ -24,7 +24,7 @@ export function FormationCard({
   return (
     <div className="card">
       <div className="image">
-        <Image layout="fill" src={image} />
+        <Image layout="fill" alt='' src={image} />
       </div>
       <div className="content">
         <p className="titleCourse">
