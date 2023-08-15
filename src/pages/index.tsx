@@ -59,7 +59,7 @@ export default function Home() {
           modal={modalFormation}
           setModal={setModalFormation}
         />
-        <Curriculum />
+        {/* <Curriculum /> */}
         <Contact setEmail={setEmail} />
         <Footer />
       </div>

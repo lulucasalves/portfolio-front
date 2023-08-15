@@ -29,7 +29,7 @@
   "thanks": "< Obrigado pela visita >",
 
   "formation": "Formação",
-  "formation-description": "Atualmente sou graduado em design gráfico e estou estudando análise e desenvolvimento de sistemas na Universidade Internacional, a previsão da minha formação em análise e desenvolvimento de sistemas será em fevereiro de 2024, busco me aprofundar cada vez mais no mundo da tecnologia e estou atraz sempre de algo mais difícil e complexo, pretendo cursar uma pós graduação em engenharia de software, logo após eu me formar em análise e desenvolvimento de sistemas.",
+  "formation-description": "Atualmente sou graduado em design gráfico e estou estudando análise e desenvolvimento de sistemas no Centro Universitário Internacional, a previsão da minha formação em análise e desenvolvimento de sistemas será em fevereiro de 2024, busco me aprofundar cada vez mais no mundo da tecnologia e estou atraz sempre de algo mais difícil e complexo, pretendo cursar uma pós graduação em engenharia de software, logo após eu me formar na minha última graduação.",
   "graphic-design": "Design gráfico",
   "home": "Início",
   "about": "Sobre mim",
@@ -55,7 +55,7 @@
   "language": "Linguagem",
   "see-more": "Ver mais",
   "more-projects": "Mais projetos",
-  "experience-description": "Estou trabalhando na empresa Hypesoft como desenvolvedor fullstack, hoje em dia sou desenvolvedor de software python e javascript como freelancer, e fiz estágio na ZB negócios como desenvolvedor frontend.",
+  "experience-description": "Estou trabalhando na empresa Lumi como desenvolvedor fullstack, hoje em dia sou desenvolvedor de software javascript e python, com experiência de mais de 2 anos.",
   "from": "De",
   "to": "Até",
   "responsible": "Responsábilidades",
@@ -109,6 +109,13 @@
   "experience-4-2": "Responsável pela criação de telas em HTML e React, integração de apis e desenvolvimento de sistemas em Javascript",
   "experience-5-2": "Sobre a empresa",
   "experience-6-2": "A ZB Negócios Digitais é uma rede de empresas que trabalha vários tipos de ramos dentro do mundo digital, como: marketing, sistemas de transações e análise de desempenho.",
+
+  "experience-1-3": "Desenvolvedor Fullstack",
+  "experience-2-3": "Lumi",
+  "experience-3-3": "Hábilidades utilizadas na função:",
+  "experience-4-3": "Responsável pela criação de telas em HTML e React, integração de apis e desenvolvimento de sistemas em Javascript",
+  "experience-5-3": "Sobre a empresa",
+  "experience-6-3": "A ZB Negócios Digitais é uma rede de empresas que trabalha vários tipos de ramos dentro do mundo digital, como: marketing, sistemas de transações e análise de desempenho.",
 
   "smurl-front": "Este projeto foi feito completamente por mim, com o objetivo de encurtar grandes links, apresentado minha hábilidades de manipulação de dados, arquitetura de dados, consumo de dados do graphql no Front-end e conhecimento em javascript em geral.",
   "smurl-back": "Nesta aplicação Back-end foi feita exclusivamente para o projeto de Front-end, sua principal função é cadastro e login de usuário, recuperação de senha, autênticação com o Google, Facebook e Github, além de edição do usuário e manipulação das urls.",
