@@ -1,48 +1,56 @@
-import { IFormationModal } from '../../pages'
-import { IoCloseOutline } from 'react-icons/io5'
-import OnOutsiceClick from 'react-outclick'
-import { useEffect, useState } from 'react'
+import { IFormationModal } from "../../pages";
+import { IoCloseOutline } from "react-icons/io5";
+import OnOutsiceClick from "react-outclick";
+import { useEffect, useState } from "react";
 
 interface IModalFormation {
-  state: IFormationModal
-  setState: (event: IFormationModal) => void
+  state: IFormationModal;
+  setState: (event: IFormationModal) => void;
 }
-import * as formData from '../../data/formation.json'
-import { Trans } from '../Trans'
+import formData from "../../data/formation.json";
+import { Trans } from "../Trans";
 
 export function ModalFormation({ state, setState }: IModalFormation) {
-  const [appear, setAppear] = useState<boolean>(false)
+  const [appear, setAppear] = useState<boolean>(false);
   let info = {
-    course: '',
-    university: '',
-    igc: '',
-    mec: '',
-    address: '',
-    init: '',
-    finish: '',
-    mecLink: '',
-    courseYears: '',
-    courseTime: '',
-    credential: '',
-    status: false
-  }
+    course: "",
+    university: "",
+    igc: "",
+    mec: "",
+    address: "",
+    init: "",
+    finish: "",
+    mecLink: "",
+    courseYears: "",
+    courseTime: "",
+    credential: "",
+    status: false,
+  };
 
   useEffect(() => {
-    setAppear(state.active)
-  }, [state])
+    setAppear(state.active);
+  }, [state]);
 
   useEffect(() => {
     if (!appear) {
-      setState({ card: state.card, active: false })
+      setState({ card: state.card, active: false });
     }
-  }, [appear])
+  }, [appear]);
 
   if (state.card === 1) {
-    info = formData.design
+    info = formData.design;
   }
 
   if (state.card === 2) {
-    info = formData.ads
+    info = formData.ads;
+  }
+
+  if (state.card === 3) {
+    info = formData["software-engineer"];
+  }
+
+  if (state.card === 4) {
+    info = formData["software-architecture"];
   }
 
   return (
@@ -51,7 +59,7 @@ export function ModalFormation({ state, setState }: IModalFormation) {
         <div className="focusModal">
           <OnOutsiceClick
             onOutsideClick={() => {
-              setAppear(false)
+              setAppear(false);
             }}
           >
             <div className="modalFormation">
@@ -75,7 +83,7 @@ export function ModalFormation({ state, setState }: IModalFormation) {
                     <li>
                       <Trans text="institute" />:
                       <span>
-                        {' '}
+                        {" "}
                         <Trans text={info.university} />
                       </span>
                     </li>
@@ -99,19 +107,19 @@ export function ModalFormation({ state, setState }: IModalFormation) {
                   </p>
                   <ul>
                     <li>
-                      <Trans text="duration" />:{' '}
+                      <Trans text="duration" />:{" "}
                       <span>
                         {info.courseYears} <Trans text="years" />
                       </span>
                     </li>
                     <li>
-                      <Trans text="time-expended" />:{' '}
+                      <Trans text="time-expended" />:{" "}
                       <span>{info.courseTime}h</span>
                     </li>
                     <li>
                       Status:
                       <span>
-                        {' '}
+                        {" "}
                         {info.status ? (
                           <Trans text="finished" />
                         ) : (
@@ -127,9 +135,9 @@ export function ModalFormation({ state, setState }: IModalFormation) {
                     </li>
                     <div className="groupButtons">
                       <button
-                        onClick={() => window.open(info.credential, '_blank')}
+                        onClick={() => window.open(info.credential, "_blank")}
                         type="button"
-                        style={{ marginLeft: '15px' }}
+                        style={{ marginLeft: "15px" }}
                         disabled={!info.status}
                       >
                         <Trans text="credential" />
@@ -143,5 +151,5 @@ export function ModalFormation({ state, setState }: IModalFormation) {
         </div>
       )}
     </div>
-  )
+  );
 }

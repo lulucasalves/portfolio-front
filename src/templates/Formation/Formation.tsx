@@ -38,6 +38,30 @@ export function Formation({ modal, setModal, setExpModal, expModal }: IModal) {
           card={2}
         />
       )
+    } else if (modal.card === 3) {
+      return (
+        <FormationCard
+          title="software-engineer"
+          university="puc-minas"
+          image="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg"  
+          init="09/2023"
+          finish="10/2024"
+          setState={setModal}
+          card={3}
+        />
+      )
+    } else if (modal.card === 4) {
+      return (
+        <FormationCard
+          title="software-architecture"
+          university="full-cycle"
+          image="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" 
+          init="02/2025"
+          finish="07/2027"
+          setState={setModal}
+          card={4}
+        />
+      )
     }
   }
 
@@ -50,7 +74,7 @@ export function Formation({ modal, setModal, setExpModal, expModal }: IModal) {
   }
 
   function nextCard() {
-    if (modal.card < 2) {
+    if (modal.card < 4) {
       return modal.card + 1
     }
     return modal.card
@@ -79,7 +103,7 @@ export function Formation({ modal, setModal, setExpModal, expModal }: IModal) {
                 />
                 {returnCard()}
                 <IoIosArrowForward
-                  className={`${modal.card > 1 && 'not-active'}`}
+                  className={`${modal.card > 3 && 'not-active'}`}
                   onClick={() =>
                     setModal({ active: false, card: nextCard() || 1 })
                   }
@@ -93,6 +117,14 @@ export function Formation({ modal, setModal, setExpModal, expModal }: IModal) {
                 <div
                   onClick={() => setModal({ active: false, card: 2 })}
                   className={`ball ${modal.card === 2 && 'active'}`}
+                />
+                <div
+                  onClick={() => setModal({ active: false, card: 3 })}
+                  className={`ball ${modal.card === 3 && 'active'}`}
+                />
+                <div
+                  onClick={() => setModal({ active: false, card: 4 })}
+                  className={`ball ${modal.card === 4 && 'active'}`}
                 />
               </div>
             </div>

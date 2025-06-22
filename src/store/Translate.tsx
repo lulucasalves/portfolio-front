@@ -1,30 +1,30 @@
-import { ReactElement, useContext } from 'react'
-import { IntlProvider } from 'react-intl'
+import { ReactElement, useContext } from "react";
+import { IntlProvider } from "react-intl";
 
-import * as enMessages from '../data/en.json'
-import * as ptMessages from '../data/pt.json'
-import { IMyContext, MyContext } from './config'
+import enMessages from "../data/en.json";
+import ptMessages from "../data/pt.json";
+import { IMyContext, MyContext } from "./config";
 
 const messages = {
   pt: ptMessages,
-  en: enMessages
-}
+  en: enMessages,
+};
 
 interface ILangProvider {
-  children: ReactElement
+  children: ReactElement;
 }
 
 export function LangProvider({ children }: ILangProvider) {
-  const { lang } = useContext<IMyContext>(MyContext)
+  const { lang } = useContext<IMyContext>(MyContext);
 
   return (
     <IntlProvider
-      locale={lang || 'pt'}
+      locale={lang || "en"}
       messages={
         lang != undefined ? messages[lang as keyof typeof messages] : {}
       }
     >
       {children}
     </IntlProvider>
-  )
+  );
 }

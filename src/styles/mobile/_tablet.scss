@@ -151,6 +151,13 @@ html {
         width: 45%;
         font-size: 1.2rem;
         margin-left: 0;
+        padding: 0 15px;
+
+        option {
+          background: var(--background);
+          color: var(--text);
+          padding: 8px;
+        }
       }
     }
 

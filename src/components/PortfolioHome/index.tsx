@@ -1,29 +1,29 @@
-import { useEffect, useState } from 'react'
-import { PortfolioContent } from '../PortfolioContent'
-import * as jsonData from '../../data/portfolio.json'
-import { IPort } from '../../templates/PortfolioHome/Home'
-import { IModalPortfolio } from '../../pages/icnvifnsdiofnsdoifnisfinsdoifnids'
-import { Trans } from '../Trans'
-import { useIntl } from 'react-intl'
+import { useEffect, useState } from "react";
+import { PortfolioContent } from "../PortfolioContent";
+import jsonData from "../../data/portfolio.json";
+import { IPort } from "../../templates/PortfolioHome/Home";
+import { IModalPortfolio } from "../../pages/icnvifnsdiofnsdoifnisfinsdoifnids";
+import { Trans } from "../Trans";
+import { useIntl } from "react-intl";
 
 export function PortfolioHome({ setState, setActive }: IPort) {
-  const { formatMessage } = useIntl()
-  const [filterInput, setFilterInput] = useState<string>('')
+  const { formatMessage } = useIntl();
+  const [filterInput, setFilterInput] = useState<string>("");
   const [content, setContent] = useState<IModalPortfolio[]>([
     {
-      search: [''],
-      title: '',
-      image: '',
-      description: '',
-      site: '',
-      code: '',
-      gif: ''
-    }
-  ])
-  const [front, setFront] = useState<boolean>(false)
-  const [back, setBack] = useState<boolean>(false)
-  const [mobile, setMobile] = useState<boolean>(false)
-  const [deploy, setDeploy] = useState<boolean>(false)
+      search: [""],
+      title: "",
+      image: "",
+      description: "",
+      site: "",
+      code: "",
+      gif: "",
+    },
+  ]);
+  const [front, setFront] = useState<boolean>(false);
+  const [back, setBack] = useState<boolean>(false);
+  const [mobile, setMobile] = useState<boolean>(false);
+  const [deploy, setDeploy] = useState<boolean>(false);
 
   useEffect(() => {
     jsonData.map((val) => {
@@ -31,24 +31,24 @@ export function PortfolioHome({ setState, setActive }: IPort) {
         ...oldArray,
         {
           title: val.title,
-          image: val.image || '',
-          site: val.site || '',
+          image: val.image || "",
+          site: val.site || "",
           code: val.code,
           search: val.search,
-          description: val.description || '',
-          gif: val.gif || ''
-        }
-      ])
-    })
-  }, [jsonData])
+          description: val.description || "",
+          gif: val.gif || "",
+        },
+      ]);
+    });
+  }, [jsonData]);
 
   function filterAll(val: IModalPortfolio) {
     if (front || back || mobile || deploy || filterInput) {
-      const frontIncludes = val.search.includes('front')
-      const backIncludes = val.search.includes('back')
-      const mobileIncludes = val.search.includes('mobile')
-      const deployIncludes = val.site
-      const searchIncludes = val.search.includes(filterInput)
+      const frontIncludes = val.search.includes("front");
+      const backIncludes = val.search.includes("back");
+      const mobileIncludes = val.search.includes("mobile");
+      const deployIncludes = val.site;
+      const searchIncludes = val.search.includes(filterInput);
 
       return (
         (front && frontIncludes) ||
@@ -56,20 +56,20 @@ export function PortfolioHome({ setState, setActive }: IPort) {
         (mobile && mobileIncludes) ||
         (deploy && deployIncludes) ||
         (filterInput && searchIncludes)
-      )
+      );
     }
 
-    return val
+    return val;
   }
 
-  const contentFilter = content.filter((val) => filterAll(val))
+  const contentFilter = content.filter((val) => filterAll(val));
 
   return (
     <div className="portfolioDiv">
       <div className="inputGroup">
         <input
           className="bigInput"
-          placeholder={formatMessage({ id: 'search-category' })}
+          placeholder={formatMessage({ id: "search-category" })}
           value={filterInput}
           onChange={(e) => setFilterInput(e.target.value)}
         />
@@ -127,46 +127,46 @@ export function PortfolioHome({ setState, setActive }: IPort) {
       <div className="portfolioContent">
         {contentFilter.length
           ? contentFilter.map((val, i) => {
-            if (val.title) {
-              return (
-                <PortfolioContent
-                  key={i}
-                  image={val.image ? val.image : ''}
-                  title={val.title}
-                  site={val.site ? val.site : ''}
-                  code={val.code}
-                  search={val.search}
-                  setState={setState}
-                  setActive={setActive}
-                  description={val.description}
-                  gif={val.gif || ''}
-                />
-              )
-            }
+              if (val.title) {
+                return (
+                  <PortfolioContent
+                    key={i}
+                    image={val.image ? val.image : ""}
+                    title={val.title}
+                    site={val.site ? val.site : ""}
+                    code={val.code}
+                    search={val.search}
+                    setState={setState}
+                    setActive={setActive}
+                    description={val.description}
+                    gif={val.gif || ""}
+                  />
+                );
+              }
 
-            return
-          })
+              return;
+            })
           : content.map((val, i) => {
-            if (val.title) {
-              return (
-                <PortfolioContent
-                  key={i}
-                  image={val.image ? val.image : ''}
-                  title={val.title}
-                  site={val.site ? val.site : ''}
-                  code={val.code}
-                  description={val.description}
-                  search={val.search}
-                  setState={setState}
-                  setActive={setActive}
-                  gif={val.gif || ''}
-                />
-              )
-            }
+              if (val.title) {
+                return (
+                  <PortfolioContent
+                    key={i}
+                    image={val.image ? val.image : ""}
+                    title={val.title}
+                    site={val.site ? val.site : ""}
+                    code={val.code}
+                    description={val.description}
+                    search={val.search}
+                    setState={setState}
+                    setActive={setActive}
+                    gif={val.gif || ""}
+                  />
+                );
+              }
 
-            return
-          })}
+              return;
+            })}
       </div>
     </div>
-  )
+  );
 }

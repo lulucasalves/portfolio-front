@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import Lottie from 'react-lottie'
-import * as animationData from '../../assets/87580-email-icon-animation.json'
+import React, { useEffect, useState } from "react";
+import Lottie from "react-lottie";
+import animationData from "../../assets/87580-email-icon-animation.json";
 
 interface IEmail {
-  state: boolean
-  setState: (val: boolean) => void
+  state: boolean;
+  setState: (val: boolean) => void;
 }
 
 export function CheckEmail({ state, setState }: IEmail) {
@@ -13,25 +13,25 @@ export function CheckEmail({ state, setState }: IEmail) {
     autoplay: true,
     animationData,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
-  const [secs, setSecs] = useState(5)
+  const [secs, setSecs] = useState(5);
 
   useEffect(() => {
-    let interval = null as any
+    let interval = null as any;
 
     if (state && secs > 0) {
       interval = setInterval(() => {
-        setSecs((oldSecs) => oldSecs - 1)
-      }, 1000)
+        setSecs((oldSecs) => oldSecs - 1);
+      }, 1000);
     } else if (secs <= 0) {
-      setState(false)
+      setState(false);
     }
 
-    return () => clearInterval(interval)
-  }, [state, secs])
+    return () => clearInterval(interval);
+  }, [state, secs]);
 
   return (
     <>
@@ -41,5 +41,5 @@ export function CheckEmail({ state, setState }: IEmail) {
         </div>
       )}
     </>
-  )
+  );
 }

@@ -1,9 +1,9 @@
 {
-  "about-1": "My name is Lucas, I'm 20 years old and I'm graduated in graphic design and studying systems analysis and development.",
-  "about-2": "I currently work as a fullstack developer at Hypesoft and as a freelancer I work as a software developer, my stack is based on Javascript and Python languages.",
-  "about-3": "Studying in practice Javascript and Python frameworks, devops, api development, mobile development and systems architecture. Focusing on skills to become a senior developer.",
-  "about-4": "In addition to technical skills, I'm improving myself in the English and German languages.",
-  "about-5": "Curious about technology from an early age, I sometimes spend time doing arduino projects using C++ and participating in programming challenges.",
+  "about-1": "👋 Hi, I'm Lucas, a full-stack developer with 5+ years of experience building web and mobile applications. I'm 22 years old and currently working at Privacy, an international social media platform, where I contribute to both the main product and internal systems.",
+  "about-2": "My core stack includes JavaScript/TypeScript and Python, using frameworks like Vue.js, Node.js, FastAPI and Django. I’ve worked on diverse projects across finance, entertainment, project and team management, and AI-powered SaaS platforms.",
+  "about-3": "I also have strong experience with cloud infrastructure on AWS and Azure, working with virtual machines, file storage, CI/CD pipelines, and serverless architecture using AWS Lambda and microservices.",
+  "about-4": "I'm constantly improving my skills through hands-on practice, exploring new technologies, and contributing to scalable system architecture across different environments.",
+  "about-5": "I’m passionate about innovation and always looking for ways to deliver smart, efficient, and elegant solutions in the tech world.",
 
   "description-change": "adjust the size of the description",
   "small": "small",
@@ -12,6 +12,7 @@
   "contact": "Contact",
   "follow-social": "Follow me on social media!",
   "send-email": "Or send me an email",
+  "my-phone": "My phone number (Whatsapp)",
   "continue": "Continue",
   "name": "Name",
   "contact-me": "Contact me",
@@ -29,9 +30,12 @@
   "thanks": "< Thanks for visiting >",
 
   "formation": "Formation",
-  "formation-description": "I am currently graduated in graphic design and I am studying systems analysis and development at the International University, my graduation in systems analysis and development is scheduled for February 2024, I seek to delve more and more into the world of technology and I am always behind something more difficult and complex, I intend to attend a postgraduate course in software engineering, right after I graduate in systems analysis and development.",
-  "graphic-design": "Graphic Design",
-  "analysis-system": "Systems Analysis",
+  "formation-description": "I hold a bachelor's degree in Graphic Design and a degree in Systems Analysis and Development, both from UNINTER. Currently, I'm pursuing a postgraduate program in Software Engineering at PUC Minas, expected to conclude in October 2024, and I’m also enrolled in an MBA in Software Architecture at Full Cycle, scheduled to finish in July 2027. My academic journey reflects my commitment to deepening my knowledge in software development and architecture, always seeking to tackle more challenging and complex problems in the tech world.",
+  "graphic-design": "Bachelor's degree - Graphic Design",
+  "analysis-system": "Bachelor's degree - Systems Analysis and Development",
+  "software-engineer": "Postgraduate - Software Engineering",
+  "software-architecture": "Master Business Administration - Software Architecture",
+
   "home": "Home",
   "about": "About me",
   "skills": "Skills",
@@ -56,7 +60,7 @@
   "language": "Language",
   "see-more": "See more",
   "more-projects": "More projects",
-  "experience-description": "I'm working at Hypesoft company as a fullstack developer, nowadays I'm a python and javascript software developer as a freelancer, and I did an internship at ZB Negócios as a frontend developer.",
+  "experience-description": "I'm currently working as a fullstack developer at Privacy, where I contribute to both the core social media platform and internal support systems using technologies like Vue.js, Node.js, FastAPI, and .NET. Previously, I worked at ZNAP Technologies leading projects such as budget planning, lead management, and cash flow systems, integrating with platforms like Netsuite and Totvs. At Lumi, I helped develop a scalable energy lease management platform using React, Node.js, GraphQL, and FastAPI. I also spent time at Hypesoft, where I built web, mobile, and AI-driven systems using React Native, Flutter, and Flask, serving clients across health, agriculture, and digital media. I started my journey at ZB Software, developing fullstack web and mobile solutions for educational, crypto, and streaming projects.",
   "from": "From",
   "to": "To",
   "responsible": "Responsibilities",
@@ -69,16 +73,22 @@
 
   "finish": "End",
   "exit": "Exit",
+ 
+  "design-course": "Bachelor's degree - Graphic design",
+  "analist-course": "Bachelor's degree - Analysis and development of systems",
+  "software-engineer-course": "Postgraduate - Software Engineering",
+  "software-architecture-course": "Master Business Administration - Software Architecture",
+  "university-center": "International University Center",
+  "puc-minas": "PUC Minas",
+  "full-cycle": "Full Cycle",
+
   "experience-1": "Frontend Developer",
   "experience-2": "ZB Digital Business",
   "experience-3": "Uses for features in the function:",
   "experience-4": "Responsible for creating HTML and React screens, api integration and javascript system development",
   "experience-5": "About the company",
   "experience-6": "ZB Digital Business is a network of companies that work various types of branches within the digital world, such as: marketing, transaction systems and performance analysis.",
-  "design-course": "Higher education - Graphic design",
-  "analist-course": "Higher education - Analysis and development of systems",
-  "university-center": "International University Center",
-
+  
   "experience-1-2": "Fullstack Developer",
   "experience-2-2": "Hypesoft",
   "experience-4-2": "Responsible for creating HTML and React screens, api integration and javascript system development",
@@ -90,6 +100,18 @@
   "experience-4-3": "Responsible for creating HTML and React screens, api integration and javascript system development",
   "experience-5-3": "About the company",
   "experience-6-3": "ZB Digital Business is a network of companies that work various types of branches within the digital world, such as: marketing, transaction systems and performance analysis.",
+
+  "experience-1-4": "Fullstack Developer",
+  "experience-2-4": "ZNAP Technologies",
+  "experience-4-4": "Responsible for creating HTML and React screens, api integration and javascript system development",
+  "experience-5-4": "About the company",
+  "experience-6-4": "ZNAP Technologies is a company that provides software development services to clients.",
+
+  "experience-1-5": "Fullstack Developer",
+  "experience-2-5": "Privacy",
+  "experience-4-5": "Responsible for creating HTML and React screens, api integration and javascript system development",
+  "experience-5-5": "About the company",
+  "experience-6-5": "Privacy is a social media platform that allows users to share their thoughts and ideas with others.",
 
   "institute": "Institution",
   "teach-institute": "Educational institution",

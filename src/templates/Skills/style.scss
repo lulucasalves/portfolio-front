@@ -37,8 +37,16 @@
       height: 40px;
       font-size: 1rem;
       margin-left: 40px;
-      width: 150px;
-      padding-left: 10px;
+      width: 180px;
+      padding: 0 15px;
+      color: var(--text);
+      cursor: pointer;
+
+      option {
+        background: var(--background);
+        color: var(--text);
+        padding: 8px;
+      }
     }
   }
 

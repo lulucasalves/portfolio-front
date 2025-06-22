@@ -9,7 +9,7 @@
   align-items: center;
   position: relative;
   width: 300px;
-  height: 155px;
+  height: 180px;
   transition: 0.5s;
 
   &:first-child {
@@ -17,7 +17,7 @@
   }
 
   &:hover {
-    height: 320px;
+    height: 340px;
     .image {
       height: 170px;
       width: 170px;

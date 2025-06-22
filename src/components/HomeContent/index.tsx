@@ -48,7 +48,7 @@ export function HomeContent() {
               <div className="terminalContent wrapper">
                 <p>
                   <span className="bash">bash: ~$</span>{' '}
-                  <span className="dynamic-txts1">hello world</span>
+                  <span className="dynamic-txts1">./hello-world.sh</span>
                   <br />
                   <span className="apresentation">
                     <Trans text="terminal-1" />
@@ -73,7 +73,7 @@ export function HomeContent() {
                   <br />
                   <span className="bash bash2">bash: ~$</span>{' '}
                   <span className="dynamic-txts3">
-                    cd <Trans text="terminal-2" />/
+                    npm run about-me
                   </span>
                   <br />
                   <span className="apresentation2">

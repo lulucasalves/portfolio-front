@@ -24,8 +24,7 @@ export function Experience({ modal, setModal }: IModal) {
 
     let total =
       (data2.getFullYear() - data1.getFullYear()) * 12 +
-      (data2.getMonth() - data1.getMonth()) -
-      1;
+      (data2.getMonth() - data1.getMonth());
 
     total = -total;
 
@@ -42,23 +41,23 @@ export function Experience({ modal, setModal }: IModal) {
   }
 
   function returnCard() {
-    if (modal.card === 3) {
+    if (modal.card === 5) {
       return (
         <ExperienceCard
           link="https://www.linkedin.com/company/zbnegocios"
           company="experience-2"
-          period={`1 ${yearT}`}
+          period={`1 ${yearT} ${andT} 11 ${monthsT}`}
           title="experience-1"
           image="/companys/zb.jpeg"
           setModal={setModal}
           card={3}
         />
       );
-    } else if (modal.card === 2) {
+    } else if (modal.card === 4) {
       return (
         <ExperienceCard
           link="https://www.linkedin.com/company/hypesoft"
-          period={`1 ${yearT}`}
+          period={`1 ${yearT} ${andT} 1 ${monthT}`}
           company="experience-2-2"
           title="experience-1-2"
           image="/companys/hypesoft.jpeg"
@@ -66,14 +65,38 @@ export function Experience({ modal, setModal }: IModal) {
           card={2}
         />
       );
-    } else if (modal.card === 1) {
+    } else if (modal.card === 3) {
       return (
         <ExperienceCard
           link="https://www.linkedin.com/company/labs-lumi"
-          period={getPeriod("2023-09-01")}
+          period={`5 ${monthsT}`}
           company="experience-2-3"
           title="experience-1-3"
           image="/companys/lumi.jpeg"
+          setModal={setModal}
+          card={1}
+        />
+      );
+    } else if (modal.card === 2) {
+      return (
+        <ExperienceCard
+          link="https://www.linkedin.com/company/znap-technologies"
+          period={`1 ${yearT} ${andT} 2 ${monthsT}`}
+          company="experience-2-4"
+          title="experience-1-4"
+          image="/companys/znap.jpg"
+          setModal={setModal}
+          card={2}
+        />
+      );
+    } else if (modal.card === 1) {
+      return (
+        <ExperienceCard
+          link="https://www.linkedin.com/company/sejaprivacy"
+          period={getPeriod("2025-02-01")}
+          company="experience-2-5"
+          title="experience-1-5"
+          image="/companys/privacy.jpg"
           setModal={setModal}
           card={1}
         />
@@ -90,7 +113,7 @@ export function Experience({ modal, setModal }: IModal) {
   }
 
   function nextCard() {
-    if (modal.card < 3) {
+    if (modal.card < 5) {
       return modal.card + 1;
     }
     return modal.card;
@@ -117,7 +140,7 @@ export function Experience({ modal, setModal }: IModal) {
               />
               {returnCard()}
               <IoIosArrowForward
-                className={`${modal.card > 2 && "not-active"}`}
+                className={`${modal.card > 5 && "not-active"}`}
                 onClick={() =>
                   setModal({ active: false, card: nextCard() || 1 })
                 }
@@ -135,6 +158,14 @@ export function Experience({ modal, setModal }: IModal) {
               <div
                 onClick={() => setModal({ active: false, card: 3 })}
                 className={`ball ${modal.card === 3 && "active"}`}
+              />
+              <div
+                onClick={() => setModal({ active: false, card: 4 })}
+                className={`ball ${modal.card === 4 && "active"}`}
+              />
+              <div
+                onClick={() => setModal({ active: false, card: 5 })}
+                className={`ball ${modal.card === 5 && "active"}`}
               />
             </div>
           </div>

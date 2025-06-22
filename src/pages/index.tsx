@@ -22,7 +22,7 @@ export interface IFormationModal {
 export default function Home() {
   const [modalFormation, setModalFormation] = useState<IFormationModal>({
     active: false,
-    card: 1
+    card: 4
   })
   const [modalExperience, setModalExperience] = useState<IFormationModal>({
     active: false,
