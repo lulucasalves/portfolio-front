@@ -140,7 +140,7 @@ export function Experience({ modal, setModal }: IModal) {
               />
               {returnCard()}
               <IoIosArrowForward
-                className={`${modal.card > 5 && "not-active"}`}
+                className={`${modal.card > 4 && "not-active"}`}
                 onClick={() =>
                   setModal({ active: false, card: nextCard() || 1 })
                 }
