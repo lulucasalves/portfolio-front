@@ -1,6 +1,9 @@
 {
   "functions": {
-    "app/**/*.ts": {
+    "src/**/*.ts": {
+      "runtime": "nodejs18.x"
+    },
+    "pages/**/*.tsx": {
       "runtime": "nodejs18.x"
     }
   },
