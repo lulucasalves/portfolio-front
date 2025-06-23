@@ -30,11 +30,13 @@ export function Contact({ setEmail }: IEmail) {
   const [level, setLevel] = useState<number>(1);
   const { lang } = useContext<IMyContext>(MyContext);
   const [sended, setSended] = useState(false);
+  const [sending, setSending] = useState(false);
 
   function handleSendForm(values: ISubmit) {
     if (!values.email || level === 1) {
       setLevel(2);
     } else {
+      setSending(true);
       const templateParams = {
         to_name: values.name,
         to_email: values.email.toLocaleLowerCase(),
@@ -51,10 +53,12 @@ export function Contact({ setEmail }: IEmail) {
         .then(() => {
           setSended(true);
           setEmail(true);
+          setSending(false);
         })
         .catch((err) => {
-          console.log(err)
+          console.log(err);
           alert(formatMessage({ id: "email-error" }));
+          setSending(false);
         });
     }
   }
@@ -203,12 +207,14 @@ export function Contact({ setEmail }: IEmail) {
                           <Trans text="return" />
                         </button>
                         <button
-                          disabled={sended}
+                          disabled={sended || sending}
                           className="submitButton"
                           type="submit"
                         >
                           <div className="buttonInner">
-                            {sended ? (
+                            {sending ? (
+                              <Trans text="sending" />
+                            ) : sended ? (
                               <Trans text="sended" />
                             ) : (
                               <Trans text="send" />

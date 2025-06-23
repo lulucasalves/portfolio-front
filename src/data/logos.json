@@ -1,13 +1,61 @@
 [
-  { "svg": "arduino", "category": ["backend", ""], "name": "Arduino" },
-
   { "svg": "aws", "category": ["backend", ""], "name": "AWS" },
   {
-    "svg": "bootstrap",
-    "category": ["frontend", "", "framework"],
-    "name": "Bootstrap"
+    "svg": "javascript",
+    "category": ["frontend", "", "backend", "mobile", "language"],
+    "name": "Javascript"
   },
-  { "svg": "c", "category": ["backend", "", "language"], "name": "C++" },
+  {
+    "svg": "typescript",
+    "category": ["frontend", "", "backend", "mobile", "language"],
+    "name": "Typescript"
+  },
+  {
+    "svg": "python",
+    "category": ["backend", "frontend", "", "language"],
+    "name": "Python"
+  },
+  {
+    "svg": "mysql",
+    "category": ["backend", "", "database"],
+    "name": "Mysql"
+  },
+  {
+    "svg": "nextjs",
+    "category": ["frontend", "", "framework"],
+    "name": "Next js"
+  },
+  { "svg": "nodejs", "category": ["backend", ""], "name": "Node js" },
+  {
+    "svg": "postgres",
+    "category": ["backend", "", "database"],
+    "name": "Postgres"
+  },
+  {
+    "svg": "react",
+    "category": ["frontend", "", "framework"],
+    "name": "React js"
+  },
+  {
+    "svg": "nuxtjs",
+    "category": ["frontend", "", "framework"],
+    "name": "Nuxt js"
+  },
+  {
+    "svg": "azure",
+    "category": ["backend", ""],
+    "name": "Azure"
+  },
+  {
+    "svg": "reactNative",
+    "category": ["mobile", "frontend", "", "framework"],
+    "name": "React Native"
+  },
+  {
+    "svg": "redis",
+    "category": ["backend", "", "database"],
+    "name": "Redis"
+  },
   { "svg": "css", "category": ["frontend", ""], "name": "CSS" },
   {
     "svg": "django",
@@ -40,19 +88,24 @@
   },
   { "svg": "html", "category": ["frontend", ""], "name": "HTML" },
   {
-    "svg": "javascript",
-    "category": ["frontend", "", "backend", "mobile", "language"],
-    "name": "Javascript"
-  },
-  {
     "svg": "jest",
     "category": ["frontend", "", "framework", "backend"],
     "name": "Jest"
   },
   {
-    "svg": "jquery",
-    "category": ["frontend", "", "framework"],
-    "name": "Jquery"
+    "svg": "fastapi",
+    "category": ["", "framework", "backend"],
+    "name": "fastapi"
+  },
+  {
+    "svg": "nestjs",
+    "category": ["", "framework", "backend"],
+    "name": "Nestjs"
+  },
+  {
+    "svg": "dotnet",
+    "category": ["", "framework", "backend"],
+    "name": ".NET"
   },
   {
     "svg": "jwt",
@@ -68,52 +121,6 @@
     "svg": "mui",
     "category": ["frontend", "", "framework"],
     "name": "Material UI"
-  },
-  {
-    "svg": "mysql",
-    "category": ["backend", "", "database"],
-    "name": "Mysql"
-  },
-  {
-    "svg": "nextjs",
-    "category": ["frontend", "", "framework"],
-    "name": "Next js"
-  },
-  { "svg": "nodejs", "category": ["backend", ""], "name": "Node js" },
-  {
-    "svg": "npm",
-    "category": [""],
-    "name": "NPM"
-  },
-  {
-    "svg": "postgres",
-    "category": ["backend", "", "database"],
-    "name": "Postgres"
-  },
-  {
-    "svg": "pip",
-    "category": [""],
-    "name": "PIP"
-  },
-  {
-    "svg": "python",
-    "category": ["backend", "frontend", "", "language"],
-    "name": "Python"
-  },
-  {
-    "svg": "react",
-    "category": ["frontend", "", "framework"],
-    "name": "React js"
-  },
-  {
-    "svg": "reactNative",
-    "category": ["mobile", "frontend", "", "framework"],
-    "name": "React Native"
-  },
-  {
-    "svg": "redis",
-    "category": ["backend", "", "database"],
-    "name": "Redis"
   },
   { "svg": "sass", "category": ["frontend", "", "framework"], "name": "SASS" },
   {
@@ -135,15 +142,5 @@
     "svg": "tailwind",
     "category": ["frontend", "", "framework"],
     "name": "Tailwind"
-  },
-  {
-    "svg": "typescript",
-    "category": ["backend", "frontend", "", "language"],
-    "name": "Typescript"
-  },
-  {
-    "svg": "yarn",
-    "category": [""],
-    "name": "YARN"
   }
 ]
