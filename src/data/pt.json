@@ -30,7 +30,7 @@
   "thanks": "< Obrigado pela visita >",
 
   "formation": "Formação",
-  "formation-description": "Atualmente sou graduado em design gráfico e estou estudando análise e desenvolvimento de sistemas no Centro Universitário Internacional, a previsão da minha formação em análise e desenvolvimento de sistemas será em fevereiro de 2024, busco me aprofundar cada vez mais no mundo da tecnologia e estou atraz sempre de algo mais difícil e complexo, pretendo cursar uma pós graduação em engenharia de software, logo após eu me formar na minha última graduação.",
+  "formation-description": "Tenho técnologo em Design Gráfico e graduação em Análise e Desenvolvimento de Sistemas, ambos pela UNINTER. Atualmente, estou cursando uma pós-graduação em Engenharia de Software na PUC Minas, com conclusão prevista para outubro de 2024, e também estou matriculado em um MBA em Arquitetura de Software pela Full Cycle, com término previsto para julho de 2027. Minha trajetória acadêmica reflete meu compromisso em aprofundar meus conhecimentos em desenvolvimento e arquitetura de software, sempre buscando enfrentar problemas mais desafiadores e complexos no mundo da tecnologia.",
   "graphic-design": "Design gráfico",
   "software-engineer": "Engenharia de software",
   "software-architecture": "Arquitetura de software",
@@ -124,6 +124,19 @@
   "experience-4-3": "Responsável pela criação de telas em HTML e React, integração de apis e desenvolvimento de sistemas em Javascript",
   "experience-5-3": "Sobre a empresa",
   "experience-6-3": "A ZB Negócios Digitais é uma rede de empresas que trabalha vários tipos de ramos dentro do mundo digital, como: marketing, sistemas de transações e análise de desempenho.",
+
+  
+  "experience-1-4": "Desenvolvedor Fullstack",
+  "experience-2-4": "ZNAP Technologies",
+  "experience-4-4": "Responsible for creating HTML and React screens, api integration and javascript system development",
+  "experience-5-4": "About the company",
+  "experience-6-4": "ZNAP Technologies is a company that provides software development services to clients.",
+
+  "experience-1-5": "Desenvolvedor Fullstack",
+  "experience-2-5": "Privacy",
+  "experience-4-5": "Responsible for creating HTML and React screens, api integration and javascript system development",
+  "experience-5-5": "About the company",
+  "experience-6-5": "Privacy is a social media platform that allows users to share their thoughts and ideas with others.",
 
   "smurl-front": "Este projeto foi feito completamente por mim, com o objetivo de encurtar grandes links, apresentado minha hábilidades de manipulação de dados, arquitetura de dados, consumo de dados do graphql no Front-end e conhecimento em javascript em geral.",
   "smurl-back": "Nesta aplicação Back-end foi feita exclusivamente para o projeto de Front-end, sua principal função é cadastro e login de usuário, recuperação de senha, autênticação com o Google, Facebook e Github, além de edição do usuário e manipulação das urls.",
